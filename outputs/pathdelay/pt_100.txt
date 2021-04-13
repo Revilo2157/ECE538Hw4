@@ -850,3 +850,145 @@ Elapsed time for this session: 12 seconds
 Diagnostics summary: 2 warnings, 7 informationals
 
 Thank you for using pt_shell!
+                                        
+                                 PrimeTime (R)
+                                        
+              Version K-2015.06-SP3-2 for linux64 - Apr 07, 2016 
+                                        
+                    Copyright (c) 1988 - 2016 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+set library_name NangateOpenCellLibrary
+NangateOpenCellLibrary
+set link_library [list * ./nangate_scan.db]
+* ./nangate_scan.db
+read_verilog  s5378_bench.v
+1
+#ungroup -flatten -all
+# Define top level in the hierarchy
+current_design "s5378_bench"
+Loading verilog file '/winhomes/oar5/ECE538/Hw4/s5378_bench.v'
+Loading db file '/winhomes/oar5/ECE538/Hw4/nangate_scan.db'
+{"s5378_bench"}
+link_design 
+Linking design s5378_bench...
+Information: 106 (79.10%) library cells are unused in library nangate_scan..... (LNK-045)
+Information: total 106 library cells are unused (LNK-046)
+Design 's5378_bench' was successfully linked.
+Information: There are 801 leaf cells, ports, hiers and 915 nets in the design (LNK-047)
+1
+# SET CONSTRAINTS
+set_max_area 0
+1
+#Clock setup commands
+set CLK_PERIOD 0.1
+0.1
+#set DFF_CKQ 0.02
+#set SETUP_TIME 0.01
+set CLK "blif_clk_net" 
+blif_clk_net
+create_clock -period $CLK_PERIOD [get_ports $CLK]
+1
+set_clock_transition -rise 0.05 [get_clocks $CLK]
+1
+set_clock_transition -fall 0.03 [get_clocks $CLK]
+1
+set_clock_latency -rise 0.01 [get_clocks $CLK]
+1
+set_clock_latency -fall 0.03 [get_clocks $CLK]
+1
+set_ideal_network [get_ports blif_clk_net]
+1
+#set_propagated_clock [all_clocks]
+#set_clock_uncertainty 0.2 [all_clocks]
+#set_operating_conditions -min WORST -max WORST
+report_timing 
+Warning: Some timing arcs have been disabled for breaking timing loops
+	or because of constant propagation. Use the 'report_disable_timing'
+	command to get the list of these disabled timing arcs. (PTE-003)
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : s5378_bench
+Version: K-2015.06-SP3-2
+Date   : Tue Apr 13 14:28:31 2021
+****************************************
+
+
+  Startpoint: n398gat_reg
+               (rising edge-triggered flip-flop clocked by blif_clk_net)
+  Endpoint: n931gat_reg
+               (rising edge-triggered flip-flop clocked by blif_clk_net)
+  Path Group: blif_clk_net
+  Path Type: max
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  clock blif_clk_net (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.01       0.01
+  n398gat_reg/CK (SDFFS_X2)                0.00       0.01 r
+  n398gat_reg/QN (SDFFS_X2)                0.23       0.24 f
+  U1045/ZN (NOR2_X1)                       0.14       0.38 r
+  U1004/ZN (AND4_X1)                       0.12       0.50 r
+  U1002/ZN (NOR2_X1)                       0.05       0.54 f
+  U728/ZN (NAND2_X1)                       0.10       0.65 r
+  U727/ZN (INV_X1)                         0.04       0.68 f
+  U726/ZN (AOI21_X1)                       0.08       0.77 r
+  U721/ZN (NAND4_X1)                       0.19       0.95 f
+  U667/ZN (OAI21_X1)                       0.12       1.07 r
+  n931gat_reg/D (SDFFS_X2)                 0.00       1.07 r
+  data arrival time                                   1.07
+
+  clock blif_clk_net (rise edge)           0.10       0.10
+  clock network delay (ideal)              0.01       0.11
+  clock reconvergence pessimism            0.00       0.11
+  n931gat_reg/CK (SDFFS_X2)                           0.11 r
+  library setup time                      -0.14      -0.03
+  data required time                                 -0.03
+  ---------------------------------------------------------------
+  data required time                                 -0.03
+  data arrival time                                  -1.07
+  ---------------------------------------------------------------
+  slack (VIOLATED)                                   -1.10
+
+
+1
+source pt2tmax.tcl
+set NUM_PATHS $::env(NUM_PATHS)
+100
+write_delay_paths -max_paths $NUM_PATHS  -nworst 1  -delay_type max ./pathdelay/timing${NUM_PATHS}withoutmob.rpt
+Information: Checking 'no_input_delay'.
+Information: Checking 'no_driving_cell'.
+Information: Checking 'unconstrained_endpoints'.
+Warning: There are 395 endpoints which are not constrained for maximum delay.
+
+Information: Checking 'unexpandable_clocks'.
+Information: Checking 'latch_fanout'.
+Information: Checking 'no_clock'.
+Information: Checking 'partial_input_delay'.
+Information: Checking 'generic'.
+Information: Checking 'loops'.
+Information: Checking 'generated_clocks'.
+Information: Checking 'pulse_clock_non_pulse_clock_merge'.
+Information: Checking 'pll_configuration'.
+Warning: report_timing has satisfied the max_paths criteria. There are 204 further endpoints which have paths of interest with slack less than     0.00 that were not considered when generating this report. (UITE-502)
+quit
+Information: Defining new variable 'CLK'. (CMD-041)
+Information: Defining new variable 'library_name'. (CMD-041)
+Information: Defining new variable 'CLK_PERIOD'. (CMD-041)
+Information: Defining new variable 'NUM_PATHS'. (CMD-041)
+
+Timing updates: 3 (1 implicit, 2 explicit) (2 incremental, 1 full, 0 logical)
+Noise updates: 0 (0 implicit, 0 explicit) (0 incremental, 0 full)
+Maximum memory usage for this session: 575.12 MB
+CPU usage for this session: 2 seconds 
+Elapsed time for this session: 9 seconds
+Diagnostics summary: 2 warnings, 7 informationals
+
+Thank you for using pt_shell!
