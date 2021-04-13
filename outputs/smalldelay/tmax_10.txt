@@ -25,7 +25,7 @@ read_netlist -delete
 read_netlist $scan_lib -library
  Begin reading netlist ( ./nangate_scan.v )...
  End parsing Verilog file ./nangate_scan.v with 0 errors.
- End reading netlist: #modules=139, top=XOR2_X2, #lines=2594, CPU_time=0.01 sec, Memory=0MB
+ End reading netlist: #modules=139, top=XOR2_X2, #lines=2594, CPU_time=0.00 sec, Memory=0MB
 # read in user's synthesized verilog code
 #read_netlist $synthesized_files
 read_netlist  s5378_bench.v
@@ -56,7 +56,7 @@ run_drc
  Begin reading test protocol file ./des2d1.spf...
  Warning: Rule V14 (missing state) was violated 1 times.
  End parsing STIL file ./des2d1.spf with 0 errors.
- Test protocol file reading completed, CPU time=0.00 sec.
+ Test protocol file reading completed, CPU time=0.01 sec.
  ------------------------------------------------------------------------------
  Begin simulating test protocol procedures...
  Test protocol simulation completed, CPU time=0.00 sec.
@@ -76,13 +76,13 @@ run_drc
  ------------------------------------------------------------------------------
  Begin DRC dependent learning...
  Fast-sequential depth results: control=0(0), observe=0(0), detect=0(0), CPU time=0.00 sec
- DRC dependent learning completed, CPU time=0.01 sec.
+ DRC dependent learning completed, CPU time=0.00 sec.
  ------------------------------------------------------------------------------
  DRC Summary Report
  ------------------------------------------------------------------------------
  Warning: Rule V14 (missing state) was violated 1 times.
  There were 1 violations that occurred during DRC process.
- Design rules checking was successful, total CPU time=0.01 sec.
+ Design rules checking was successful, total CPU time=0.02 sec.
  ------------------------------------------------------------------------------
 read_timing ./SDD/slack.dat
  reading slack data file ./SDD/slack.dat.
@@ -100,29 +100,29 @@ run_atpg basic_scan_only -ndetects 1
  stored     detect/active  red/au/abort  coverage  CPU time
  ---------  -------------  ------------  --------  --------
  Begin deterministic ATPG: #collapsed_faults=3556, abort_limit=10...
- 32           1510   2046         0/0/0    58.88%      0.02
- 64            505   1538         0/3/0    71.76%      0.02
- 95            240   1294         0/7/0    77.63%      0.03
- 127           221   1071         0/9/0    82.31%      0.04
- 158           175    890        0/15/0    86.42%      0.04
- 190            77    804        0/24/0    88.47%      0.05
- 221            83    714        0/31/0    90.53%      0.06
- 253            60    651        0/34/0    92.12%      0.07
- 284            65    576        0/44/0    93.37%      0.07
- 314            44    522        0/54/0    94.52%      0.08
- 343            41    473        0/62/0    95.55%      0.08
- 369            30    435        0/70/0    96.33%      0.08
- 398            35    384        0/86/0    97.19%      0.09
- 419            31    347        0/92/0    97.75%      0.09
+ 32           1546   2010         0/0/0    58.88%      0.01
+ 63            516   1494         0/0/0    72.27%      0.02
+ 95            254   1240         0/0/0    78.56%      0.03
+ 127           180   1057         0/3/0    82.94%      0.03
+ 158           151    897        0/12/0    86.32%      0.04
+ 189            81    815        0/13/0    88.42%      0.05
+ 220           100    706        0/22/0    90.53%      0.05
+ 248            56    640        0/32/0    91.80%      0.06
+ 279            55    575        0/42/0    93.00%      0.06
+ 311            58    512        0/47/0    94.44%      0.07
+ 340            45    455        0/59/0    95.52%      0.07
+ 366            32    415        0/67/0    96.35%      0.07
+ 395            33    370        0/79/0    97.16%      0.09
+ 418            26    331        0/92/0    97.75%      0.09
  
     Collapsed Transition Fault Summary Report
  -----------------------------------------------
  fault class                     code   #faults
  ------------------------------  ----  ---------
  Detected                         DT       3994
-   detected_by_simulation         DS        (78)
+   detected_by_simulation         DS         (4)
    detected_by_implication        DI       (530)
-   transition-partially_detected   TP      (3386)
+   transition-partially_detected   TP      (3460)
  Possibly detected                PT          0
  Undetectable                     UD          8
    undetectable-tied              UT         (8)
@@ -135,18 +135,18 @@ run_atpg basic_scan_only -ndetects 1
  -----------------------------------------------
             Pattern Summary Report
  -----------------------------------------------
- #internal patterns                         419
-     #basic_scan patterns                   419
+ #internal patterns                         418
+     #basic_scan patterns                   418
  -----------------------------------------------
 report_faults -slack effectiveness  
  ------------------------------------------------------------------------------
- delay effectiveness  55.17%
+ delay effectiveness   6.64%
  ------------------------------------------------------------------------------
 #report_faults -slack tdet 
 #report_faults -slack delta
 report_faults -slack sdql
- SDQL 6289088.50
+ SDQL 5756102.00
 write_patterns ./SDD/pattern_sdd_slack10%.stil -internal -format STIL -unified_stil_flow -replace 
- Patterns written reference 1679 V statements, generating 35699 test cycles
- End writing file 'pattern_sdd_slack10%.stil' with 419 patterns, File_size = 304166, CPU_time = 0.0 sec.
+ Patterns written reference 1675 V statements, generating 35614 test cycles
+ End writing file 'pattern_sdd_slack10%.stil' with 418 patterns, File_size = 303484, CPU_time = 0.0 sec.
 exit
