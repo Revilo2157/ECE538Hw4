@@ -7,7 +7,7 @@ done
 
 echo
 
-export CLK_PERIOD=1.2
+export CLK_PERIOD=1.1
 echo Clock Period of: $CLK_PERIOD 
 
 for (( c=1; c<=$#; c++ ))

@@ -25,13 +25,13 @@ read_netlist -delete
 read_netlist $scan_lib -library
  Begin reading netlist ( ./nangate_scan.v )...
  End parsing Verilog file ./nangate_scan.v with 0 errors.
- End reading netlist: #modules=139, top=XOR2_X2, #lines=2594, CPU_time=0.00 sec, Memory=0MB
+ End reading netlist: #modules=139, top=XOR2_X2, #lines=2594, CPU_time=0.01 sec, Memory=0MB
 # read in user's synthesized verilog code
 #read_netlist $synthesized_files
 read_netlist  s5378_bench.v
  Begin reading netlist ( s5378_bench.v )...
  End parsing Verilog file s5378_bench.v with 0 errors.
- End reading netlist: #modules=1, top=s5378_bench, #lines=1079, CPU_time=0.01 sec, Memory=0MB
+ End reading netlist: #modules=1, top=s5378_bench, #lines=1079, CPU_time=0.00 sec, Memory=0MB
 run_build_model $top_module
  ------------------------------------------------------------------------------
  Begin build model for topcut = s5378_bench ...
@@ -56,7 +56,7 @@ run_drc
  Begin reading test protocol file ./des2d1.spf...
  Warning: Rule V14 (missing state) was violated 1 times.
  End parsing STIL file ./des2d1.spf with 0 errors.
- Test protocol file reading completed, CPU time=0.01 sec.
+ Test protocol file reading completed, CPU time=0.00 sec.
  ------------------------------------------------------------------------------
  Begin simulating test protocol procedures...
  Test protocol simulation completed, CPU time=0.00 sec.
@@ -67,7 +67,7 @@ run_drc
  Scan chain operation checking completed, CPU time=0.00 sec.
  ------------------------------------------------------------------------------
  Begin clock rules checking...
- Clock rules checking completed, CPU time=0.00 sec.
+ Clock rules checking completed, CPU time=0.01 sec.
  Clock grouping results: #pairs=0, #groups=0, #serial_pairs=0, #disturbed_pairs=0, CPU time=0.00 sec.
  ------------------------------------------------------------------------------
  Begin nonscan rules checking...
@@ -100,30 +100,29 @@ run_atpg basic_scan_only -ndetects 1
  stored     detect/active  red/au/abort  coverage  CPU time
  ---------  -------------  ------------  --------  --------
  Begin deterministic ATPG: #collapsed_faults=3556, abort_limit=10...
- 32           1519   2037         0/0/0    58.88%      0.01
- 62            427   1607         0/3/0    69.82%      0.02
- 94            289   1317         0/4/0    76.63%      0.03
- 126           260   1055         0/6/0    81.91%      0.03
- 155           115    938         0/8/0    84.92%      0.04
- 187            83    843        0/20/0    87.35%      0.04
- 217           120    713        0/30/0    89.77%      0.05
- 246            57    648        0/38/0    91.09%      0.05
- 274            79    562        0/45/0    92.78%      0.06
- 305            50    506        0/51/0    93.91%      0.06
- 333            32    464        0/61/0    94.88%      0.07
- 361            40    414        0/71/0    95.96%      0.07
- 386            37    368        0/80/0    96.84%      0.08
- 412            33    327        0/88/0    97.63%      0.08
- 417             4    319        0/92/0    97.75%      0.09
+ 32           1490   2066         0/0/0    59.72%      0.01
+ 64            500   1565         0/1/0    71.46%      0.02
+ 93            163   1396         0/7/0    75.97%      0.03
+ 125           251   1143         0/9/0    82.16%      0.04
+ 156           129   1010        0/13/0    85.27%      0.04
+ 186            90    911        0/22/0    87.79%      0.05
+ 218           107    800        0/26/0    90.63%      0.05
+ 247            72    720        0/34/0    92.14%      0.06
+ 278            53    661        0/40/0    93.37%      0.06
+ 308            54    599        0/48/0    94.64%      0.07
+ 338            38    550        0/59/0    95.64%      0.08
+ 368            37    507        0/65/0    96.55%      0.08
+ 399            35    452        0/85/0    97.38%      0.09
+ 413            15    430        0/92/0    97.75%      0.09
  
     Collapsed Transition Fault Summary Report
  -----------------------------------------------
  fault class                     code   #faults
  ------------------------------  ----  ---------
  Detected                         DT       3994
-   detected_by_simulation         DS        (56)
+   detected_by_simulation         DS        (77)
    detected_by_implication        DI       (530)
-   transition-partially_detected   TP      (3408)
+   transition-partially_detected   TP      (3387)
  Possibly detected                PT          0
  Undetectable                     UD          8
    undetectable-tied              UT         (8)
@@ -136,18 +135,18 @@ run_atpg basic_scan_only -ndetects 1
  -----------------------------------------------
             Pattern Summary Report
  -----------------------------------------------
- #internal patterns                         417
-     #basic_scan patterns                   417
+ #internal patterns                         413
+     #basic_scan patterns                   413
  -----------------------------------------------
 report_faults -slack effectiveness  
  ------------------------------------------------------------------------------
- delay effectiveness  49.23%
+ delay effectiveness  43.21%
  ------------------------------------------------------------------------------
 #report_faults -slack tdet 
 #report_faults -slack delta
 report_faults -slack sdql
- SDQL 5206344.50
+ SDQL 5719313.50
 write_patterns ./SDD/pattern_sdd_slack10%.stil -internal -format STIL -unified_stil_flow -replace 
- Patterns written reference 1671 V statements, generating 35529 test cycles
- End writing file 'pattern_sdd_slack10%.stil' with 417 patterns, File_size = 302802, CPU_time = 0.0 sec.
+ Patterns written reference 1655 V statements, generating 35189 test cycles
+ End writing file 'pattern_sdd_slack10%.stil' with 413 patterns, File_size = 300074, CPU_time = 0.0 sec.
 exit
