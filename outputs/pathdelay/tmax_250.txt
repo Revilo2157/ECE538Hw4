@@ -31,14 +31,14 @@ read_netlist $scan_lib -library
 read_netlist  s5378_bench.v
  Begin reading netlist ( s5378_bench.v )...
  End parsing Verilog file s5378_bench.v with 0 errors.
- End reading netlist: #modules=1, top=s5378_bench, #lines=1079, CPU_time=0.00 sec, Memory=0MB
+ End reading netlist: #modules=1, top=s5378_bench, #lines=1079, CPU_time=0.01 sec, Memory=0MB
 run_build_model $top_module
  ------------------------------------------------------------------------------
  Begin build model for topcut = s5378_bench ...
  ------------------------------------------------------------------------------
  There were 1688 primitives and 36 faultable pins removed during model optimizations
  Warning: Rule N21 (unsupported UDP entry) was violated 1 times.
- End build model: #primitives=1597, CPU_time=0.01 sec, Memory=1MB
+ End build model: #primitives=1597, CPU_time=0.00 sec, Memory=1MB
  ------------------------------------------------------------------------------
  Begin learning analyses...
  End learning analyses, total learning CPU time=0.01 sec.
@@ -56,7 +56,7 @@ run_drc
  Begin reading test protocol file ./des2d1.spf...
  Warning: Rule V14 (missing state) was violated 1 times.
  End parsing STIL file ./des2d1.spf with 0 errors.
- Test protocol file reading completed, CPU time=0.01 sec.
+ Test protocol file reading completed, CPU time=0.00 sec.
  ------------------------------------------------------------------------------
  Begin simulating test protocol procedures...
  Test protocol simulation completed, CPU time=0.00 sec.
@@ -76,7 +76,7 @@ run_drc
  ------------------------------------------------------------------------------
  Begin DRC dependent learning...
  Fast-sequential depth results: control=0(0), observe=0(0), detect=0(0), CPU time=0.00 sec
- DRC dependent learning completed, CPU time=0.00 sec.
+ DRC dependent learning completed, CPU time=0.01 sec.
  ------------------------------------------------------------------------------
  DRC Summary Report
  ------------------------------------------------------------------------------
@@ -95,7 +95,7 @@ set NUM_PATHS $::env(NUM_PATHS)
 add_delay_path ./pathdelay/timing${NUM_PATHS}withoutmob.rpt
  Warning: Rule P8 (capture later than path cycle time) was violated 250 times.
  Warning: Rule P22 (off-path node values not satisfiable) was violated 2 times.
- Delay path file results: #paths=250, #invalid=0, #untestable=0, CPU time=0.03 sec.
+ Delay path file results: #paths=250, #invalid=0, #untestable=0, CPU time=0.02 sec.
 add_faults -all
  250 faults were added to fault list.
 #set_atpg -nofull_seq_atpg
@@ -108,24 +108,24 @@ run_atpg -auto
  stored     detect/active  red/au/abort  coverage  CPU time
  ---------  -------------  ------------  --------  --------
  Begin fast-seq ATPG: #collapsed_faults=250, abort_limit=10, depth=4...
- 1              46    203         0/1/0    18.40%      0.01
- 2              14    189         0/1/0    24.00%      0.01
- 3               9    180         0/1/0    27.60%      0.01
+ 1              46    203         0/1/0    18.40%      0.00
+ 2              14    189         0/1/0    24.00%      0.00
+ 3               9    180         0/1/0    27.60%      0.00
  4               9    171         0/1/0    31.20%      0.01
- 5               5    166         0/1/0    33.20%      0.02
- 6               8    158         0/1/0    36.40%      0.02
- 7               3    155         0/1/0    37.60%      0.02
- 8               5    149         0/2/0    39.60%      0.02
- 9              10    138         0/3/2    43.60%      0.03
- 10              5    133         0/3/2    45.60%      0.03
- 11              2    131         0/3/2    46.40%      0.03
- 12              3    128         0/3/2    47.60%      0.03
- 13              2    125         0/4/2    48.40%      0.03
+ 5               5    166         0/1/0    33.20%      0.01
+ 6               8    158         0/1/0    36.40%      0.01
+ 7               3    155         0/1/0    37.60%      0.01
+ 8               5    149         0/2/0    39.60%      0.01
+ 9              10    138         0/3/2    43.60%      0.02
+ 10              5    133         0/3/2    45.60%      0.02
+ 11              2    131         0/3/2    46.40%      0.02
+ 12              3    128         0/3/2    47.60%      0.02
+ 13              2    125         0/4/2    48.40%      0.02
  14              1    124         0/4/2    48.80%      0.03
- 15              1    123         0/4/2    49.20%      0.05
- 16              1    122         0/4/2    49.60%      0.05
- 17              2    120         0/4/2    50.40%      0.05
- 18              2    118         0/4/2    51.20%      0.05
+ 15              1    123         0/4/2    49.20%      0.03
+ 16              1    122         0/4/2    49.60%      0.03
+ 17              2    120         0/4/2    50.40%      0.04
+ 18              2    118         0/4/2    51.20%      0.04
  19              1    116         0/5/2    51.60%      0.05
  
     Collapsed Path_delay Fault Summary Report

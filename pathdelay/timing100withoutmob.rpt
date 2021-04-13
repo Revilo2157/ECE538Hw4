@@ -6,8 +6,8 @@ $path {
   // from: n398gat_reg
   // to: n1121gat_reg
   $name "internal_1" ;
-  $cycle 0.1 ;
-  $slack -1.1025 ;
+  $cycle 0.15 ;
+  $slack -1.0525 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -27,8 +27,8 @@ $path {
   // from: n398gat_reg
   // to: n1072gat_reg
   $name "internal_2" ;
-  $cycle 0.1 ;
-  $slack -1.1025 ;
+  $cycle 0.15 ;
+  $slack -1.0525 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -48,8 +48,8 @@ $path {
   // from: n398gat_reg
   // to: n1035gat_reg
   $name "internal_3" ;
-  $cycle 0.1 ;
-  $slack -1.1025 ;
+  $cycle 0.15 ;
+  $slack -1.0525 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -69,8 +69,8 @@ $path {
   // from: n398gat_reg
   // to: n1135gat_reg
   $name "internal_4" ;
-  $cycle 0.1 ;
-  $slack -1.1025 ;
+  $cycle 0.15 ;
+  $slack -1.0525 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -90,8 +90,8 @@ $path {
   // from: n398gat_reg
   // to: n931gat_reg
   $name "internal_5" ;
-  $cycle 0.1 ;
-  $slack -1.1025 ;
+  $cycle 0.15 ;
+  $slack -1.0525 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -111,8 +111,8 @@ $path {
   // from: n398gat_reg
   // to: n1282gat_reg
   $name "internal_6" ;
-  $cycle 0.1 ;
-  $slack -1.1025 ;
+  $cycle 0.15 ;
+  $slack -1.0525 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -132,8 +132,8 @@ $path {
   // from: n398gat_reg
   // to: n1045gat_reg
   $name "internal_7" ;
-  $cycle 0.1 ;
-  $slack -1.1025 ;
+  $cycle 0.15 ;
+  $slack -1.0525 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -153,8 +153,8 @@ $path {
   // from: n398gat_reg
   // to: n1197gat_reg
   $name "internal_8" ;
-  $cycle 0.1 ;
-  $slack -1.1025 ;
+  $cycle 0.15 ;
+  $slack -1.0525 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -174,8 +174,8 @@ $path {
   // from: n398gat_reg
   // to: n1226gat_reg
   $name "internal_9" ;
-  $cycle 0.1 ;
-  $slack -1.1025 ;
+  $cycle 0.15 ;
+  $slack -1.0525 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -195,8 +195,8 @@ $path {
   // from: n398gat_reg
   // to: n777gat_reg
   $name "internal_10" ;
-  $cycle 0.1 ;
-  $slack -1.07111 ;
+  $cycle 0.15 ;
+  $slack -1.02111 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -216,8 +216,8 @@ $path {
   // from: n398gat_reg
   // to: n667gat_reg
   $name "internal_11" ;
-  $cycle 0.1 ;
-  $slack -1.07111 ;
+  $cycle 0.15 ;
+  $slack -1.02111 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -237,8 +237,8 @@ $path {
   // from: n398gat_reg
   // to: n553gat_reg
   $name "internal_12" ;
-  $cycle 0.1 ;
-  $slack -1.07111 ;
+  $cycle 0.15 ;
+  $slack -1.02111 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -258,8 +258,8 @@ $path {
   // from: n398gat_reg
   // to: n561gat_reg
   $name "internal_13" ;
-  $cycle 0.1 ;
-  $slack -1.07111 ;
+  $cycle 0.15 ;
+  $slack -1.02111 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -279,8 +279,8 @@ $path {
   // from: n398gat_reg
   // to: n659gat_reg
   $name "internal_14" ;
-  $cycle 0.1 ;
-  $slack -1.07111 ;
+  $cycle 0.15 ;
+  $slack -1.02111 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -300,8 +300,8 @@ $path {
   // from: n398gat_reg
   // to: n366gat_reg
   $name "internal_15" ;
-  $cycle 0.1 ;
-  $slack -1.07111 ;
+  $cycle 0.15 ;
+  $slack -1.02111 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -321,8 +321,8 @@ $path {
   // from: n398gat_reg
   // to: n322gat_reg
   $name "internal_16" ;
-  $cycle 0.1 ;
-  $slack -1.07111 ;
+  $cycle 0.15 ;
+  $slack -1.02111 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -342,8 +342,8 @@ $path {
   // from: n398gat_reg
   // to: n318gat_reg
   $name "internal_17" ;
-  $cycle 0.1 ;
-  $slack -1.07111 ;
+  $cycle 0.15 ;
+  $slack -1.02111 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -363,8 +363,8 @@ $path {
   // from: n398gat_reg
   // to: n314gat_reg
   $name "internal_18" ;
-  $cycle 0.1 ;
-  $slack -1.07111 ;
+  $cycle 0.15 ;
+  $slack -1.02111 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -384,8 +384,8 @@ $path {
   // from: n398gat_reg
   // to: n1871gat_reg
   $name "internal_19" ;
-  $cycle 0.1 ;
-  $slack -1.0396 ;
+  $cycle 0.15 ;
+  $slack -0.989597 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -408,8 +408,8 @@ $path {
   // from: n398gat_reg
   // to: n1456gat_reg
   $name "internal_20" ;
-  $cycle 0.1 ;
-  $slack -0.95931 ;
+  $cycle 0.15 ;
+  $slack -0.90931 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -430,8 +430,8 @@ $path {
   // from: n398gat_reg
   // to: n2025gat_reg
   $name "internal_21" ;
-  $cycle 0.1 ;
-  $slack -0.958987 ;
+  $cycle 0.15 ;
+  $slack -0.908987 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -452,8 +452,8 @@ $path {
   // from: n398gat_reg
   // to: n1748gat_reg
   $name "internal_22" ;
-  $cycle 0.1 ;
-  $slack -0.928573 ;
+  $cycle 0.15 ;
+  $slack -0.878573 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -474,8 +474,8 @@ $path {
   // from: n1880gat_reg
   // to: n2634gat_reg
   $name "internal_23" ;
-  $cycle 0.1 ;
-  $slack -0.910525 ;
+  $cycle 0.15 ;
+  $slack -0.860525 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -494,8 +494,8 @@ $path {
   // from: n398gat_reg
   // to: n2454gat_reg
   $name "internal_24" ;
-  $cycle 0.1 ;
-  $slack -0.905299 ;
+  $cycle 0.15 ;
+  $slack -0.855299 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -515,8 +515,8 @@ $path {
   // from: n1880gat_reg
   // to: n2543gat_reg
   $name "internal_25" ;
-  $cycle 0.1 ;
-  $slack -0.896255 ;
+  $cycle 0.15 ;
+  $slack -0.846255 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -535,8 +535,8 @@ $path {
   // from: n398gat_reg
   // to: n834gat_reg
   $name "internal_26" ;
-  $cycle 0.1 ;
-  $slack -0.843538 ;
+  $cycle 0.15 ;
+  $slack -0.793538 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -555,8 +555,8 @@ $path {
   // from: n1880gat_reg
   // to: n2626gat_reg
   $name "internal_27" ;
-  $cycle 0.1 ;
-  $slack -0.837769 ;
+  $cycle 0.15 ;
+  $slack -0.787769 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -574,8 +574,8 @@ $path {
   // from: n1880gat_reg
   // to: n1433gat_reg
   $name "internal_28" ;
-  $cycle 0.1 ;
-  $slack -0.830155 ;
+  $cycle 0.15 ;
+  $slack -0.780155 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -592,8 +592,8 @@ $path {
   // from: n1880gat_reg
   // to: n2490gat_reg
   $name "internal_29" ;
-  $cycle 0.1 ;
-  $slack -0.827607 ;
+  $cycle 0.15 ;
+  $slack -0.777607 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -611,8 +611,8 @@ $path {
   // from: n1880gat_reg
   // to: n2630gat_reg
   $name "internal_30" ;
-  $cycle 0.1 ;
-  $slack -0.827607 ;
+  $cycle 0.15 ;
+  $slack -0.777607 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -630,8 +630,8 @@ $path {
   // from: n398gat_reg
   // to: n2021gat_reg
   $name "internal_31" ;
-  $cycle 0.1 ;
-  $slack -0.826331 ;
+  $cycle 0.15 ;
+  $slack -0.776331 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -652,8 +652,8 @@ $path {
   // from: n1880gat_reg
   // to: n2622gat_reg
   $name "internal_32" ;
-  $cycle 0.1 ;
-  $slack -0.82143 ;
+  $cycle 0.15 ;
+  $slack -0.77143 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -671,8 +671,8 @@ $path {
   // from: n398gat_reg
   // to: n2040gat_reg
   $name "internal_33" ;
-  $cycle 0.1 ;
-  $slack -0.818603 ;
+  $cycle 0.15 ;
+  $slack -0.768603 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -693,8 +693,8 @@ $path {
   // from: n398gat_reg
   // to: n2522gat_reg
   $name "internal_34" ;
-  $cycle 0.1 ;
-  $slack -0.80103 ;
+  $cycle 0.15 ;
+  $slack -0.75103 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -712,8 +712,8 @@ $path {
   // from: n398gat_reg
   // to: n2476gat_reg
   $name "internal_35" ;
-  $cycle 0.1 ;
-  $slack -0.80103 ;
+  $cycle 0.15 ;
+  $slack -0.75103 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -731,8 +731,8 @@ $path {
   // from: n398gat_reg
   // to: n838gat_reg
   $name "internal_36" ;
-  $cycle 0.1 ;
-  $slack -0.792777 ;
+  $cycle 0.15 ;
+  $slack -0.742777 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -750,8 +750,8 @@ $path {
   // from: n919gat_reg
   // to: n699gat_reg
   $name "internal_37" ;
-  $cycle 0.1 ;
-  $slack -0.779773 ;
+  $cycle 0.15 ;
+  $slack -0.729773 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -770,8 +770,8 @@ $path {
   // from: n1871gat_reg
   // to: n614gat_reg
   $name "internal_38" ;
-  $cycle 0.1 ;
-  $slack -0.777838 ;
+  $cycle 0.15 ;
+  $slack -0.727838 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -788,8 +788,8 @@ $path {
   // from: n1871gat_reg
   // to: n707gat_reg
   $name "internal_39" ;
-  $cycle 0.1 ;
-  $slack -0.777838 ;
+  $cycle 0.15 ;
+  $slack -0.727838 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -806,8 +806,8 @@ $path {
   // from: n1871gat_reg
   // to: n830gat_reg
   $name "internal_40" ;
-  $cycle 0.1 ;
-  $slack -0.777838 ;
+  $cycle 0.15 ;
+  $slack -0.727838 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -824,8 +824,8 @@ $path {
   // from: n1880gat_reg
   // to: n2640gat_reg
   $name "internal_41" ;
-  $cycle 0.1 ;
-  $slack -0.754129 ;
+  $cycle 0.15 ;
+  $slack -0.704129 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -842,8 +842,8 @@ $path {
   // from: n398gat_reg
   // to: n2526gat_reg
   $name "internal_42" ;
-  $cycle 0.1 ;
-  $slack -0.751269 ;
+  $cycle 0.15 ;
+  $slack -0.701269 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -861,8 +861,8 @@ $path {
   // from: n919gat_reg
   // to: n684gat_reg
   $name "internal_43" ;
-  $cycle 0.1 ;
-  $slack -0.744526 ;
+  $cycle 0.15 ;
+  $slack -0.694526 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -880,8 +880,8 @@ $path {
   // from: n398gat_reg
   // to: n2182gat_reg
   $name "internal_44" ;
-  $cycle 0.1 ;
-  $slack -0.738429 ;
+  $cycle 0.15 ;
+  $slack -0.688429 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -900,8 +900,8 @@ $path {
   // from: n1871gat_reg
   // to: n883gat_reg
   $name "internal_45" ;
-  $cycle 0.1 ;
-  $slack -0.729219 ;
+  $cycle 0.15 ;
+  $slack -0.679219 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -918,8 +918,8 @@ $path {
   // from: n1871gat_reg
   // to: n820gat_reg
   $name "internal_46" ;
-  $cycle 0.1 ;
-  $slack -0.729219 ;
+  $cycle 0.15 ;
+  $slack -0.679219 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -936,8 +936,8 @@ $path {
   // from: n1871gat_reg
   // to: n824gat_reg
   $name "internal_47" ;
-  $cycle 0.1 ;
-  $slack -0.721086 ;
+  $cycle 0.15 ;
+  $slack -0.671086 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -954,8 +954,8 @@ $path {
   // from: n1880gat_reg
   // to: n1389gat_reg
   $name "internal_48" ;
-  $cycle 0.1 ;
-  $slack -0.696864 ;
+  $cycle 0.15 ;
+  $slack -0.646864 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -972,8 +972,8 @@ $path {
   // from: n2588gat_reg
   // to: n2343gat_reg
   $name "internal_49" ;
-  $cycle 0.1 ;
-  $slack -0.685656 ;
+  $cycle 0.15 ;
+  $slack -0.635656 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -992,8 +992,8 @@ $path {
   // from: n2588gat_reg
   // to: n2207gat_reg
   $name "internal_50" ;
-  $cycle 0.1 ;
-  $slack -0.685635 ;
+  $cycle 0.15 ;
+  $slack -0.635635 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1012,8 +1012,8 @@ $path {
   // from: n1880gat_reg
   // to: n2562gat_reg
   $name "internal_51" ;
-  $cycle 0.1 ;
-  $slack -0.681496 ;
+  $cycle 0.15 ;
+  $slack -0.631496 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1029,8 +1029,8 @@ $path {
   // from: n553gat_reg
   // to: n2599gat_reg
   $name "internal_52" ;
-  $cycle 0.1 ;
-  $slack -0.680006 ;
+  $cycle 0.15 ;
+  $slack -0.630006 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1046,8 +1046,8 @@ $path {
   // from: n398gat_reg
   // to: n2091gat_reg
   $name "internal_53" ;
-  $cycle 0.1 ;
-  $slack -0.679397 ;
+  $cycle 0.15 ;
+  $slack -0.629397 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1063,8 +1063,8 @@ $path {
   // from: n2588gat_reg
   // to: n2399gat_reg
   $name "internal_54" ;
-  $cycle 0.1 ;
-  $slack -0.676655 ;
+  $cycle 0.15 ;
+  $slack -0.626655 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1083,8 +1083,8 @@ $path {
   // from: n2588gat_reg
   // to: n2203gat_reg
   $name "internal_55" ;
-  $cycle 0.1 ;
-  $slack -0.676655 ;
+  $cycle 0.15 ;
+  $slack -0.626655 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1103,8 +1103,8 @@ $path {
   // from: n673gat_reg
   // to: n2468gat_reg
   $name "internal_56" ;
-  $cycle 0.1 ;
-  $slack -0.632589 ;
+  $cycle 0.15 ;
+  $slack -0.582589 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1120,8 +1120,8 @@ $path {
   // from: n699gat_reg
   // to: n2464gat_reg
   $name "internal_57" ;
-  $cycle 0.1 ;
-  $slack -0.630425 ;
+  $cycle 0.15 ;
+  $slack -0.580425 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1137,8 +1137,8 @@ $path {
   // from: n398gat_reg
   // to: n1771gat_reg
   $name "internal_58" ;
-  $cycle 0.1 ;
-  $slack -0.629662 ;
+  $cycle 0.15 ;
+  $slack -0.579662 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1155,8 +1155,8 @@ $path {
   // from: n1072gat_reg
   // to: n2518gat_reg
   $name "internal_59" ;
-  $cycle 0.1 ;
-  $slack -0.626618 ;
+  $cycle 0.15 ;
+  $slack -0.576618 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1172,8 +1172,8 @@ $path {
   // from: n398gat_reg
   // to: n2179gat_reg
   $name "internal_60" ;
-  $cycle 0.1 ;
-  $slack -0.618515 ;
+  $cycle 0.15 ;
+  $slack -0.568515 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1189,8 +1189,8 @@ $path {
   // from: n398gat_reg
   // to: n1834gat_reg
   $name "internal_61" ;
-  $cycle 0.1 ;
-  $slack -0.601865 ;
+  $cycle 0.15 ;
+  $slack -0.551865 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1207,8 +1207,8 @@ $path {
   // from: n1880gat_reg
   // to: n1508gat_reg
   $name "internal_62" ;
-  $cycle 0.1 ;
-  $slack -0.581197 ;
+  $cycle 0.15 ;
+  $slack -0.531197 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1223,8 +1223,8 @@ $path {
   // from: n2399gat_reg
   // to: n1336gat_reg
   $name "internal_63" ;
-  $cycle 0.1 ;
-  $slack -0.577757 ;
+  $cycle 0.15 ;
+  $slack -0.527757 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1239,8 +1239,8 @@ $path {
   // from: n2399gat_reg
   // to: n2658gat_reg
   $name "internal_64" ;
-  $cycle 0.1 ;
-  $slack -0.57473 ;
+  $cycle 0.15 ;
+  $slack -0.52473 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1255,8 +1255,8 @@ $path {
   // from: n2588gat_reg
   // to: n2495gat_reg
   $name "internal_65" ;
-  $cycle 0.1 ;
-  $slack -0.557519 ;
+  $cycle 0.15 ;
+  $slack -0.507519 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1274,8 +1274,8 @@ $path {
   // from: n2588gat_reg
   // to: n2390gat_reg
   $name "internal_66" ;
-  $cycle 0.1 ;
-  $slack -0.557515 ;
+  $cycle 0.15 ;
+  $slack -0.507515 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1292,8 +1292,8 @@ $path {
   // from: n1871gat_reg
   // to: n680gat_reg
   $name "internal_67" ;
-  $cycle 0.1 ;
-  $slack -0.555085 ;
+  $cycle 0.15 ;
+  $slack -0.505085 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1309,8 +1309,8 @@ $path {
   // from: n1871gat_reg
   // to: n580gat_reg
   $name "internal_68" ;
-  $cycle 0.1 ;
-  $slack -0.555085 ;
+  $cycle 0.15 ;
+  $slack -0.505085 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1326,8 +1326,8 @@ $path {
   // from: n1871gat_reg
   // to: n584gat_reg
   $name "internal_69" ;
-  $cycle 0.1 ;
-  $slack -0.555085 ;
+  $cycle 0.15 ;
+  $slack -0.505085 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1343,8 +1343,8 @@ $path {
   // from: n1871gat_reg
   // to: n816gat_reg
   $name "internal_70" ;
-  $cycle 0.1 ;
-  $slack -0.554973 ;
+  $cycle 0.15 ;
+  $slack -0.504973 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1360,8 +1360,8 @@ $path {
   // from: n1850gat_reg
   // to: n1675gat_reg
   $name "internal_71" ;
-  $cycle 0.1 ;
-  $slack -0.548277 ;
+  $cycle 0.15 ;
+  $slack -0.498277 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1376,8 +1376,8 @@ $path {
   // from: n2061gat_reg
   // to: n1462gat_reg
   $name "internal_72" ;
-  $cycle 0.1 ;
-  $slack -0.543662 ;
+  $cycle 0.15 ;
+  $slack -0.493662 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1394,8 +1394,8 @@ $path {
   // from: n2139gat_reg
   // to: n1394gat_reg
   $name "internal_73" ;
-  $cycle 0.1 ;
-  $slack -0.542007 ;
+  $cycle 0.15 ;
+  $slack -0.492007 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1410,8 +1410,8 @@ $path {
   // from: n2588gat_reg
   // to: n2270gat_reg
   $name "internal_74" ;
-  $cycle 0.1 ;
-  $slack -0.541437 ;
+  $cycle 0.15 ;
+  $slack -0.491437 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1428,8 +1428,8 @@ $path {
   // from: n2588gat_reg
   // to: n2339gat_reg
   $name "internal_75" ;
-  $cycle 0.1 ;
-  $slack -0.532286 ;
+  $cycle 0.15 ;
+  $slack -0.482286 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1446,8 +1446,8 @@ $path {
   // from: n1850gat_reg
   // to: n1332gat_reg
   $name "internal_76" ;
-  $cycle 0.1 ;
-  $slack -0.522095 ;
+  $cycle 0.15 ;
+  $slack -0.472095 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1462,8 +1462,8 @@ $path {
   // from: n1850gat_reg
   // to: n1525gat_reg
   $name "internal_77" ;
-  $cycle 0.1 ;
-  $slack -0.514056 ;
+  $cycle 0.15 ;
+  $slack -0.464056 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1478,8 +1478,8 @@ $path {
   // from: n2622gat_reg
   // to: n2506gat_reg
   $name "internal_78" ;
-  $cycle 0.1 ;
-  $slack -0.499933 ;
+  $cycle 0.15 ;
+  $slack -0.449933 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1494,8 +1494,8 @@ $path {
   // from: n2394gat_reg
   // to: n1596gat_reg
   $name "internal_79" ;
-  $cycle 0.1 ;
-  $slack -0.486175 ;
+  $cycle 0.15 ;
+  $slack -0.436175 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1510,8 +1510,8 @@ $path {
   // from: n2061gat_reg
   // to: n1807gat_reg
   $name "internal_80" ;
-  $cycle 0.1 ;
-  $slack -0.474467 ;
+  $cycle 0.15 ;
+  $slack -0.424467 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1526,8 +1526,8 @@ $path {
   // from: n398gat_reg
   // to: n1775gat_reg
   $name "internal_81" ;
-  $cycle 0.1 ;
-  $slack -0.473301 ;
+  $cycle 0.15 ;
+  $slack -0.423301 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1542,8 +1542,8 @@ $path {
   // from: n1880gat_reg
   // to: n2155gat_reg
   $name "internal_82" ;
-  $cycle 0.1 ;
-  $slack -0.470432 ;
+  $cycle 0.15 ;
+  $slack -0.420432 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1556,8 +1556,8 @@ $path {
   // from: n1850gat_reg
   // to: n1340gat_reg
   $name "internal_83" ;
-  $cycle 0.1 ;
-  $slack -0.467492 ;
+  $cycle 0.15 ;
+  $slack -0.417492 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1572,8 +1572,8 @@ $path {
   // from: n1871gat_reg
   // to: n2095gat_reg
   $name "internal_84" ;
-  $cycle 0.1 ;
-  $slack -0.463069 ;
+  $cycle 0.15 ;
+  $slack -0.413069 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1589,8 +1589,8 @@ $path {
   // from: n398gat_reg
   // to: n1767gat_reg
   $name "internal_85" ;
-  $cycle 0.1 ;
-  $slack -0.446074 ;
+  $cycle 0.15 ;
+  $slack -0.396074 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1605,8 +1605,8 @@ $path {
   // from: n2139gat_reg
   // to: n1588gat_reg
   $name "internal_86" ;
-  $cycle 0.1 ;
-  $slack -0.442935 ;
+  $cycle 0.15 ;
+  $slack -0.392935 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1620,8 +1620,8 @@ $path {
   // from: n1850gat_reg
   // to: n1678gat_reg
   $name "internal_87" ;
-  $cycle 0.1 ;
-  $slack -0.440116 ;
+  $cycle 0.15 ;
+  $slack -0.390116 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1636,8 +1636,8 @@ $path {
   // from: n2390gat_reg
   // to: n2502gat_reg
   $name "internal_88" ;
-  $cycle 0.1 ;
-  $slack -0.428593 ;
+  $cycle 0.15 ;
+  $slack -0.378593 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1651,8 +1651,8 @@ $path {
   // from: n402gat_reg
   // to: n2472gat_reg
   $name "internal_89" ;
-  $cycle 0.1 ;
-  $slack -0.391268 ;
+  $cycle 0.15 ;
+  $slack -0.341268 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1665,8 +1665,8 @@ $path {
   // from: n2450gat_reg
   // to: n1763gat_reg
   $name "internal_90" ;
-  $cycle 0.1 ;
-  $slack -0.374203 ;
+  $cycle 0.15 ;
+  $slack -0.324203 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1682,8 +1682,8 @@ $path {
   // from: n1880gat_reg
   // to: n2084gat_reg
   $name "internal_91" ;
-  $cycle 0.1 ;
-  $slack -0.351713 ;
+  $cycle 0.15 ;
+  $slack -0.301713 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1696,8 +1696,8 @@ $path {
   // from: n2599gat_reg
   // to: n2588gat_reg
   $name "internal_92" ;
-  $cycle 0.1 ;
-  $slack -0.344997 ;
+  $cycle 0.15 ;
+  $slack -0.294997 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1711,8 +1711,8 @@ $path {
   // from: n2450gat_reg
   // to: n1880gat_reg
   $name "internal_93" ;
-  $cycle 0.1 ;
-  $slack -0.339282 ;
+  $cycle 0.15 ;
+  $slack -0.289282 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1728,8 +1728,8 @@ $path {
   // from: n2588gat_reg
   // to: n2446gat_reg
   $name "internal_94" ;
-  $cycle 0.1 ;
-  $slack -0.308227 ;
+  $cycle 0.15 ;
+  $slack -0.258227 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1743,8 +1743,8 @@ $path {
   // from: n2319gat_reg
   // to: n1821gat_reg
   $name "internal_95" ;
-  $cycle 0.1 ;
-  $slack -0.294384 ;
+  $cycle 0.15 ;
+  $slack -0.244384 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1757,8 +1757,8 @@ $path {
   // from: n2399gat_reg
   // to: n2403gat_reg
   $name "internal_96" ;
-  $cycle 0.1 ;
-  $slack -0.280879 ;
+  $cycle 0.15 ;
+  $slack -0.230879 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1771,8 +1771,8 @@ $path {
   // from: n2207gat_reg
   // to: n2407gat_reg
   $name "internal_97" ;
-  $cycle 0.1 ;
-  $slack -0.241611 ;
+  $cycle 0.15 ;
+  $slack -0.191611 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1785,8 +1785,8 @@ $path {
   // from: n2343gat_reg
   // to: n2394gat_reg
   $name "internal_98" ;
-  $cycle 0.1 ;
-  $slack -0.235655 ;
+  $cycle 0.15 ;
+  $slack -0.185655 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1799,8 +1799,8 @@ $path {
   // from: n2562gat_reg
   // to: n2588gat_reg
   $name "internal_99" ;
-  $cycle 0.1 ;
-  $slack -0.235399 ;
+  $cycle 0.15 ;
+  $slack -0.185399 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {
@@ -1813,8 +1813,8 @@ $path {
   // from: n402gat_reg
   // to: n463gat_reg
   $name "internal_100" ;
-  $cycle 0.1 ;
-  $slack -0.234603 ;
+  $cycle 0.15 ;
+  $slack -0.184603 ;
   $launch "blif_clk_net" ; // (rise edge)
   $capture "blif_clk_net" ; // (rise edge)
   $transition {

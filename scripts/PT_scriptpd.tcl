@@ -14,7 +14,7 @@ link_design
 
 set_max_area 0
 #Clock setup commands
-set CLK_PERIOD 0.1
+set CLK_PERIOD 0.15
 #set DFF_CKQ 0.02
 #set SETUP_TIME 0.01
 set CLK "blif_clk_net" 

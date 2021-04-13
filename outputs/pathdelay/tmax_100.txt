@@ -25,23 +25,23 @@ read_netlist -delete
 read_netlist $scan_lib -library
  Begin reading netlist ( ./nangate_scan.v )...
  End parsing Verilog file ./nangate_scan.v with 0 errors.
- End reading netlist: #modules=139, top=XOR2_X2, #lines=2594, CPU_time=0.00 sec, Memory=0MB
+ End reading netlist: #modules=139, top=XOR2_X2, #lines=2594, CPU_time=0.01 sec, Memory=0MB
 # read in user's synthesized verilog code
 #read_netlist $synthesized_files
 read_netlist  s5378_bench.v
  Begin reading netlist ( s5378_bench.v )...
  End parsing Verilog file s5378_bench.v with 0 errors.
- End reading netlist: #modules=1, top=s5378_bench, #lines=1079, CPU_time=0.01 sec, Memory=0MB
+ End reading netlist: #modules=1, top=s5378_bench, #lines=1079, CPU_time=0.00 sec, Memory=0MB
 run_build_model $top_module
  ------------------------------------------------------------------------------
  Begin build model for topcut = s5378_bench ...
  ------------------------------------------------------------------------------
  There were 1688 primitives and 36 faultable pins removed during model optimizations
  Warning: Rule N21 (unsupported UDP entry) was violated 1 times.
- End build model: #primitives=1597, CPU_time=0.00 sec, Memory=1MB
+ End build model: #primitives=1597, CPU_time=0.01 sec, Memory=1MB
  ------------------------------------------------------------------------------
  Begin learning analyses...
- End learning analyses, total learning CPU time=0.01 sec.
+ End learning analyses, total learning CPU time=0.00 sec.
  ------------------------------------------------------------------------------
 # ignoring warnings like N20 or B10
 # Set STIL file from DFT Compiler
@@ -67,7 +67,7 @@ run_drc
  Scan chain operation checking completed, CPU time=0.00 sec.
  ------------------------------------------------------------------------------
  Begin clock rules checking...
- Clock rules checking completed, CPU time=0.01 sec.
+ Clock rules checking completed, CPU time=0.00 sec.
  Clock grouping results: #pairs=0, #groups=0, #serial_pairs=0, #disturbed_pairs=0, CPU time=0.00 sec.
  ------------------------------------------------------------------------------
  Begin nonscan rules checking...
@@ -82,7 +82,7 @@ run_drc
  ------------------------------------------------------------------------------
  Warning: Rule V14 (missing state) was violated 1 times.
  There were 1 violations that occurred during DRC process.
- Design rules checking was successful, total CPU time=0.01 sec.
+ Design rules checking was successful, total CPU time=0.00 sec.
  ------------------------------------------------------------------------------
 set_atpg -full_seq_merge medium
 set_faults -model path_delay
@@ -110,15 +110,15 @@ run_atpg -auto
  Begin fast-seq ATPG: #collapsed_faults=100, abort_limit=10, depth=4...
  1              29     71         0/0/0    29.00%      0.00
  2               3     68         0/0/0    32.00%      0.00
- 3               4     64         0/0/0    36.00%      0.01
+ 3               4     64         0/0/0    36.00%      0.00
  4               4     60         0/0/0    40.00%      0.01
  5               7     53         0/0/0    47.00%      0.01
  6               5     48         0/0/0    52.00%      0.01
  7               6     42         0/0/0    58.00%      0.01
  8               5     35         0/2/1    63.00%      0.01
  9               2     33         0/2/2    65.00%      0.01
- 10              4     29         0/2/2    69.00%      0.02
- 11              2     27         0/2/2    71.00%      0.02
+ 10              4     29         0/2/2    69.00%      0.01
+ 11              2     27         0/2/2    71.00%      0.01
  12              2     25         0/2/2    73.00%      0.02
  13              2     23         0/2/2    75.00%      0.02
  14              1     21         0/3/2    76.00%      0.02
