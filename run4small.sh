@@ -15,8 +15,8 @@ do
 	echo Doing ${!c}
 	SLACK=${!c}
         export TMGN=$(awk "BEGIN {printf \"%.2f\n \", $CLK_PERIOD * $SLACK / 100}");
-	pt_shell -f ./scripts/PT_scriptsd.tcl >> "outputs/smalldelay/pt_${SLACK}.txt"
-	tmax -shell ./scripts/sddatpg.tcl >> "outputs/smalldelay/tmax_${SLACK}.txt"
+	pt_shell -f ./scripts/PT_scriptsd.tcl > "outputs/smalldelay/pt_${SLACK}.txt"
+	tmax -shell ./scripts/sddatpg.tcl > "outputs/smalldelay/tmax_${SLACK}.txt"
 done
 
 

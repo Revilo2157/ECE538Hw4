@@ -25,7 +25,7 @@ read_netlist -delete
 read_netlist $scan_lib -library
  Begin reading netlist ( ./nangate_scan.v )...
  End parsing Verilog file ./nangate_scan.v with 0 errors.
- End reading netlist: #modules=139, top=XOR2_X2, #lines=2594, CPU_time=0.00 sec, Memory=0MB
+ End reading netlist: #modules=139, top=XOR2_X2, #lines=2594, CPU_time=0.01 sec, Memory=0MB
 # read in user's synthesized verilog code
 #read_netlist $synthesized_files
 read_netlist  s5378_bench.v
@@ -75,7 +75,7 @@ run_drc
  Nonscan rules checking completed, CPU time=0.00 sec.
  ------------------------------------------------------------------------------
  Begin DRC dependent learning...
- Fast-sequential depth results: control=0(0), observe=0(0), detect=0(0), CPU time=0.00 sec
+ Fast-sequential depth results: control=0(0), observe=0(0), detect=0(0), CPU time=0.01 sec
  DRC dependent learning completed, CPU time=0.01 sec.
  ------------------------------------------------------------------------------
  DRC Summary Report
@@ -109,14 +109,14 @@ run_atpg -auto
  ---------  -------------  ------------  --------  --------
  Begin fast-seq ATPG: #collapsed_faults=150, abort_limit=10, depth=4...
  1              43    107         0/0/0    28.67%      0.00
- 2              17     90         0/0/0    40.00%      0.01
+ 2              17     90         0/0/0    40.00%      0.00
  3              10     80         0/0/0    46.67%      0.01
  4              14     66         0/0/0    56.00%      0.01
  5               4     62         0/0/0    58.67%      0.01
  6               1     61         0/0/0    59.33%      0.01
  7              10     49         0/2/1    66.00%      0.01
- 8               2     47         0/2/2    67.33%      0.01
- 9               2     45         0/2/2    68.67%      0.01
+ 8               2     47         0/2/2    67.33%      0.02
+ 9               2     45         0/2/2    68.67%      0.02
  10              4     41         0/2/2    71.33%      0.02
  11              3     38         0/2/2    73.33%      0.02
  12              2     36         0/2/2    74.67%      0.02
@@ -124,9 +124,9 @@ run_atpg -auto
  14              1     31         0/3/2    77.33%      0.02
  15              1     30         0/3/2    78.00%      0.02
  16              1     29         0/3/2    78.67%      0.02
- 17              2     27         0/3/2    80.00%      0.02
- 18              2     25         0/3/2    81.33%      0.02
- 19              1     23         0/4/2    82.00%      0.02
+ 17              2     27         0/3/2    80.00%      0.03
+ 18              2     25         0/3/2    81.33%      0.03
+ 19              1     23         0/4/2    82.00%      0.03
  
     Collapsed Path_delay Fault Summary Report
  -----------------------------------------------
@@ -149,164 +149,7 @@ run_atpg -auto
  -----------------------------------------------
             CPU Usage Summary Report
  -----------------------------------------------
- Total CPU time                            0.02
- -----------------------------------------------
-write_patterns ./pathdelay/patterns${NUM_PATHS}.stil -internal -format STIL -unified_stil_flow -replace 
- Patterns written reference 80 V statements, generating 1700 test cycles
- End writing file 'patterns150.stil' with 19 patterns, File_size = 31887, CPU_time = 0.0 sec.
-exit
-
-                                  TetraMAX(R) 
-
-
-              Version O-2018.06-SP5-1 for linux64 - Mar 08, 2019  
-
-                    Copyright (c) 1996 - 2019 Synopsys, Inc.
-   This software and the associated documentation are proprietary to Synopsys,
- Inc. This software may only be used in accordance with the terms and conditions
- of a written license agreement with Synopsys, Inc. All other use, reproduction,
-            or distribution of this software is strictly prohibited.
-
-
- Tcl mode is on by default. Use -notcl to run in native mode.
- Executing startup file "/home/software/synopsys/tetramax/txs/O-2018.06-SP5-1/admin/setup/tmaxtcl.rc".
-set top_module s5378_bench
-s5378_bench
-set scan_lib ./nangate_scan.v
-./nangate_scan.v
-set stil_file  ./des2d1.spf 
-./des2d1.spf
-read_netlist -delete
- Warning: All netlist and library module data are now deleted. (M41)
-# read in scan cell library
-read_netlist $scan_lib -library
- Begin reading netlist ( ./nangate_scan.v )...
- End parsing Verilog file ./nangate_scan.v with 0 errors.
- End reading netlist: #modules=139, top=XOR2_X2, #lines=2594, CPU_time=0.01 sec, Memory=0MB
-# read in user's synthesized verilog code
-#read_netlist $synthesized_files
-read_netlist  s5378_bench.v
- Begin reading netlist ( s5378_bench.v )...
- End parsing Verilog file s5378_bench.v with 0 errors.
- End reading netlist: #modules=1, top=s5378_bench, #lines=1079, CPU_time=0.00 sec, Memory=0MB
-run_build_model $top_module
- ------------------------------------------------------------------------------
- Begin build model for topcut = s5378_bench ...
- ------------------------------------------------------------------------------
- There were 1688 primitives and 36 faultable pins removed during model optimizations
- Warning: Rule N21 (unsupported UDP entry) was violated 1 times.
- End build model: #primitives=1597, CPU_time=0.00 sec, Memory=1MB
- ------------------------------------------------------------------------------
- Begin learning analyses...
- End learning analyses, total learning CPU time=0.02 sec.
- ------------------------------------------------------------------------------
-# ignoring warnings like N20 or B10
-# Set STIL file from DFT Compiler
-set_drc $stil_file
-# run check to see if synthesized code violates any testing rules
-add_clocks 0 blif_clk_net
-add_pi_constraints 0 test_se
-run_drc
- ------------------------------------------------------------------------------
- Begin scan design rules checking...
- ------------------------------------------------------------------------------
- Begin reading test protocol file ./des2d1.spf...
- Warning: Rule V14 (missing state) was violated 1 times.
- End parsing STIL file ./des2d1.spf with 0 errors.
- Test protocol file reading completed, CPU time=0.00 sec.
- ------------------------------------------------------------------------------
- Begin simulating test protocol procedures...
- Test protocol simulation completed, CPU time=0.00 sec.
- ------------------------------------------------------------------------------
- Begin scan chain operation checking...
- Chain 1 successfully traced with 82 scan_cells.
- Chain 2 successfully traced with 81 scan_cells.
- Scan chain operation checking completed, CPU time=0.00 sec.
- ------------------------------------------------------------------------------
- Begin clock rules checking...
- Clock rules checking completed, CPU time=0.01 sec.
- Clock grouping results: #pairs=0, #groups=0, #serial_pairs=0, #disturbed_pairs=0, CPU time=0.00 sec.
- ------------------------------------------------------------------------------
- Begin nonscan rules checking...
- Nonscan cell summary: #DFF=0  #DLAT=0  #RAM_outs=0  tla_usage_type=none
- Nonscan rules checking completed, CPU time=0.00 sec.
- ------------------------------------------------------------------------------
- Begin DRC dependent learning...
- Fast-sequential depth results: control=0(0), observe=0(0), detect=0(0), CPU time=0.00 sec
- DRC dependent learning completed, CPU time=0.00 sec.
- ------------------------------------------------------------------------------
- DRC Summary Report
- ------------------------------------------------------------------------------
- Warning: Rule V14 (missing state) was violated 1 times.
- There were 1 violations that occurred during DRC process.
- Design rules checking was successful, total CPU time=0.01 sec.
- ------------------------------------------------------------------------------
-set_atpg -full_seq_merge medium
-set_faults -model path_delay
- Warning: Path delay defaults have changed as of 2014.09-SP1. By default, fast-sequential ATPG is enabled and full-sequential ATPG is disabled.
-set_faults -report collapsed
-#add_faults -all
-set_rule P7 war
-set NUM_PATHS $::env(NUM_PATHS)
-150
-add_delay_path ./pathdelay/timing${NUM_PATHS}withoutmob.rpt
- Warning: Rule P8 (capture later than path cycle time) was violated 150 times.
- Warning: Rule P22 (off-path node values not satisfiable) was violated 2 times.
- Delay path file results: #paths=150, #invalid=0, #untestable=0, CPU time=0.02 sec.
-add_faults -all
- 150 faults were added to fault list.
-#set_atpg -nofull_seq_atpg
-run_atpg -auto
- Warning: Unconstrained primary input blif_reset_net used as SET (off_state=0) may change during at-speed cycles. (M487)
- 
- ATPG performed for path_delay fault model using internal pattern source.
- ----------------------------------------------------------
- #patterns     #faults     #ATPG faults  test      process
- stored     detect/active  red/au/abort  coverage  CPU time
- ---------  -------------  ------------  --------  --------
- Begin fast-seq ATPG: #collapsed_faults=150, abort_limit=10, depth=4...
- 1              43    107         0/0/0    28.67%      0.00
- 2              17     90         0/0/0    40.00%      0.00
- 3              10     80         0/0/0    46.67%      0.00
- 4              14     66         0/0/0    56.00%      0.00
- 5               4     62         0/0/0    58.67%      0.01
- 6               1     61         0/0/0    59.33%      0.01
- 7              10     49         0/2/1    66.00%      0.01
- 8               2     47         0/2/2    67.33%      0.01
- 9               2     45         0/2/2    68.67%      0.01
- 10              4     41         0/2/2    71.33%      0.01
- 11              3     38         0/2/2    73.33%      0.01
- 12              2     36         0/2/2    74.67%      0.01
- 13              3     33         0/2/2    76.67%      0.02
- 14              1     31         0/3/2    77.33%      0.02
- 15              1     30         0/3/2    78.00%      0.02
- 16              1     29         0/3/2    78.67%      0.02
- 17              2     27         0/3/2    80.00%      0.02
- 18              2     25         0/3/2    81.33%      0.02
- 19              1     23         0/4/2    82.00%      0.02
- 
-    Collapsed Path_delay Fault Summary Report
- -----------------------------------------------
- fault class                     code   #faults
- ------------------------------  ----  ---------
- Detected                         DT        123
- Possibly detected                PT          0
- Undetectable                     UD          0
- ATPG untestable                  AU         19
- Not detected                     ND          8
- -----------------------------------------------
- total faults                               150
- test coverage                            82.00%
- ATPG effectiveness                       94.67%
- -----------------------------------------------
-            Pattern Summary Report
- -----------------------------------------------
- #internal patterns                          19
-     #fast_sequential patterns               19
- -----------------------------------------------
-            CPU Usage Summary Report
- -----------------------------------------------
- Total CPU time                            0.02
+ Total CPU time                            0.03
  -----------------------------------------------
 write_patterns ./pathdelay/patterns${NUM_PATHS}.stil -internal -format STIL -unified_stil_flow -replace 
  Patterns written reference 80 V statements, generating 1700 test cycles
