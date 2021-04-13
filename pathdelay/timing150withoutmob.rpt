@@ -1,0 +1,2525 @@
+
+// pt2tmax
+// Version E-2010.12
+
+$path {
+  // from: n398gat_reg
+  // to: n1121gat_reg
+  $name "internal_1" ;
+  $cycle 0.1 ;
+  $slack -1.1025 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1004/A1" ^ ; // (AND4_X1)
+    "U1002/A1" ^ ; // (NOR2_X1)
+    "U728/A2" v ; // (NAND2_X1)
+    "U727/A" ^ ; // (INV_X1)
+    "U726/A" v ; // (AOI21_X1)
+    "U721/A3" ^ ; // (NAND4_X1)
+    "U607/A" v ; // (OAI21_X1)
+    "n1121gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n1072gat_reg
+  $name "internal_2" ;
+  $cycle 0.1 ;
+  $slack -1.1025 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1004/A1" ^ ; // (AND4_X1)
+    "U1002/A1" ^ ; // (NOR2_X1)
+    "U728/A2" v ; // (NAND2_X1)
+    "U727/A" ^ ; // (INV_X1)
+    "U726/A" v ; // (AOI21_X1)
+    "U721/A3" ^ ; // (NAND4_X1)
+    "U651/A" v ; // (OAI21_X1)
+    "n1072gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n1035gat_reg
+  $name "internal_3" ;
+  $cycle 0.1 ;
+  $slack -1.1025 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1004/A1" ^ ; // (AND4_X1)
+    "U1002/A1" ^ ; // (NOR2_X1)
+    "U728/A2" v ; // (NAND2_X1)
+    "U727/A" ^ ; // (INV_X1)
+    "U726/A" v ; // (AOI21_X1)
+    "U721/A3" ^ ; // (NAND4_X1)
+    "U652/A" v ; // (OAI21_X1)
+    "n1035gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n1135gat_reg
+  $name "internal_4" ;
+  $cycle 0.1 ;
+  $slack -1.1025 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1004/A1" ^ ; // (AND4_X1)
+    "U1002/A1" ^ ; // (NOR2_X1)
+    "U728/A2" v ; // (NAND2_X1)
+    "U727/A" ^ ; // (INV_X1)
+    "U726/A" v ; // (AOI21_X1)
+    "U721/A3" ^ ; // (NAND4_X1)
+    "U665/A" v ; // (OAI21_X1)
+    "n1135gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n931gat_reg
+  $name "internal_5" ;
+  $cycle 0.1 ;
+  $slack -1.1025 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1004/A1" ^ ; // (AND4_X1)
+    "U1002/A1" ^ ; // (NOR2_X1)
+    "U728/A2" v ; // (NAND2_X1)
+    "U727/A" ^ ; // (INV_X1)
+    "U726/A" v ; // (AOI21_X1)
+    "U721/A3" ^ ; // (NAND4_X1)
+    "U667/A" v ; // (OAI21_X1)
+    "n931gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n1282gat_reg
+  $name "internal_6" ;
+  $cycle 0.1 ;
+  $slack -1.1025 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1004/A1" ^ ; // (AND4_X1)
+    "U1002/A1" ^ ; // (NOR2_X1)
+    "U728/A2" v ; // (NAND2_X1)
+    "U727/A" ^ ; // (INV_X1)
+    "U726/A" v ; // (AOI21_X1)
+    "U721/A3" ^ ; // (NAND4_X1)
+    "U668/A" v ; // (OAI21_X1)
+    "n1282gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n1045gat_reg
+  $name "internal_7" ;
+  $cycle 0.1 ;
+  $slack -1.1025 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1004/A1" ^ ; // (AND4_X1)
+    "U1002/A1" ^ ; // (NOR2_X1)
+    "U728/A2" v ; // (NAND2_X1)
+    "U727/A" ^ ; // (INV_X1)
+    "U726/A" v ; // (AOI21_X1)
+    "U721/A3" ^ ; // (NAND4_X1)
+    "U669/A" v ; // (OAI21_X1)
+    "n1045gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n1197gat_reg
+  $name "internal_8" ;
+  $cycle 0.1 ;
+  $slack -1.1025 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1004/A1" ^ ; // (AND4_X1)
+    "U1002/A1" ^ ; // (NOR2_X1)
+    "U728/A2" v ; // (NAND2_X1)
+    "U727/A" ^ ; // (INV_X1)
+    "U726/A" v ; // (AOI21_X1)
+    "U721/A3" ^ ; // (NAND4_X1)
+    "U670/A" v ; // (OAI21_X1)
+    "n1197gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n1226gat_reg
+  $name "internal_9" ;
+  $cycle 0.1 ;
+  $slack -1.1025 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1004/A1" ^ ; // (AND4_X1)
+    "U1002/A1" ^ ; // (NOR2_X1)
+    "U728/A2" v ; // (NAND2_X1)
+    "U727/A" ^ ; // (INV_X1)
+    "U726/A" v ; // (AOI21_X1)
+    "U721/A3" ^ ; // (NAND4_X1)
+    "U672/A" v ; // (OAI21_X1)
+    "n1226gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n777gat_reg
+  $name "internal_10" ;
+  $cycle 0.1 ;
+  $slack -1.07111 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1004/A1" ^ ; // (AND4_X1)
+    "U1002/A1" ^ ; // (NOR2_X1)
+    "U728/A2" v ; // (NAND2_X1)
+    "U727/A" ^ ; // (INV_X1)
+    "U726/A" v ; // (AOI21_X1)
+    "U721/A3" ^ ; // (NAND4_X1)
+    "U659/A1" v ; // (NAND2_X1)
+    "n777gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n667gat_reg
+  $name "internal_11" ;
+  $cycle 0.1 ;
+  $slack -1.07111 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1004/A1" ^ ; // (AND4_X1)
+    "U1002/A1" ^ ; // (NOR2_X1)
+    "U728/A2" v ; // (NAND2_X1)
+    "U727/A" ^ ; // (INV_X1)
+    "U726/A" v ; // (AOI21_X1)
+    "U721/A3" ^ ; // (NAND4_X1)
+    "U679/A1" v ; // (NAND2_X1)
+    "n667gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n553gat_reg
+  $name "internal_12" ;
+  $cycle 0.1 ;
+  $slack -1.07111 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1004/A1" ^ ; // (AND4_X1)
+    "U1002/A1" ^ ; // (NOR2_X1)
+    "U728/A2" v ; // (NAND2_X1)
+    "U727/A" ^ ; // (INV_X1)
+    "U726/A" v ; // (AOI21_X1)
+    "U721/A3" ^ ; // (NAND4_X1)
+    "U681/A1" v ; // (NAND2_X1)
+    "n553gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n561gat_reg
+  $name "internal_13" ;
+  $cycle 0.1 ;
+  $slack -1.07111 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1004/A1" ^ ; // (AND4_X1)
+    "U1002/A1" ^ ; // (NOR2_X1)
+    "U728/A2" v ; // (NAND2_X1)
+    "U727/A" ^ ; // (INV_X1)
+    "U726/A" v ; // (AOI21_X1)
+    "U721/A3" ^ ; // (NAND4_X1)
+    "U683/A1" v ; // (NAND2_X1)
+    "n561gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n659gat_reg
+  $name "internal_14" ;
+  $cycle 0.1 ;
+  $slack -1.07111 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1004/A1" ^ ; // (AND4_X1)
+    "U1002/A1" ^ ; // (NOR2_X1)
+    "U728/A2" v ; // (NAND2_X1)
+    "U727/A" ^ ; // (INV_X1)
+    "U726/A" v ; // (AOI21_X1)
+    "U721/A3" ^ ; // (NAND4_X1)
+    "U711/A1" v ; // (NAND2_X1)
+    "n659gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n366gat_reg
+  $name "internal_15" ;
+  $cycle 0.1 ;
+  $slack -1.07111 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1004/A1" ^ ; // (AND4_X1)
+    "U1002/A1" ^ ; // (NOR2_X1)
+    "U728/A2" v ; // (NAND2_X1)
+    "U727/A" ^ ; // (INV_X1)
+    "U726/A" v ; // (AOI21_X1)
+    "U721/A3" ^ ; // (NAND4_X1)
+    "U713/A1" v ; // (NAND2_X1)
+    "n366gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n322gat_reg
+  $name "internal_16" ;
+  $cycle 0.1 ;
+  $slack -1.07111 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1004/A1" ^ ; // (AND4_X1)
+    "U1002/A1" ^ ; // (NOR2_X1)
+    "U728/A2" v ; // (NAND2_X1)
+    "U727/A" ^ ; // (INV_X1)
+    "U726/A" v ; // (AOI21_X1)
+    "U721/A3" ^ ; // (NAND4_X1)
+    "U715/A1" v ; // (NAND2_X1)
+    "n322gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n318gat_reg
+  $name "internal_17" ;
+  $cycle 0.1 ;
+  $slack -1.07111 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1004/A1" ^ ; // (AND4_X1)
+    "U1002/A1" ^ ; // (NOR2_X1)
+    "U728/A2" v ; // (NAND2_X1)
+    "U727/A" ^ ; // (INV_X1)
+    "U726/A" v ; // (AOI21_X1)
+    "U721/A3" ^ ; // (NAND4_X1)
+    "U717/A1" v ; // (NAND2_X1)
+    "n318gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n314gat_reg
+  $name "internal_18" ;
+  $cycle 0.1 ;
+  $slack -1.07111 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1004/A1" ^ ; // (AND4_X1)
+    "U1002/A1" ^ ; // (NOR2_X1)
+    "U728/A2" v ; // (NAND2_X1)
+    "U727/A" ^ ; // (INV_X1)
+    "U726/A" v ; // (AOI21_X1)
+    "U721/A3" ^ ; // (NAND4_X1)
+    "U719/A1" v ; // (NAND2_X1)
+    "n314gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n1871gat_reg
+  $name "internal_19" ;
+  $cycle 0.1 ;
+  $slack -1.0396 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1044/A" ^ ; // (XOR2_X1)
+    "U1038/A2" ^ ; // (OR2_X1)
+    "U1037/B" ^ ; // (MUX2_X1)
+    "U1035/A1" ^ ; // (NOR3_X1)
+    "U1034/B" v ; // (MUX2_X1)
+    "U1029/A1" v ; // (NAND4_X1)
+    "U1028/A" ^ ; // (INV_X1)
+    "U961/A2" v ; // (NOR2_X1)
+    "U553/A" ^ ; // (OAI211_X1)
+    "U552/A" v ; // (INV_X1)
+    "n1871gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n1456gat_reg
+  $name "internal_20" ;
+  $cycle 0.1 ;
+  $slack -0.95931 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1044/A" ^ ; // (XOR2_X1)
+    "U1038/A2" ^ ; // (OR2_X1)
+    "U1037/B" ^ ; // (MUX2_X1)
+    "U1035/A1" ^ ; // (NOR3_X1)
+    "U1034/B" v ; // (MUX2_X1)
+    "U1029/A1" v ; // (NAND4_X1)
+    "U1028/A" ^ ; // (INV_X1)
+    "U1025/A2" v ; // (NOR3_X1)
+    "n1456gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n2025gat_reg
+  $name "internal_21" ;
+  $cycle 0.1 ;
+  $slack -0.958987 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1044/A" ^ ; // (XOR2_X1)
+    "U1038/A2" ^ ; // (OR2_X1)
+    "U1037/B" ^ ; // (MUX2_X1)
+    "U1035/A1" ^ ; // (NOR3_X1)
+    "U1034/B" v ; // (MUX2_X1)
+    "U1029/A1" v ; // (NAND4_X1)
+    "U1028/A" ^ ; // (INV_X1)
+    "U961/A2" v ; // (NOR2_X1)
+    "n2025gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n1748gat_reg
+  $name "internal_22" ;
+  $cycle 0.1 ;
+  $slack -0.928573 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1044/A" ^ ; // (XOR2_X1)
+    "U1038/A2" ^ ; // (OR2_X1)
+    "U1037/B" ^ ; // (MUX2_X1)
+    "U1035/A1" ^ ; // (NOR3_X1)
+    "U1034/B" v ; // (MUX2_X1)
+    "U1029/A1" v ; // (NAND4_X1)
+    "U1028/A" ^ ; // (INV_X1)
+    "U963/A1" v ; // (NOR2_X1)
+    "n1748gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1880gat_reg
+  // to: n2634gat_reg
+  $name "internal_23" ;
+  $cycle 0.1 ;
+  $slack -0.910525 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1050/B1" v ; // (OAI21_X1)
+    "U1049/A2" ^ ; // (NAND4_X1)
+    "U986/B" v ; // (MUX2_X1)
+    "U985/A3" v ; // (AND3_X1)
+    "U977/A1" v ; // (NAND2_X1)
+    "U976/A" ^ ; // (INV_X1)
+    "U559/A1" v ; // (NAND2_X1)
+    "n2634gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n2454gat_reg
+  $name "internal_24" ;
+  $cycle 0.1 ;
+  $slack -0.905299 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1044/A" ^ ; // (XOR2_X1)
+    "U1038/A2" ^ ; // (OR2_X1)
+    "U1037/B" ^ ; // (MUX2_X1)
+    "U1035/A1" ^ ; // (NOR3_X1)
+    "U1034/B" v ; // (MUX2_X1)
+    "U1029/A1" v ; // (NAND4_X1)
+    "U955/A2" ^ ; // (AND4_X1)
+    "n2454gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1880gat_reg
+  // to: n2543gat_reg
+  $name "internal_25" ;
+  $cycle 0.1 ;
+  $slack -0.896255 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1050/B1" v ; // (OAI21_X1)
+    "U1049/A2" ^ ; // (NAND4_X1)
+    "U986/B" v ; // (MUX2_X1)
+    "U985/A3" v ; // (AND3_X1)
+    "U977/A1" v ; // (NAND2_X1)
+    "U976/A" ^ ; // (INV_X1)
+    "U936/A2" v ; // (AND2_X1)
+    "n2543gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n834gat_reg
+  $name "internal_26" ;
+  $cycle 0.1 ;
+  $slack -0.843538 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1004/A1" ^ ; // (AND4_X1)
+    "U655/A1" ^ ; // (NAND2_X1)
+    "U645/A1" v ; // (NOR2_X1)
+    "U644/A1" ^ ; // (NAND2_X1)
+    "U643/B" v ; // (XOR2_X1)
+    "U642/B" v ; // (MUX2_X1)
+    "n834gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1880gat_reg
+  // to: n2626gat_reg
+  $name "internal_27" ;
+  $cycle 0.1 ;
+  $slack -0.837769 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1050/B1" v ; // (OAI21_X1)
+    "U1049/A2" ^ ; // (NAND4_X1)
+    "U986/B" v ; // (MUX2_X1)
+    "U985/A3" v ; // (AND3_X1)
+    "U977/A1" v ; // (NAND2_X1)
+    "U976/A" ^ ; // (INV_X1)
+    "n2626gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1880gat_reg
+  // to: n1433gat_reg
+  $name "internal_28" ;
+  $cycle 0.1 ;
+  $slack -0.830155 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1050/B1" v ; // (OAI21_X1)
+    "U1049/A2" ^ ; // (NAND4_X1)
+    "U986/B" v ; // (MUX2_X1)
+    "U985/A3" v ; // (AND3_X1)
+    "U593/A2" v ; // (NOR3_X1)
+    "n1433gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1880gat_reg
+  // to: n2490gat_reg
+  $name "internal_29" ;
+  $cycle 0.1 ;
+  $slack -0.827607 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1050/B1" v ; // (OAI21_X1)
+    "U1049/A2" ^ ; // (NAND4_X1)
+    "U986/B" v ; // (MUX2_X1)
+    "U985/A3" v ; // (AND3_X1)
+    "U977/A1" v ; // (NAND2_X1)
+    "U944/A2" ^ ; // (NOR2_X1)
+    "n2490gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1880gat_reg
+  // to: n2630gat_reg
+  $name "internal_30" ;
+  $cycle 0.1 ;
+  $slack -0.827607 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1050/B1" v ; // (OAI21_X1)
+    "U1049/A2" ^ ; // (NAND4_X1)
+    "U986/B" v ; // (MUX2_X1)
+    "U985/A3" v ; // (AND3_X1)
+    "U977/A1" v ; // (NAND2_X1)
+    "U934/A2" ^ ; // (NOR2_X1)
+    "n2630gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n2021gat_reg
+  $name "internal_31" ;
+  $cycle 0.1 ;
+  $slack -0.826331 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1072/A2" v ; // (NOR2_X1)
+    "U1071/A" ^ ; // (INV_X1)
+    "U1070/A3" v ; // (NOR3_X1)
+    "U849/A1" ^ ; // (NAND2_X1)
+    "U847/A1" v ; // (NAND2_X1)
+    "U801/A" ^ ; // (INV_X1)
+    "U576/A1" v ; // (NAND2_X1)
+    "U574/A1" ^ ; // (NOR2_X1)
+    "U568/A2" v ; // (NAND3_X1)
+    "n2021gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1880gat_reg
+  // to: n2622gat_reg
+  $name "internal_32" ;
+  $cycle 0.1 ;
+  $slack -0.82143 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1050/B1" v ; // (OAI21_X1)
+    "U1049/A2" ^ ; // (NAND4_X1)
+    "U986/B" v ; // (MUX2_X1)
+    "U985/A3" v ; // (AND3_X1)
+    "U977/A1" v ; // (NAND2_X1)
+    "U940/A1" ^ ; // (NOR2_X1)
+    "n2622gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n2040gat_reg
+  $name "internal_33" ;
+  $cycle 0.1 ;
+  $slack -0.818603 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1072/A2" v ; // (NOR2_X1)
+    "U1071/A" ^ ; // (INV_X1)
+    "U1070/A3" v ; // (NOR3_X1)
+    "U849/A1" ^ ; // (NAND2_X1)
+    "U847/A1" v ; // (NAND2_X1)
+    "U801/A" ^ ; // (INV_X1)
+    "U576/A1" v ; // (NAND2_X1)
+    "U574/A1" ^ ; // (NOR2_X1)
+    "U573/A" v ; // (INV_X1)
+    "n2040gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n2522gat_reg
+  $name "internal_34" ;
+  $cycle 0.1 ;
+  $slack -0.80103 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1046/A1" v ; // (NOR2_X1)
+    "U1036/A" ^ ; // (INV_X1)
+    "U861/A" v ; // (OAI21_X1)
+    "U859/A" ^ ; // (MUX2_X1)
+    "U856/A" ^ ; // (XOR2_X1)
+    "U855/B" ^ ; // (XOR2_X1)
+    "n2522gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n2476gat_reg
+  $name "internal_35" ;
+  $cycle 0.1 ;
+  $slack -0.80103 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1046/A1" v ; // (NOR2_X1)
+    "U1036/A" ^ ; // (INV_X1)
+    "U861/A" v ; // (OAI21_X1)
+    "U859/A" ^ ; // (MUX2_X1)
+    "U856/A" ^ ; // (XOR2_X1)
+    "U855/B" ^ ; // (XOR2_X1)
+    "n2476gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n838gat_reg
+  $name "internal_36" ;
+  $cycle 0.1 ;
+  $slack -0.792777 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1004/A1" ^ ; // (AND4_X1)
+    "U655/A1" ^ ; // (NAND2_X1)
+    "U645/A1" v ; // (NOR2_X1)
+    "U641/B" ^ ; // (XOR2_X1)
+    "U640/B" ^ ; // (MUX2_X1)
+    "n838gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n919gat_reg
+  // to: n699gat_reg
+  $name "internal_37" ;
+  $cycle 0.1 ;
+  $slack -0.779773 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1061/A1" v ; // (NOR2_X1)
+    "U1003/A3" ^ ; // (AND3_X1)
+    "U694/A1" ^ ; // (AND2_X1)
+    "U693/A1" ^ ; // (NAND2_X1)
+    "U692/A2" v ; // (NOR2_X1)
+    "U691/B" ^ ; // (XOR2_X1)
+    "U688/B1" v ; // (OAI222_X1)
+    "n699gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1871gat_reg
+  // to: n614gat_reg
+  $name "internal_38" ;
+  $cycle 0.1 ;
+  $slack -0.777838 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U909/A2" v ; // (NAND3_X1)
+    "U735/A" ^ ; // (INV_X1)
+    "U709/A2" v ; // (NAND4_X1)
+    "U707/A1" ^ ; // (AND2_X1)
+    "U706/S" ^ ; // (MUX2_X1)
+    "n614gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1871gat_reg
+  // to: n707gat_reg
+  $name "internal_39" ;
+  $cycle 0.1 ;
+  $slack -0.777838 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U909/A2" v ; // (NAND3_X1)
+    "U735/A" ^ ; // (INV_X1)
+    "U709/A2" v ; // (NAND4_X1)
+    "U707/A1" ^ ; // (AND2_X1)
+    "U653/S" ^ ; // (MUX2_X1)
+    "n707gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1871gat_reg
+  // to: n830gat_reg
+  $name "internal_40" ;
+  $cycle 0.1 ;
+  $slack -0.777838 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U909/A2" v ; // (NAND3_X1)
+    "U735/A" ^ ; // (INV_X1)
+    "U709/A2" v ; // (NAND4_X1)
+    "U707/A1" ^ ; // (AND2_X1)
+    "U631/S" ^ ; // (MUX2_X1)
+    "n830gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1880gat_reg
+  // to: n2640gat_reg
+  $name "internal_41" ;
+  $cycle 0.1 ;
+  $slack -0.754129 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1050/B1" v ; // (OAI21_X1)
+    "U968/S" ^ ; // (MUX2_X1)
+    "U967/A1" v ; // (NAND2_X1)
+    "U966/A" ^ ; // (INV_X1)
+    "U562/A1" v ; // (NAND2_X1)
+    "n2640gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n2526gat_reg
+  $name "internal_42" ;
+  $cycle 0.1 ;
+  $slack -0.751269 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1046/A1" v ; // (NOR2_X1)
+    "U1036/A" ^ ; // (INV_X1)
+    "U861/A" v ; // (OAI21_X1)
+    "U764/A" ^ ; // (MUX2_X1)
+    "U762/A" ^ ; // (XOR2_X1)
+    "U761/B" ^ ; // (XOR2_X1)
+    "n2526gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n919gat_reg
+  // to: n684gat_reg
+  $name "internal_43" ;
+  $cycle 0.1 ;
+  $slack -0.744526 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1061/A1" v ; // (NOR2_X1)
+    "U1003/A3" ^ ; // (AND3_X1)
+    "U694/A1" ^ ; // (AND2_X1)
+    "U693/A1" ^ ; // (NAND2_X1)
+    "U658/A" v ; // (XNOR2_X1)
+    "U656/B1" v ; // (OAI222_X1)
+    "n684gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n2182gat_reg
+  $name "internal_44" ;
+  $cycle 0.1 ;
+  $slack -0.738429 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1072/A2" v ; // (NOR2_X1)
+    "U1071/A" ^ ; // (INV_X1)
+    "U1070/A3" v ; // (NOR3_X1)
+    "U849/A1" ^ ; // (NAND2_X1)
+    "U847/A1" v ; // (NAND2_X1)
+    "U801/A" ^ ; // (INV_X1)
+    "U576/A1" v ; // (NAND2_X1)
+    "n2182gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1871gat_reg
+  // to: n883gat_reg
+  $name "internal_45" ;
+  $cycle 0.1 ;
+  $slack -0.729219 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U909/A2" v ; // (NAND3_X1)
+    "U735/A" ^ ; // (INV_X1)
+    "U709/A2" v ; // (NAND4_X1)
+    "U690/A1" ^ ; // (NAND2_X1)
+    "U626/B2" v ; // (OAI222_X1)
+    "n883gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1871gat_reg
+  // to: n820gat_reg
+  $name "internal_46" ;
+  $cycle 0.1 ;
+  $slack -0.729219 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U909/A2" v ; // (NAND3_X1)
+    "U735/A" ^ ; // (INV_X1)
+    "U709/A2" v ; // (NAND4_X1)
+    "U690/A1" ^ ; // (NAND2_X1)
+    "U635/B2" v ; // (OAI222_X1)
+    "n820gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1871gat_reg
+  // to: n824gat_reg
+  $name "internal_47" ;
+  $cycle 0.1 ;
+  $slack -0.721086 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U909/A2" v ; // (NAND3_X1)
+    "U735/A" ^ ; // (INV_X1)
+    "U709/A2" v ; // (NAND4_X1)
+    "U690/A1" ^ ; // (NAND2_X1)
+    "U684/B1" v ; // (OAI222_X1)
+    "n824gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1880gat_reg
+  // to: n1389gat_reg
+  $name "internal_48" ;
+  $cycle 0.1 ;
+  $slack -0.696864 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1050/B1" v ; // (OAI21_X1)
+    "U1049/A2" ^ ; // (NAND4_X1)
+    "U1031/A" v ; // (OAI21_X1)
+    "U995/A" ^ ; // (INV_X1)
+    "U994/A1" v ; // (NOR2_X1)
+    "n1389gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2588gat_reg
+  // to: n2343gat_reg
+  $name "internal_49" ;
+  $cycle 0.1 ;
+  $slack -0.685656 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U983/A2" v ; // (NOR2_X1)
+    "U982/A3" ^ ; // (NAND4_X1)
+    "U981/A2" v ; // (NAND2_X1)
+    "U979/A" ^ ; // (OAI211_X1)
+    "U978/A" v ; // (INV_X1)
+    "U967/A2" ^ ; // (NAND2_X1)
+    "U945/A2" v ; // (NOR2_X1)
+    "n2343gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2588gat_reg
+  // to: n2207gat_reg
+  $name "internal_50" ;
+  $cycle 0.1 ;
+  $slack -0.685635 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U983/A2" v ; // (NOR2_X1)
+    "U982/A3" ^ ; // (NAND4_X1)
+    "U981/A2" v ; // (NAND2_X1)
+    "U979/A" ^ ; // (OAI211_X1)
+    "U978/A" v ; // (INV_X1)
+    "U967/A2" ^ ; // (NAND2_X1)
+    "U946/A2" v ; // (NOR2_X1)
+    "n2207gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1880gat_reg
+  // to: n2562gat_reg
+  $name "internal_51" ;
+  $cycle 0.1 ;
+  $slack -0.681496 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1050/B1" v ; // (OAI21_X1)
+    "U968/S" ^ ; // (MUX2_X1)
+    "U967/A1" v ; // (NAND2_X1)
+    "U966/A" ^ ; // (INV_X1)
+    "n2562gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n553gat_reg
+  // to: n2599gat_reg
+  $name "internal_52" ;
+  $cycle 0.1 ;
+  $slack -0.680006 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U815/B" v ; // (XOR2_X1)
+    "U813/A" ^ ; // (XOR2_X1)
+    "U812/B" ^ ; // (XOR2_X1)
+    "U756/B" ^ ; // (XNOR2_X1)
+    "n2599gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n2091gat_reg
+  $name "internal_53" ;
+  $cycle 0.1 ;
+  $slack -0.679397 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1004/A1" ^ ; // (AND4_X1)
+    "U1002/A1" ^ ; // (NOR2_X1)
+    "U728/A2" v ; // (NAND2_X1)
+    "n2091gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2588gat_reg
+  // to: n2399gat_reg
+  $name "internal_54" ;
+  $cycle 0.1 ;
+  $slack -0.676655 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U983/A2" v ; // (NOR2_X1)
+    "U982/A3" ^ ; // (NAND4_X1)
+    "U981/A2" v ; // (NAND2_X1)
+    "U979/A" ^ ; // (OAI211_X1)
+    "U978/A" v ; // (INV_X1)
+    "U967/A2" ^ ; // (NAND2_X1)
+    "U938/A1" v ; // (NOR2_X1)
+    "n2399gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2588gat_reg
+  // to: n2203gat_reg
+  $name "internal_55" ;
+  $cycle 0.1 ;
+  $slack -0.676655 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U983/A2" v ; // (NOR2_X1)
+    "U982/A3" ^ ; // (NAND4_X1)
+    "U981/A2" v ; // (NAND2_X1)
+    "U979/A" ^ ; // (OAI211_X1)
+    "U978/A" v ; // (INV_X1)
+    "U967/A2" ^ ; // (NAND2_X1)
+    "U949/A1" v ; // (NOR2_X1)
+    "n2203gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n673gat_reg
+  // to: n2468gat_reg
+  $name "internal_56" ;
+  $cycle 0.1 ;
+  $slack -0.632589 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U791/B" v ; // (XNOR2_X1)
+    "U789/A" ^ ; // (XOR2_X1)
+    "U788/B" ^ ; // (XOR2_X1)
+    "U787/B" ^ ; // (XNOR2_X1)
+    "n2468gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n699gat_reg
+  // to: n2464gat_reg
+  $name "internal_57" ;
+  $cycle 0.1 ;
+  $slack -0.630425 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U775/B" v ; // (XNOR2_X1)
+    "U773/A" ^ ; // (XOR2_X1)
+    "U772/B" ^ ; // (XOR2_X1)
+    "U771/B" ^ ; // (XNOR2_X1)
+    "n2464gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n1771gat_reg
+  $name "internal_58" ;
+  $cycle 0.1 ;
+  $slack -0.629662 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1072/A2" v ; // (NOR2_X1)
+    "U1071/A" ^ ; // (INV_X1)
+    "U1070/A3" v ; // (NOR3_X1)
+    "U1069/A1" ^ ; // (NAND2_X1)
+    "U1009/A2" v ; // (NOR2_X1)
+    "n1771gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1072gat_reg
+  // to: n2518gat_reg
+  $name "internal_59" ;
+  $cycle 0.1 ;
+  $slack -0.626618 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1075/B" v ; // (XNOR2_X1)
+    "U1074/B" ^ ; // (XOR2_X1)
+    "U1073/B" ^ ; // (XNOR2_X1)
+    "U751/B" ^ ; // (XNOR2_X1)
+    "n2518gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n2179gat_reg
+  $name "internal_60" ;
+  $cycle 0.1 ;
+  $slack -0.618515 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1045/A2" v ; // (NOR2_X1)
+    "U1004/A1" ^ ; // (AND4_X1)
+    "U1002/A1" ^ ; // (NOR2_X1)
+    "U575/A" v ; // (INV_X1)
+    "n2179gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n1834gat_reg
+  $name "internal_61" ;
+  $cycle 0.1 ;
+  $slack -0.601865 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1072/A2" v ; // (NOR2_X1)
+    "U1071/A" ^ ; // (INV_X1)
+    "U1070/A3" v ; // (NOR3_X1)
+    "U1069/A1" ^ ; // (NAND2_X1)
+    "U1068/A" v ; // (INV_X1)
+    "n1834gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1880gat_reg
+  // to: n1508gat_reg
+  $name "internal_62" ;
+  $cycle 0.1 ;
+  $slack -0.581197 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1050/B1" v ; // (OAI21_X1)
+    "U1007/A" ^ ; // (INV_X1)
+    "U1006/A1" v ; // (NOR4_X1)
+    "n1508gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2399gat_reg
+  // to: n1336gat_reg
+  $name "internal_63" ;
+  $cycle 0.1 ;
+  $slack -0.577757 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1064/A2" v ; // (NOR2_X1)
+    "U1063/A" ^ ; // (INV_X1)
+    "U1062/A3" v ; // (NOR3_X1)
+    "n1336gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2399gat_reg
+  // to: n2658gat_reg
+  $name "internal_64" ;
+  $cycle 0.1 ;
+  $slack -0.57473 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U926/S" ^ ; // (MUX2_X1)
+    "U925/A" v ; // (AOI21_X1)
+    "U924/B" ^ ; // (XNOR2_X1)
+    "n2658gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2588gat_reg
+  // to: n2495gat_reg
+  $name "internal_65" ;
+  $cycle 0.1 ;
+  $slack -0.557519 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U983/A2" v ; // (NOR2_X1)
+    "U982/A3" ^ ; // (NAND4_X1)
+    "U981/A2" v ; // (NAND2_X1)
+    "U979/A" ^ ; // (OAI211_X1)
+    "U978/A" v ; // (INV_X1)
+    "U565/A1" ^ ; // (NAND2_X1)
+    "n2495gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2588gat_reg
+  // to: n2390gat_reg
+  $name "internal_66" ;
+  $cycle 0.1 ;
+  $slack -0.557515 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U983/A2" v ; // (NOR2_X1)
+    "U982/A3" ^ ; // (NAND4_X1)
+    "U981/A2" v ; // (NAND2_X1)
+    "U979/A" ^ ; // (OAI211_X1)
+    "U978/A" v ; // (INV_X1)
+    "n2390gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1871gat_reg
+  // to: n680gat_reg
+  $name "internal_67" ;
+  $cycle 0.1 ;
+  $slack -0.555085 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U909/A2" ^ ; // (NAND3_X1)
+    "U735/A" v ; // (INV_X1)
+    "U709/A2" ^ ; // (NAND4_X1)
+    "U662/A1" v ; // (OAI22_X1)
+    "n680gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1871gat_reg
+  // to: n580gat_reg
+  $name "internal_68" ;
+  $cycle 0.1 ;
+  $slack -0.555085 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U909/A2" ^ ; // (NAND3_X1)
+    "U735/A" v ; // (INV_X1)
+    "U709/A2" ^ ; // (NAND4_X1)
+    "U676/A1" v ; // (OAI22_X1)
+    "n580gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1871gat_reg
+  // to: n584gat_reg
+  $name "internal_69" ;
+  $cycle 0.1 ;
+  $slack -0.555085 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U909/A2" ^ ; // (NAND3_X1)
+    "U735/A" v ; // (INV_X1)
+    "U709/A2" ^ ; // (NAND4_X1)
+    "U696/A1" v ; // (OAI22_X1)
+    "n584gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1871gat_reg
+  // to: n816gat_reg
+  $name "internal_70" ;
+  $cycle 0.1 ;
+  $slack -0.554973 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U909/A2" ^ ; // (NAND3_X1)
+    "U735/A" v ; // (INV_X1)
+    "U709/A2" ^ ; // (NAND4_X1)
+    "U648/A1" v ; // (OAI22_X1)
+    "n816gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1850gat_reg
+  // to: n1675gat_reg
+  $name "internal_71" ;
+  $cycle 0.1 ;
+  $slack -0.548277 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1055/A1" v ; // (NOR2_X1)
+    "U1054/A" ^ ; // (INV_X1)
+    "U993/A2" v ; // (NOR4_X1)
+    "n1675gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2061gat_reg
+  // to: n1462gat_reg
+  $name "internal_72" ;
+  $cycle 0.1 ;
+  $slack -0.543662 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1033/A3" v ; // (NOR3_X1)
+    "U989/A2" ^ ; // (NAND2_X1)
+    "U988/A1" v ; // (NOR2_X1)
+    "U965/A" ^ ; // (INV_X1)
+    "U964/A1" v ; // (NOR2_X1)
+    "n1462gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2139gat_reg
+  // to: n1394gat_reg
+  $name "internal_73" ;
+  $cycle 0.1 ;
+  $slack -0.542007 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1053/A3" v ; // (NOR3_X1)
+    "U1052/A" ^ ; // (INV_X1)
+    "U1051/A4" v ; // (NOR4_X1)
+    "n1394gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2588gat_reg
+  // to: n2270gat_reg
+  $name "internal_74" ;
+  $cycle 0.1 ;
+  $slack -0.541437 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U983/A2" v ; // (NOR2_X1)
+    "U982/A3" ^ ; // (NAND4_X1)
+    "U981/A2" v ; // (NAND2_X1)
+    "U979/A" ^ ; // (OAI211_X1)
+    "U953/A2" v ; // (NOR2_X1)
+    "n2270gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2588gat_reg
+  // to: n2339gat_reg
+  $name "internal_75" ;
+  $cycle 0.1 ;
+  $slack -0.532286 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U983/A2" v ; // (NOR2_X1)
+    "U982/A3" ^ ; // (NAND4_X1)
+    "U981/A2" v ; // (NAND2_X1)
+    "U979/A" ^ ; // (OAI211_X1)
+    "U956/A1" v ; // (NOR2_X1)
+    "n2339gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1850gat_reg
+  // to: n1332gat_reg
+  $name "internal_76" ;
+  $cycle 0.1 ;
+  $slack -0.522095 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1055/A1" v ; // (NOR2_X1)
+    "U1054/A" ^ ; // (INV_X1)
+    "U1021/A2" v ; // (NOR4_X1)
+    "n1332gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1850gat_reg
+  // to: n1525gat_reg
+  $name "internal_77" ;
+  $cycle 0.1 ;
+  $slack -0.514056 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1055/A1" v ; // (NOR2_X1)
+    "U1054/A" ^ ; // (INV_X1)
+    "U558/A3" v ; // (NOR3_X1)
+    "n1525gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2622gat_reg
+  // to: n2506gat_reg
+  $name "internal_78" ;
+  $cycle 0.1 ;
+  $slack -0.499933 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U923/A" v ; // (XNOR2_X1)
+    "U922/B" ^ ; // (XNOR2_X1)
+    "U919/A" ^ ; // (XNOR2_X1)
+    "n2506gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2394gat_reg
+  // to: n1596gat_reg
+  $name "internal_79" ;
+  $cycle 0.1 ;
+  $slack -0.486175 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U975/A3" v ; // (NOR3_X1)
+    "U974/A3" ^ ; // (NAND3_X1)
+    "U973/A2" v ; // (NOR2_X1)
+    "n1596gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2061gat_reg
+  // to: n1807gat_reg
+  $name "internal_80" ;
+  $cycle 0.1 ;
+  $slack -0.474467 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1033/A3" v ; // (NOR3_X1)
+    "U989/A2" ^ ; // (NAND2_X1)
+    "U988/A1" v ; // (NOR2_X1)
+    "n1807gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n1775gat_reg
+  $name "internal_81" ;
+  $cycle 0.1 ;
+  $slack -0.473301 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1072/A2" v ; // (NOR2_X1)
+    "U1060/A1" ^ ; // (NAND3_X1)
+    "U1005/A2" v ; // (NOR2_X1)
+    "n1775gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1880gat_reg
+  // to: n2155gat_reg
+  $name "internal_82" ;
+  $cycle 0.1 ;
+  $slack -0.470432 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1050/B1" v ; // (OAI21_X1)
+    "n2155gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1850gat_reg
+  // to: n1340gat_reg
+  $name "internal_83" ;
+  $cycle 0.1 ;
+  $slack -0.467492 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1055/A1" v ; // (NOR2_X1)
+    "U1019/A1" ^ ; // (NAND3_X1)
+    "U1018/A2" v ; // (NOR2_X1)
+    "n1340gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1871gat_reg
+  // to: n2095gat_reg
+  $name "internal_84" ;
+  $cycle 0.1 ;
+  $slack -0.463069 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U909/A2" ^ ; // (NAND3_X1)
+    "U735/A" v ; // (INV_X1)
+    "U557/A3" ^ ; // (AND3_X1)
+    "U554/A" ^ ; // (MUX2_X1)
+    "n2095gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n1767gat_reg
+  $name "internal_85" ;
+  $cycle 0.1 ;
+  $slack -0.446074 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1072/A2" v ; // (NOR2_X1)
+    "U1060/A1" ^ ; // (NAND3_X1)
+    "U1059/A" v ; // (INV_X1)
+    "n1767gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2139gat_reg
+  // to: n1588gat_reg
+  $name "internal_86" ;
+  $cycle 0.1 ;
+  $slack -0.442935 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1053/A3" v ; // (NOR3_X1)
+    "U1017/A3" ^ ; // (AND3_X1)
+    "n1588gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1850gat_reg
+  // to: n1678gat_reg
+  $name "internal_87" ;
+  $cycle 0.1 ;
+  $slack -0.440116 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1055/A1" v ; // (NOR2_X1)
+    "U1019/A1" ^ ; // (NAND3_X1)
+    "U551/A" v ; // (INV_X1)
+    "n1678gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2390gat_reg
+  // to: n2502gat_reg
+  $name "internal_88" ;
+  $cycle 0.1 ;
+  $slack -0.428593 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U917/B" v ; // (XOR2_X1)
+    "U916/B" v ; // (XNOR2_X1)
+    "n2502gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n402gat_reg
+  // to: n2472gat_reg
+  $name "internal_89" ;
+  $cycle 0.1 ;
+  $slack -0.391268 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1008/A4" v ; // (NOR4_X1)
+    "n2472gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2450gat_reg
+  // to: n1763gat_reg
+  $name "internal_90" ;
+  $cycle 0.1 ;
+  $slack -0.374203 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1014/A2" ^ ; // (NAND2_X1)
+    "U1013/A2" v ; // (NAND2_X1)
+    "U1012/A" ^ ; // (OAI211_X1)
+    "U1010/A1" v ; // (NOR2_X1)
+    "n1763gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1880gat_reg
+  // to: n2084gat_reg
+  $name "internal_91" ;
+  $cycle 0.1 ;
+  $slack -0.351713 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1030/A3" v ; // (NAND3_X1)
+    "n2084gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2599gat_reg
+  // to: n2588gat_reg
+  $name "internal_92" ;
+  $cycle 0.1 ;
+  $slack -0.344997 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U591/A4" v ; // (NOR4_X1)
+    "U590/A2" ^ ; // (NAND2_X1)
+    "n2588gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2450gat_reg
+  // to: n1880gat_reg
+  $name "internal_93" ;
+  $cycle 0.1 ;
+  $slack -0.339282 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1014/A2" ^ ; // (NAND2_X1)
+    "U1013/A2" v ; // (NAND2_X1)
+    "U971/A" ^ ; // (INV_X1)
+    "U970/A1" v ; // (NOR3_X1)
+    "n1880gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2588gat_reg
+  // to: n2446gat_reg
+  $name "internal_94" ;
+  $cycle 0.1 ;
+  $slack -0.308227 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U983/A2" v ; // (NOR2_X1)
+    "U982/A3" ^ ; // (NAND4_X1)
+    "n2446gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2319gat_reg
+  // to: n1821gat_reg
+  $name "internal_95" ;
+  $cycle 0.1 ;
+  $slack -0.294384 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U972/A2" v ; // (NOR2_X1)
+    "n1821gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2399gat_reg
+  // to: n2403gat_reg
+  $name "internal_96" ;
+  $cycle 0.1 ;
+  $slack -0.280879 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2399gat_reg/QN" v ; // (SDFFS_X2)
+    "n2403gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2207gat_reg
+  // to: n2407gat_reg
+  $name "internal_97" ;
+  $cycle 0.1 ;
+  $slack -0.241611 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2207gat_reg/QN" v ; // (SDFFS_X2)
+    "n2407gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2343gat_reg
+  // to: n2394gat_reg
+  $name "internal_98" ;
+  $cycle 0.1 ;
+  $slack -0.235655 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2343gat_reg/QN" v ; // (SDFFS_X2)
+    "n2394gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2562gat_reg
+  // to: n2588gat_reg
+  $name "internal_99" ;
+  $cycle 0.1 ;
+  $slack -0.235399 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2562gat_reg/Q" ^ ; // (SDFFS_X2)
+    "n2588gat_reg/SI" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n402gat_reg
+  // to: n463gat_reg
+  $name "internal_100" ;
+  $cycle 0.1 ;
+  $slack -0.234603 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n402gat_reg/Q" ^ ; // (SDFFS_X2)
+    "n463gat_reg/SI" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2203gat_reg
+  // to: n2347gat_reg
+  $name "internal_101" ;
+  $cycle 0.1 ;
+  $slack -0.231737 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2203gat_reg/QN" v ; // (SDFFS_X2)
+    "n2347gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2626gat_reg
+  // to: n1899gat_reg
+  $name "internal_102" ;
+  $cycle 0.1 ;
+  $slack -0.231347 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2626gat_reg/QN" v ; // (SDFFS_X2)
+    "n1899gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1316gat_reg
+  // to: n2044gat_reg
+  $name "internal_103" ;
+  $cycle 0.1 ;
+  $slack -0.2294 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U962/A3" v ; // (NOR3_X1)
+    "n2044gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n271gat_reg
+  // to: n2102gat_reg
+  $name "internal_104" ;
+  $cycle 0.1 ;
+  $slack -0.227319 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "U1016/A2" v ; // (NOR2_X1)
+    "n2102gat_reg/D" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2622gat_reg
+  // to: n2061gat_reg
+  $name "internal_105" ;
+  $cycle 0.1 ;
+  $slack -0.226559 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2622gat_reg/QN" v ; // (SDFFS_X2)
+    "n2061gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n684gat_reg
+  // to: n327gat_reg
+  $name "internal_106" ;
+  $cycle 0.1 ;
+  $slack -0.226342 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n684gat_reg/QN" v ; // (SDFFS_X2)
+    "n327gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n707gat_reg
+  // to: n152gat_reg
+  $name "internal_107" ;
+  $cycle 0.1 ;
+  $slack -0.226331 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n707gat_reg/QN" v ; // (SDFFS_X2)
+    "n152gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n883gat_reg
+  // to: n388gat_reg
+  $name "internal_108" ;
+  $cycle 0.1 ;
+  $slack -0.225808 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n883gat_reg/QN" v ; // (SDFFS_X2)
+    "n388gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1394gat_reg
+  // to: n1496gat_reg
+  $name "internal_109" ;
+  $cycle 0.1 ;
+  $slack -0.224185 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n1394gat_reg/QN" v ; // (SDFFS_X2)
+    "n1496gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n846gat_reg
+  // to: n861gat_reg
+  $name "internal_110" ;
+  $cycle 0.1 ;
+  $slack -0.223562 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n846gat_reg/Q" ^ ; // (SDFFS_X2)
+    "n861gat_reg/SI" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n614gat_reg
+  // to: n156gat_reg
+  $name "internal_111" ;
+  $cycle 0.1 ;
+  $slack -0.222936 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n614gat_reg/QN" v ; // (SDFFS_X2)
+    "n156gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n699gat_reg
+  // to: n384gat_reg
+  $name "internal_112" ;
+  $cycle 0.1 ;
+  $slack -0.221378 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n699gat_reg/QN" v ; // (SDFFS_X2)
+    "n384gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n838gat_reg
+  // to: n256gat_reg
+  $name "internal_113" ;
+  $cycle 0.1 ;
+  $slack -0.220342 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n838gat_reg/QN" v ; // (SDFFS_X2)
+    "n256gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2203gat_reg
+  // to: n2207gat_reg
+  $name "internal_114" ;
+  $cycle 0.1 ;
+  $slack -0.220327 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2203gat_reg/Q" ^ ; // (SDFFS_X2)
+    "n2207gat_reg/SI" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1821gat_reg
+  // to: n2029gat_reg
+  $name "internal_115" ;
+  $cycle 0.1 ;
+  $slack -0.218393 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n1821gat_reg/QN" v ; // (SDFFS_X2)
+    "n2029gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1775gat_reg
+  // to: n2592gat_reg
+  $name "internal_116" ;
+  $cycle 0.1 ;
+  $slack -0.217852 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n1775gat_reg/QN" v ; // (SDFFS_X2)
+    "n2592gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n824gat_reg
+  // to: n331gat_reg
+  $name "internal_117" ;
+  $cycle 0.1 ;
+  $slack -0.217833 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n824gat_reg/QN" v ; // (SDFFS_X2)
+    "n331gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2390gat_reg
+  // to: n2262gat_reg
+  $name "internal_118" ;
+  $cycle 0.1 ;
+  $slack -0.217471 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2390gat_reg/QN" v ; // (SDFFS_X2)
+    "n2262gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2270gat_reg
+  // to: n2190gat_reg
+  $name "internal_119" ;
+  $cycle 0.1 ;
+  $slack -0.217471 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2270gat_reg/QN" v ; // (SDFFS_X2)
+    "n2190gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2562gat_reg
+  // to: n2440gat_reg
+  $name "internal_120" ;
+  $cycle 0.1 ;
+  $slack -0.217325 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2562gat_reg/QN" v ; // (SDFFS_X2)
+    "n2440gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2640gat_reg
+  // to: n2644gat_reg
+  $name "internal_121" ;
+  $cycle 0.1 ;
+  $slack -0.216773 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2640gat_reg/QN" v ; // (SDFFS_X2)
+    "n2644gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1899gat_reg
+  // to: n1975gat_reg
+  $name "internal_122" ;
+  $cycle 0.1 ;
+  $slack -0.215288 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n1899gat_reg/Q" ^ ; // (SDFFS_X2)
+    "n1975gat_reg/SI" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2176gat_reg
+  // to: n2169gat_reg
+  $name "internal_123" ;
+  $cycle 0.1 ;
+  $slack -0.212281 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2176gat_reg/QN" v ; // (SDFFS_X2)
+    "n2169gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2110gat_reg
+  // to: n2125gat_reg
+  $name "internal_124" ;
+  $cycle 0.1 ;
+  $slack -0.211857 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2110gat_reg/QN" v ; // (SDFFS_X2)
+    "n2125gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n834gat_reg
+  // to: n148gat_reg
+  $name "internal_125" ;
+  $cycle 0.1 ;
+  $slack -0.211575 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n834gat_reg/QN" v ; // (SDFFS_X2)
+    "n148gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n830gat_reg
+  // to: n470gat_reg
+  $name "internal_126" ;
+  $cycle 0.1 ;
+  $slack -0.211575 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n830gat_reg/QN" v ; // (SDFFS_X2)
+    "n470gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2630gat_reg
+  // to: n1850gat_reg
+  $name "internal_127" ;
+  $cycle 0.1 ;
+  $slack -0.211562 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2630gat_reg/QN" v ; // (SDFFS_X2)
+    "n1850gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2543gat_reg
+  // to: n2143gat_reg
+  $name "internal_128" ;
+  $cycle 0.1 ;
+  $slack -0.211548 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2543gat_reg/QN" v ; // (SDFFS_X2)
+    "n2143gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n820gat_reg
+  // to: n463gat_reg
+  $name "internal_129" ;
+  $cycle 0.1 ;
+  $slack -0.211398 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n820gat_reg/QN" v ; // (SDFFS_X2)
+    "n463gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2440gat_reg
+  // to: n2446gat_reg
+  $name "internal_130" ;
+  $cycle 0.1 ;
+  $slack -0.211296 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2440gat_reg/Q" ^ ; // (SDFFS_X2)
+    "n2446gat_reg/SI" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1871gat_reg
+  // to: n1880gat_reg
+  $name "internal_131" ;
+  $cycle 0.1 ;
+  $slack -0.210708 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n1871gat_reg/Q" ^ ; // (SDFFS_X2)
+    "n1880gat_reg/SI" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2343gat_reg
+  // to: n2347gat_reg
+  $name "internal_132" ;
+  $cycle 0.1 ;
+  $slack -0.208785 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2343gat_reg/Q" ^ ; // (SDFFS_X2)
+    "n2347gat_reg/SI" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n919gat_reg
+  // to: n931gat_reg
+  $name "internal_133" ;
+  $cycle 0.1 ;
+  $slack -0.207817 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n919gat_reg/Q" ^ ; // (SDFFS_X2)
+    "n931gat_reg/SI" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2339gat_reg
+  // to: n2135gat_reg
+  $name "internal_134" ;
+  $cycle 0.1 ;
+  $slack -0.207251 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2339gat_reg/QN" v ; // (SDFFS_X2)
+    "n2135gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2490gat_reg
+  // to: n2495gat_reg
+  $name "internal_135" ;
+  $cycle 0.1 ;
+  $slack -0.206518 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2490gat_reg/Q" ^ ; // (SDFFS_X2)
+    "n2495gat_reg/SI" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2403gat_reg
+  // to: n2407gat_reg
+  $name "internal_136" ;
+  $cycle 0.1 ;
+  $slack -0.206126 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2403gat_reg/Q" ^ ; // (SDFFS_X2)
+    "n2407gat_reg/SI" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n398gat_reg
+  // to: n402gat_reg
+  $name "internal_137" ;
+  $cycle 0.1 ;
+  $slack -0.205902 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n398gat_reg/Q" ^ ; // (SDFFS_X2)
+    "n402gat_reg/SI" ^ ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2472gat_reg
+  // to: n2319gat_reg
+  $name "internal_138" ;
+  $cycle 0.1 ;
+  $slack -0.204439 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2472gat_reg/QN" v ; // (SDFFS_X2)
+    "n2319gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1316gat_reg
+  // to: n1363gat_reg
+  $name "internal_139" ;
+  $cycle 0.1 ;
+  $slack -0.204439 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n1316gat_reg/QN" v ; // (SDFFS_X2)
+    "n1363gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2033gat_reg
+  // to: n2110gat_reg
+  $name "internal_140" ;
+  $cycle 0.1 ;
+  $slack -0.204439 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2033gat_reg/QN" v ; // (SDFFS_X2)
+    "n2110gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2125gat_reg
+  // to: n2121gat_reg
+  $name "internal_141" ;
+  $cycle 0.1 ;
+  $slack -0.204439 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2125gat_reg/QN" v ; // (SDFFS_X2)
+    "n2121gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2592gat_reg
+  // to: n2458gat_reg
+  $name "internal_142" ;
+  $cycle 0.1 ;
+  $slack -0.204439 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2592gat_reg/QN" v ; // (SDFFS_X2)
+    "n2458gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2029gat_reg
+  // to: n1829gat_reg
+  $name "internal_143" ;
+  $cycle 0.1 ;
+  $slack -0.204439 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2029gat_reg/QN" v ; // (SDFFS_X2)
+    "n1829gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2095gat_reg
+  // to: n2176gat_reg
+  $name "internal_144" ;
+  $cycle 0.1 ;
+  $slack -0.204439 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2095gat_reg/QN" v ; // (SDFFS_X2)
+    "n2176gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2495gat_reg
+  // to: n2266gat_reg
+  $name "internal_145" ;
+  $cycle 0.1 ;
+  $slack -0.204439 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2495gat_reg/QN" v ; // (SDFFS_X2)
+    "n2266gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1433gat_reg
+  // to: n1316gat_reg
+  $name "internal_146" ;
+  $cycle 0.1 ;
+  $slack -0.204439 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n1433gat_reg/QN" v ; // (SDFFS_X2)
+    "n1316gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n1363gat_reg
+  // to: n1312gat_reg
+  $name "internal_147" ;
+  $cycle 0.1 ;
+  $slack -0.204439 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n1363gat_reg/QN" v ; // (SDFFS_X2)
+    "n1312gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2044gat_reg
+  // to: n2037gat_reg
+  $name "internal_148" ;
+  $cycle 0.1 ;
+  $slack -0.204439 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2044gat_reg/QN" v ; // (SDFFS_X2)
+    "n2037gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2037gat_reg
+  // to: n2033gat_reg
+  $name "internal_149" ;
+  $cycle 0.1 ;
+  $slack -0.204439 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2037gat_reg/QN" v ; // (SDFFS_X2)
+    "n2033gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
+$path {
+  // from: n2121gat_reg
+  // to: n2117gat_reg
+  $name "internal_150" ;
+  $cycle 0.1 ;
+  $slack -0.204439 ;
+  $launch "blif_clk_net" ; // (rise edge)
+  $capture "blif_clk_net" ; // (rise edge)
+  $transition {
+    "n2121gat_reg/QN" v ; // (SDFFS_X2)
+    "n2117gat_reg/D" v ; // (SDFFS_X2)
+  }
+}
+
