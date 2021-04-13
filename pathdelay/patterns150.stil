@@ -1,7 +1,7 @@
 STIL 1.0 { Design 2005; }
 Header {
    Title "  TetraMAX(R)  O-2018.06-SP5-1-i20190308_134335 STIL output";
-   Date "Tue Apr 13 14:28:53 2021";
+   Date "Tue Apr 13 14:47:03 2021";
    Source "Minimal STIL for design `s5378_bench'";
    History {
       Ann {*  Incoming_Date "Mon Mar 12 19:43:39 2012"  *}
