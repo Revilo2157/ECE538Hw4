@@ -25,23 +25,23 @@ read_netlist -delete
 read_netlist $scan_lib -library
  Begin reading netlist ( ./nangate_scan.v )...
  End parsing Verilog file ./nangate_scan.v with 0 errors.
- End reading netlist: #modules=139, top=XOR2_X2, #lines=2594, CPU_time=0.01 sec, Memory=0MB
+ End reading netlist: #modules=139, top=XOR2_X2, #lines=2594, CPU_time=0.00 sec, Memory=0MB
 # read in user's synthesized verilog code
 #read_netlist $synthesized_files
 read_netlist  s5378_bench.v
  Begin reading netlist ( s5378_bench.v )...
  End parsing Verilog file s5378_bench.v with 0 errors.
- End reading netlist: #modules=1, top=s5378_bench, #lines=1079, CPU_time=0.00 sec, Memory=0MB
+ End reading netlist: #modules=1, top=s5378_bench, #lines=1079, CPU_time=0.01 sec, Memory=0MB
 run_build_model $top_module
  ------------------------------------------------------------------------------
  Begin build model for topcut = s5378_bench ...
  ------------------------------------------------------------------------------
  There were 1688 primitives and 36 faultable pins removed during model optimizations
  Warning: Rule N21 (unsupported UDP entry) was violated 1 times.
- End build model: #primitives=1597, CPU_time=0.01 sec, Memory=1MB
+ End build model: #primitives=1597, CPU_time=0.00 sec, Memory=1MB
  ------------------------------------------------------------------------------
  Begin learning analyses...
- End learning analyses, total learning CPU time=0.01 sec.
+ End learning analyses, total learning CPU time=0.02 sec.
  ------------------------------------------------------------------------------
 # ignoring warnings like N20 or B10
 # Set STIL file from DFT Compiler
@@ -64,10 +64,10 @@ run_drc
  Begin scan chain operation checking...
  Chain 1 successfully traced with 82 scan_cells.
  Chain 2 successfully traced with 81 scan_cells.
- Scan chain operation checking completed, CPU time=0.01 sec.
+ Scan chain operation checking completed, CPU time=0.00 sec.
  ------------------------------------------------------------------------------
  Begin clock rules checking...
- Clock rules checking completed, CPU time=0.00 sec.
+ Clock rules checking completed, CPU time=0.01 sec.
  Clock grouping results: #pairs=0, #groups=0, #serial_pairs=0, #disturbed_pairs=0, CPU time=0.00 sec.
  ------------------------------------------------------------------------------
  Begin nonscan rules checking...
@@ -100,30 +100,30 @@ run_atpg basic_scan_only -ndetects 1
  stored     detect/active  red/au/abort  coverage  CPU time
  ---------  -------------  ------------  --------  --------
  Begin deterministic ATPG: #collapsed_faults=3556, abort_limit=10...
- 32           1519   2037         0/0/0    58.88%      0.02
- 62            427   1607         0/3/0    69.82%      0.03
- 94            289   1317         0/4/0    76.63%      0.04
- 126           260   1055         0/6/0    81.91%      0.05
- 155           115    938         0/8/0    84.92%      0.05
- 187            83    843        0/20/0    87.35%      0.06
- 217           120    713        0/30/0    89.77%      0.06
- 246            57    648        0/38/0    91.09%      0.07
- 274            79    562        0/45/0    92.78%      0.07
- 305            50    506        0/51/0    93.91%      0.08
- 333            32    464        0/61/0    94.88%      0.08
- 361            40    414        0/71/0    95.96%      0.09
- 386            37    368        0/80/0    96.84%      0.09
- 412            33    327        0/88/0    97.63%      0.10
- 417             4    319        0/92/0    97.75%      0.10
+ 32           1421   2135         0/0/0    59.72%      0.02
+ 63            487   1645         0/3/0    72.20%      0.03
+ 94            250   1389         0/9/0    78.07%      0.04
+ 126           143   1243        0/12/0    81.40%      0.05
+ 158           149   1092        0/14/0    84.92%      0.06
+ 189            94    993        0/19/0    87.79%      0.06
+ 221            78    902        0/32/0    89.53%      0.07
+ 251            67    830        0/37/0    91.14%      0.09
+ 282            73    749        0/45/0    92.76%      0.09
+ 312            64    676        0/54/0    94.10%      0.10
+ 343            43    626        0/61/0    95.18%      0.10
+ 372            31    587        0/69/0    96.08%      0.11
+ 402            35    543        0/78/0    96.92%      0.11
+ 431            36    493        0/92/0    97.70%      0.12
+ 433             0    493        0/92/0    97.75%      0.12
  
     Collapsed Transition Fault Summary Report
  -----------------------------------------------
  fault class                     code   #faults
  ------------------------------  ----  ---------
  Detected                         DT       3994
-   detected_by_simulation         DS        (56)
+   detected_by_simulation         DS       (157)
    detected_by_implication        DI       (530)
-   transition-partially_detected   TP      (3408)
+   transition-partially_detected   TP      (3307)
  Possibly detected                PT          0
  Undetectable                     UD          8
    undetectable-tied              UT         (8)
@@ -136,18 +136,18 @@ run_atpg basic_scan_only -ndetects 1
  -----------------------------------------------
             Pattern Summary Report
  -----------------------------------------------
- #internal patterns                         417
-     #basic_scan patterns                   417
+ #internal patterns                         433
+     #basic_scan patterns                   433
  -----------------------------------------------
 report_faults -slack effectiveness  
  ------------------------------------------------------------------------------
- delay effectiveness  49.23%
+ delay effectiveness  45.63%
  ------------------------------------------------------------------------------
 #report_faults -slack tdet 
 #report_faults -slack delta
 report_faults -slack sdql
- SDQL 5206344.50
+ SDQL 5683769.50
 write_patterns ./SDD/pattern_sdd_slack10%.stil -internal -format STIL -unified_stil_flow -replace 
- Patterns written reference 1671 V statements, generating 35529 test cycles
- End writing file 'pattern_sdd_slack10%.stil' with 417 patterns, File_size = 302802, CPU_time = 0.0 sec.
+ Patterns written reference 1735 V statements, generating 36889 test cycles
+ End writing file 'pattern_sdd_slack10%.stil' with 433 patterns, File_size = 313714, CPU_time = 0.0 sec.
 exit
