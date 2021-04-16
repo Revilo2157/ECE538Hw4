@@ -23,12 +23,11 @@ do
 
 	rm pathdelay/*
 
-	pt_shell -f ./scripts/PT_scriptpd.tcl > ${outDir}/pt_${NUM_PATHS}.txt
-	tmax -shell ./scripts/path_delay_atpg.tcl > ${outDir}/tmax_${NUM_PATHS}.txt
+	pt_shell -f ./scripts/PT_scriptpd.tcl > "${outDir}/pt_${NUM_PATHS}.txt"
+	echo Finished PrimeTime
+	tmax -shell ./scripts/path_delay_atpg.tcl > "${outDir}/tmax_${NUM_PATHS}.txt"
+	echo Finished TetraMax
 done
-
-rm outputs.zip
-zip -r outputs.zip outputs > /dev/null
 
 echo Done
 exit 0

@@ -19,12 +19,11 @@ do
 	
 	rm SDD/*	
 
-	pt_shell -f ./scripts/PT_scriptsd.tcl > ${outDir}/pt_${SLACK}.txt
-	tmax -shell ./scripts/sddatpg.tcl > ${outDir}/tmax_${SLACK}.txt
+	pt_shell -f ./scripts/PT_scriptsd.tcl > "${outDir}/pt_${SLACK}.txt"
+	echo Finished PrimeTime
+	tmax -shell ./scripts/sddatpg.tcl > "${outDir}/tmax_${SLACK}.txt"
+	echo Finished TetraMax
 done
-
-rm outputs.zip
-zip -r outputs.zip outputs > /dev/null
 
 echo Done
 exit 0
