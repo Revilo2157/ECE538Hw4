@@ -1,0 +1,155 @@
+
+                                  TetraMAX(R) 
+
+
+              Version O-2018.06-SP5-1 for linux64 - Mar 08, 2019  
+
+                    Copyright (c) 1996 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+
+ Tcl mode is on by default. Use -notcl to run in native mode.
+ Executing startup file "/home/software/synopsys/tetramax/txs/O-2018.06-SP5-1/admin/setup/tmaxtcl.rc".
+set top_module s5378_bench
+s5378_bench
+set scan_lib ./nangate_scan.v
+./nangate_scan.v
+set stil_file  ./des2d1.spf 
+./des2d1.spf
+read_netlist -delete
+ Warning: All netlist and library module data are now deleted. (M41)
+# read in scan cell library
+read_netlist $scan_lib -library
+ Begin reading netlist ( ./nangate_scan.v )...
+ End parsing Verilog file ./nangate_scan.v with 0 errors.
+ End reading netlist: #modules=139, top=XOR2_X2, #lines=2594, CPU_time=0.01 sec, Memory=0MB
+# read in user's synthesized verilog code
+#read_netlist $synthesized_files
+read_netlist  s5378_bench.v
+ Begin reading netlist ( s5378_bench.v )...
+ End parsing Verilog file s5378_bench.v with 0 errors.
+ End reading netlist: #modules=1, top=s5378_bench, #lines=1079, CPU_time=0.00 sec, Memory=0MB
+run_build_model $top_module
+ ------------------------------------------------------------------------------
+ Begin build model for topcut = s5378_bench ...
+ ------------------------------------------------------------------------------
+ There were 1688 primitives and 36 faultable pins removed during model optimizations
+ Warning: Rule N21 (unsupported UDP entry) was violated 1 times.
+ End build model: #primitives=1597, CPU_time=0.00 sec, Memory=1MB
+ ------------------------------------------------------------------------------
+ Begin learning analyses...
+ End learning analyses, total learning CPU time=0.01 sec.
+ ------------------------------------------------------------------------------
+# ignoring warnings like N20 or B10
+# Set STIL file from DFT Compiler
+set_drc $stil_file
+# run check to see if synthesized code violates any testing rules
+add_clocks 0  blif_clk_net
+add_pi_constraints 0 test_se
+run_drc
+ ------------------------------------------------------------------------------
+ Begin scan design rules checking...
+ ------------------------------------------------------------------------------
+ Begin reading test protocol file ./des2d1.spf...
+ Warning: Rule V14 (missing state) was violated 1 times.
+ End parsing STIL file ./des2d1.spf with 0 errors.
+ Test protocol file reading completed, CPU time=0.01 sec.
+ ------------------------------------------------------------------------------
+ Begin simulating test protocol procedures...
+ Test protocol simulation completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin scan chain operation checking...
+ Chain 1 successfully traced with 82 scan_cells.
+ Chain 2 successfully traced with 81 scan_cells.
+ Scan chain operation checking completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin clock rules checking...
+ Clock rules checking completed, CPU time=0.00 sec.
+ Clock grouping results: #pairs=0, #groups=0, #serial_pairs=0, #disturbed_pairs=0, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin nonscan rules checking...
+ Nonscan cell summary: #DFF=0  #DLAT=0  #RAM_outs=0  tla_usage_type=none
+ Nonscan rules checking completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin DRC dependent learning...
+ Fast-sequential depth results: control=0(0), observe=0(0), detect=0(0), CPU time=0.00 sec
+ DRC dependent learning completed, CPU time=0.01 sec.
+ ------------------------------------------------------------------------------
+ DRC Summary Report
+ ------------------------------------------------------------------------------
+ Warning: Rule V14 (missing state) was violated 1 times.
+ There were 1 violations that occurred during DRC process.
+ Design rules checking was successful, total CPU time=0.02 sec.
+ ------------------------------------------------------------------------------
+read_timing ./SDD/slack.dat
+ reading slack data file ./SDD/slack.dat.
+set_delay -launch_cycle last_shift
+set_faults -model transition
+add_faults -all
+ 5198 faults were added to fault list.
+set_faults -report collapsed
+set_faults -summary verbose 
+set_delay -max_tmgn $::env(TMGN)
+puts $::env(TMGN)
+0.33
+ 
+run_atpg basic_scan_only -ndetects 1
+ ATPG performed for transition fault model using internal pattern source.
+ ----------------------------------------------------------
+ #patterns     #faults     #ATPG faults  test      process
+ stored     detect/active  red/au/abort  coverage  CPU time
+ ---------  -------------  ------------  --------  --------
+ Begin deterministic ATPG: #collapsed_faults=3556, abort_limit=10...
+ 32           1380   2176         0/0/0    60.70%      0.01
+ 64            391   1778         0/7/0    71.86%      0.02
+ 96            226   1548        0/11/0    78.05%      0.03
+ 127           200   1346        0/13/0    82.11%      0.04
+ 159           155   1185        0/19/0    86.07%      0.05
+ 190           118   1065        0/21/0    88.69%      0.06
+ 220            76    975        0/35/0    90.33%      0.06
+ 251            52    916        0/42/0    91.70%      0.07
+ 283            65    843        0/50/0    93.15%      0.08
+ 313            52    785        0/56/0    94.42%      0.08
+ 340            38    736        0/67/0    95.35%      0.09
+ 367            38    692        0/73/0    96.33%      0.09
+ 394            33    655        0/77/0    97.19%      0.10
+ 417            22    618        0/92/0    97.75%      0.10
+ 
+    Collapsed Transition Fault Summary Report
+ -----------------------------------------------
+ fault class                     code   #faults
+ ------------------------------  ----  ---------
+ Detected                         DT       3994
+   detected_by_simulation         DS       (257)
+   detected_by_implication        DI       (530)
+   transition-partially_detected   TP      (3207)
+ Possibly detected                PT          0
+ Undetectable                     UD          8
+   undetectable-tied              UT         (8)
+ ATPG untestable                  AU         92
+   atpg_untestable-not_detected   AN        (92)
+ Not detected                     ND          0
+ -----------------------------------------------
+ total faults                              4094
+ test coverage                            97.75%
+ -----------------------------------------------
+            Pattern Summary Report
+ -----------------------------------------------
+ #internal patterns                         417
+     #basic_scan patterns                   417
+ -----------------------------------------------
+report_faults -slack effectiveness  
+ ------------------------------------------------------------------------------
+ delay effectiveness  53.68%
+ ------------------------------------------------------------------------------
+#report_faults -slack tdet 
+#report_faults -slack delta
+report_faults -slack sdql
+ SDQL 4477742.50
+write_patterns ./SDD/pattern_sdd_slack10%.stil -internal -format STIL -unified_stil_flow -replace 
+ Patterns written reference 1671 V statements, generating 35529 test cycles
+ End writing file 'pattern_sdd_slack10%.stil' with 417 patterns, File_size = 302802, CPU_time = 0.0 sec.
+exit
