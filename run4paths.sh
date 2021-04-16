@@ -1,20 +1,35 @@
 echo Got $# arguments
 
-for (( c=1; c<=$#; c++ ))
-do
-	echo -n "${!c} "	
-done
+
+if [ $# -ne 1 ]; then
+        echo Not enough arguments
+        exit 1
+fi
+
+export CLK_PERIOD=$1
+echo Clock Period of: $CLK_PERIOD
+
+export outDir=outputs/pathdelay_${CLK_PERIOD}
+
+rm -r $outDir
+mkdir $outDir
 
 echo
 
-for (( c=1; c<=$#; c++ ))
+for (( c=50; c<=300; c+=50 ))
 do
-	echo Doing ${!c}
-        export NUM_PATHS=${!c}
-	pt_shell -f ./scripts/PT_scriptpd.tcl > "outputs/pathdelay/pt_${NUM_PATHS}.txt"
-	tmax -shell ./scripts/path_delay_atpg.tcl > "outputs/pathdelay/tmax_${NUM_PATHS}.txt"
+	echo Doing $c
+        export NUM_PATHS=$c
+
+	rm pathdelay/*
+
+	pt_shell -f ./scripts/PT_scriptpd.tcl > ${outDir}/pt_${NUM_PATHS}.txt
+	tmax -shell ./scripts/path_delay_atpg.tcl > ${outDir}/tmax_${NUM_PATHS}.txt
 done
 
+rm outputs.zip
+zip -r outputs.zip outputs > /dev/null
 
 echo Done
 exit 0
+
