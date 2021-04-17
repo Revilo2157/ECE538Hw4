@@ -25,13 +25,13 @@ read_netlist -delete
 read_netlist $scan_lib -library
  Begin reading netlist ( ./nangate_scan.v )...
  End parsing Verilog file ./nangate_scan.v with 0 errors.
- End reading netlist: #modules=139, top=XOR2_X2, #lines=2594, CPU_time=0.02 sec, Memory=0MB
+ End reading netlist: #modules=139, top=XOR2_X2, #lines=2594, CPU_time=0.00 sec, Memory=0MB
 # read in user's synthesized verilog code
 #read_netlist $synthesized_files
 read_netlist  s5378_bench.v
  Begin reading netlist ( s5378_bench.v )...
  End parsing Verilog file s5378_bench.v with 0 errors.
- End reading netlist: #modules=1, top=s5378_bench, #lines=1079, CPU_time=0.00 sec, Memory=0MB
+ End reading netlist: #modules=1, top=s5378_bench, #lines=1079, CPU_time=0.01 sec, Memory=0MB
 run_build_model $top_module
  ------------------------------------------------------------------------------
  Begin build model for topcut = s5378_bench ...
@@ -64,7 +64,7 @@ run_drc
  Begin scan chain operation checking...
  Chain 1 successfully traced with 82 scan_cells.
  Chain 2 successfully traced with 81 scan_cells.
- Scan chain operation checking completed, CPU time=0.01 sec.
+ Scan chain operation checking completed, CPU time=0.00 sec.
  ------------------------------------------------------------------------------
  Begin clock rules checking...
  Clock rules checking completed, CPU time=0.00 sec.
@@ -76,7 +76,7 @@ run_drc
  ------------------------------------------------------------------------------
  Begin DRC dependent learning...
  Fast-sequential depth results: control=0(0), observe=0(0), detect=0(0), CPU time=0.00 sec
- DRC dependent learning completed, CPU time=0.00 sec.
+ DRC dependent learning completed, CPU time=0.01 sec.
  ------------------------------------------------------------------------------
  DRC Summary Report
  ------------------------------------------------------------------------------
@@ -105,18 +105,18 @@ run_atpg basic_scan_only -ndetects 1
  Begin deterministic ATPG: #collapsed_faults=3556, abort_limit=10...
  32           1510   2046         0/0/0    58.88%      0.01
  64            505   1538         0/3/0    71.76%      0.02
- 95            240   1294         0/7/0    77.63%      0.03
- 127           221   1071         0/9/0    82.31%      0.04
- 158           175    890        0/15/0    86.42%      0.04
- 190            77    804        0/24/0    88.47%      0.05
- 221            83    714        0/31/0    90.53%      0.05
- 253            60    651        0/34/0    92.12%      0.06
- 284            65    576        0/44/0    93.37%      0.06
- 314            44    522        0/54/0    94.52%      0.07
- 343            41    473        0/62/0    95.55%      0.07
- 369            30    435        0/70/0    96.33%      0.08
+ 95            240   1294         0/7/0    77.63%      0.04
+ 127           221   1071         0/9/0    82.31%      0.05
+ 158           175    890        0/15/0    86.42%      0.05
+ 190            77    804        0/24/0    88.47%      0.06
+ 221            83    714        0/31/0    90.53%      0.07
+ 253            60    651        0/34/0    92.12%      0.07
+ 284            65    576        0/44/0    93.37%      0.07
+ 314            44    522        0/54/0    94.52%      0.08
+ 343            41    473        0/62/0    95.55%      0.08
+ 369            30    435        0/70/0    96.33%      0.09
  398            35    384        0/86/0    97.19%      0.09
- 419            31    347        0/92/0    97.75%      0.09
+ 419            31    347        0/92/0    97.75%      0.10
  
     Collapsed Transition Fault Summary Report
  -----------------------------------------------

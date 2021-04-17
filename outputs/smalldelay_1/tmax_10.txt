@@ -25,20 +25,20 @@ read_netlist -delete
 read_netlist $scan_lib -library
  Begin reading netlist ( ./nangate_scan.v )...
  End parsing Verilog file ./nangate_scan.v with 0 errors.
- End reading netlist: #modules=139, top=XOR2_X2, #lines=2594, CPU_time=0.00 sec, Memory=0MB
+ End reading netlist: #modules=139, top=XOR2_X2, #lines=2594, CPU_time=0.01 sec, Memory=0MB
 # read in user's synthesized verilog code
 #read_netlist $synthesized_files
 read_netlist  s5378_bench.v
  Begin reading netlist ( s5378_bench.v )...
  End parsing Verilog file s5378_bench.v with 0 errors.
- End reading netlist: #modules=1, top=s5378_bench, #lines=1079, CPU_time=0.01 sec, Memory=0MB
+ End reading netlist: #modules=1, top=s5378_bench, #lines=1079, CPU_time=0.00 sec, Memory=0MB
 run_build_model $top_module
  ------------------------------------------------------------------------------
  Begin build model for topcut = s5378_bench ...
  ------------------------------------------------------------------------------
  There were 1688 primitives and 36 faultable pins removed during model optimizations
  Warning: Rule N21 (unsupported UDP entry) was violated 1 times.
- End build model: #primitives=1597, CPU_time=0.00 sec, Memory=1MB
+ End build model: #primitives=1597, CPU_time=0.01 sec, Memory=1MB
  ------------------------------------------------------------------------------
  Begin learning analyses...
  End learning analyses, total learning CPU time=0.01 sec.
@@ -56,7 +56,7 @@ run_drc
  Begin reading test protocol file ./des2d1.spf...
  Warning: Rule V14 (missing state) was violated 1 times.
  End parsing STIL file ./des2d1.spf with 0 errors.
- Test protocol file reading completed, CPU time=0.02 sec.
+ Test protocol file reading completed, CPU time=0.00 sec.
  ------------------------------------------------------------------------------
  Begin simulating test protocol procedures...
  Test protocol simulation completed, CPU time=0.00 sec.
@@ -82,7 +82,7 @@ run_drc
  ------------------------------------------------------------------------------
  Warning: Rule V14 (missing state) was violated 1 times.
  There were 1 violations that occurred during DRC process.
- Design rules checking was successful, total CPU time=0.02 sec.
+ Design rules checking was successful, total CPU time=0.00 sec.
  ------------------------------------------------------------------------------
 read_timing ./SDD/slack.dat
  reading slack data file ./SDD/slack.dat.
@@ -103,19 +103,19 @@ run_atpg basic_scan_only -ndetects 1
  stored     detect/active  red/au/abort  coverage  CPU time
  ---------  -------------  ------------  --------  --------
  Begin deterministic ATPG: #collapsed_faults=3556, abort_limit=10...
- 32           1467   2089         0/0/0    59.72%      0.01
- 64            558   1529         0/2/0    72.42%      0.02
+ 32           1467   2089         0/0/0    59.72%      0.02
+ 64            558   1529         0/2/0    72.42%      0.03
  96            225   1299         0/7/0    78.51%      0.03
- 128           174   1125         0/7/0    83.02%      0.03
- 160           140    982        0/10/0    86.34%      0.04
+ 128           174   1125         0/7/0    83.02%      0.04
+ 160           140    982        0/10/0    86.34%      0.05
  191           101    874        0/17/0    88.84%      0.05
- 223            65    797        0/29/0    90.70%      0.05
- 255            48    740        0/38/0    91.95%      0.06
- 286            66    670        0/42/0    93.51%      0.06
+ 223            65    797        0/29/0    90.70%      0.06
+ 255            48    740        0/38/0    91.95%      0.07
+ 286            66    670        0/42/0    93.51%      0.08
  315            40    617        0/55/0    94.62%      0.08
- 346            53    556        0/63/0    95.72%      0.08
+ 346            53    556        0/63/0    95.72%      0.09
  376            36    512        0/71/0    96.60%      0.09
- 401            31    467        0/85/0    97.38%      0.09
+ 401            31    467        0/85/0    97.38%      0.10
  416            13    447        0/92/0    97.75%      0.10
  
     Collapsed Transition Fault Summary Report

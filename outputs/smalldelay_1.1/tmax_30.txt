@@ -76,13 +76,13 @@ run_drc
  ------------------------------------------------------------------------------
  Begin DRC dependent learning...
  Fast-sequential depth results: control=0(0), observe=0(0), detect=0(0), CPU time=0.00 sec
- DRC dependent learning completed, CPU time=0.01 sec.
+ DRC dependent learning completed, CPU time=0.00 sec.
  ------------------------------------------------------------------------------
  DRC Summary Report
  ------------------------------------------------------------------------------
  Warning: Rule V14 (missing state) was violated 1 times.
  There were 1 violations that occurred during DRC process.
- Design rules checking was successful, total CPU time=0.02 sec.
+ Design rules checking was successful, total CPU time=0.01 sec.
  ------------------------------------------------------------------------------
 read_timing ./SDD/slack.dat
  reading slack data file ./SDD/slack.dat.
@@ -103,20 +103,20 @@ run_atpg basic_scan_only -ndetects 1
  stored     detect/active  red/au/abort  coverage  CPU time
  ---------  -------------  ------------  --------  --------
  Begin deterministic ATPG: #collapsed_faults=3556, abort_limit=10...
- 32           1380   2176         0/0/0    60.70%      0.01
- 64            391   1778         0/7/0    71.86%      0.02
- 96            226   1548        0/11/0    78.05%      0.03
- 127           200   1346        0/13/0    82.11%      0.04
+ 32           1380   2176         0/0/0    60.70%      0.02
+ 64            391   1778         0/7/0    71.86%      0.03
+ 96            226   1548        0/11/0    78.05%      0.04
+ 127           200   1346        0/13/0    82.11%      0.05
  159           155   1185        0/19/0    86.07%      0.05
  190           118   1065        0/21/0    88.69%      0.06
- 220            76    975        0/35/0    90.33%      0.06
+ 220            76    975        0/35/0    90.33%      0.07
  251            52    916        0/42/0    91.70%      0.07
  283            65    843        0/50/0    93.15%      0.08
- 313            52    785        0/56/0    94.42%      0.08
+ 313            52    785        0/56/0    94.42%      0.09
  340            38    736        0/67/0    95.35%      0.09
- 367            38    692        0/73/0    96.33%      0.09
+ 367            38    692        0/73/0    96.33%      0.10
  394            33    655        0/77/0    97.19%      0.10
- 417            22    618        0/92/0    97.75%      0.10
+ 417            22    618        0/92/0    97.75%      0.11
  
     Collapsed Transition Fault Summary Report
  -----------------------------------------------

@@ -25,7 +25,7 @@ read_netlist -delete
 read_netlist $scan_lib -library
  Begin reading netlist ( ./nangate_scan.v )...
  End parsing Verilog file ./nangate_scan.v with 0 errors.
- End reading netlist: #modules=139, top=XOR2_X2, #lines=2594, CPU_time=0.00 sec, Memory=0MB
+ End reading netlist: #modules=139, top=XOR2_X2, #lines=2594, CPU_time=0.01 sec, Memory=0MB
 # read in user's synthesized verilog code
 #read_netlist $synthesized_files
 read_netlist  s5378_bench.v
@@ -38,10 +38,10 @@ run_build_model $top_module
  ------------------------------------------------------------------------------
  There were 1688 primitives and 36 faultable pins removed during model optimizations
  Warning: Rule N21 (unsupported UDP entry) was violated 1 times.
- End build model: #primitives=1597, CPU_time=0.00 sec, Memory=1MB
+ End build model: #primitives=1597, CPU_time=0.01 sec, Memory=1MB
  ------------------------------------------------------------------------------
  Begin learning analyses...
- End learning analyses, total learning CPU time=0.02 sec.
+ End learning analyses, total learning CPU time=0.00 sec.
  ------------------------------------------------------------------------------
 # ignoring warnings like N20 or B10
 # Set STIL file from DFT Compiler
@@ -76,13 +76,13 @@ run_drc
  ------------------------------------------------------------------------------
  Begin DRC dependent learning...
  Fast-sequential depth results: control=0(0), observe=0(0), detect=0(0), CPU time=0.00 sec
- DRC dependent learning completed, CPU time=0.01 sec.
+ DRC dependent learning completed, CPU time=0.00 sec.
  ------------------------------------------------------------------------------
  DRC Summary Report
  ------------------------------------------------------------------------------
  Warning: Rule V14 (missing state) was violated 1 times.
  There were 1 violations that occurred during DRC process.
- Design rules checking was successful, total CPU time=0.01 sec.
+ Design rules checking was successful, total CPU time=0.00 sec.
  ------------------------------------------------------------------------------
 set_atpg -full_seq_merge medium
 set_faults -model path_delay
@@ -95,7 +95,7 @@ set NUM_PATHS $::env(NUM_PATHS)
 add_delay_path ./pathdelay/timing${NUM_PATHS}withoutmob.rpt
  Warning: Rule P8 (capture later than path cycle time) was violated 200 times.
  Warning: Rule P22 (off-path node values not satisfiable) was violated 2 times.
- Delay path file results: #paths=200, #invalid=0, #untestable=0, CPU time=0.02 sec.
+ Delay path file results: #paths=200, #invalid=0, #untestable=0, CPU time=0.01 sec.
 add_faults -all
  200 faults were added to fault list.
 #set_atpg -nofull_seq_atpg
@@ -109,23 +109,23 @@ run_atpg -auto
  ---------  -------------  ------------  --------  --------
  Begin fast-seq ATPG: #collapsed_faults=200, abort_limit=10, depth=4...
  1              46    154         0/0/0    23.00%      0.01
- 2              22    132         0/0/0    34.00%      0.01
- 3               9    123         0/0/0    38.50%      0.01
- 4               6    117         0/0/1    41.50%      0.01
- 5               2    115         0/0/1    42.50%      0.01
- 6               9    106         0/0/1    47.00%      0.02
- 7               2    104         0/0/1    48.00%      0.02
- 8               5     99         0/0/1    50.50%      0.02
- 9               3     96         0/0/1    52.00%      0.02
- 10              2     93         0/1/1    53.00%      0.02
- 11              4     88         0/2/3    55.00%      0.02
- 12              6     82         0/2/3    58.00%      0.03
- 13              4     78         0/2/3    60.00%      0.03
- 14              1     76         0/3/3    60.50%      0.03
- 15              2     74         0/3/3    61.50%      0.03
- 16              2     72         0/3/3    62.50%      0.03
- 17              2     70         0/3/3    63.50%      0.03
- 18              1     68         0/4/3    64.00%      0.03
+ 2              22    132         0/0/0    34.00%      0.02
+ 3               9    123         0/0/0    38.50%      0.02
+ 4               6    117         0/0/1    41.50%      0.02
+ 5               2    115         0/0/1    42.50%      0.03
+ 6               9    106         0/0/1    47.00%      0.03
+ 7               2    104         0/0/1    48.00%      0.03
+ 8               5     99         0/0/1    50.50%      0.03
+ 9               3     96         0/0/1    52.00%      0.03
+ 10              2     93         0/1/1    53.00%      0.03
+ 11              4     88         0/2/3    55.00%      0.04
+ 12              6     82         0/2/3    58.00%      0.04
+ 13              4     78         0/2/3    60.00%      0.04
+ 14              1     76         0/3/3    60.50%      0.04
+ 15              2     74         0/3/3    61.50%      0.04
+ 16              2     72         0/3/3    62.50%      0.04
+ 17              2     70         0/3/3    63.50%      0.04
+ 18              1     68         0/4/3    64.00%      0.04
  
     Collapsed Path_delay Fault Summary Report
  -----------------------------------------------
@@ -148,7 +148,7 @@ run_atpg -auto
  -----------------------------------------------
             CPU Usage Summary Report
  -----------------------------------------------
- Total CPU time                            0.04
+ Total CPU time                            0.05
  -----------------------------------------------
 write_patterns ./pathdelay/patterns${NUM_PATHS}.stil -internal -format STIL -unified_stil_flow -replace 
  Patterns written reference 76 V statements, generating 1615 test cycles

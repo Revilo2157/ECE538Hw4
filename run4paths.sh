@@ -6,10 +6,10 @@ if [ $# -ne 1 ]; then
         exit 1
 fi
 
-export CLK_PERIOD=$1
-echo Clock Period of: $CLK_PERIOD
+export outDir=outputs/pathdelay_${1}
 
-export outDir=outputs/pathdelay_${CLK_PERIOD}
+export CLK_PERIOD=$(awk "BEGIN {printf \"%.2f\n \", $1 / 100}")
+echo Clock Period of: $CLK_PERIOD
 
 rm -r $outDir
 mkdir $outDir

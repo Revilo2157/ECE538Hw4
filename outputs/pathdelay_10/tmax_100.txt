@@ -25,7 +25,7 @@ read_netlist -delete
 read_netlist $scan_lib -library
  Begin reading netlist ( ./nangate_scan.v )...
  End parsing Verilog file ./nangate_scan.v with 0 errors.
- End reading netlist: #modules=139, top=XOR2_X2, #lines=2594, CPU_time=0.00 sec, Memory=0MB
+ End reading netlist: #modules=139, top=XOR2_X2, #lines=2594, CPU_time=0.01 sec, Memory=0MB
 # read in user's synthesized verilog code
 #read_netlist $synthesized_files
 read_netlist  s5378_bench.v
@@ -38,10 +38,10 @@ run_build_model $top_module
  ------------------------------------------------------------------------------
  There were 1688 primitives and 36 faultable pins removed during model optimizations
  Warning: Rule N21 (unsupported UDP entry) was violated 1 times.
- End build model: #primitives=1597, CPU_time=0.00 sec, Memory=1MB
+ End build model: #primitives=1597, CPU_time=0.01 sec, Memory=1MB
  ------------------------------------------------------------------------------
  Begin learning analyses...
- End learning analyses, total learning CPU time=0.01 sec.
+ End learning analyses, total learning CPU time=0.00 sec.
  ------------------------------------------------------------------------------
 # ignoring warnings like N20 or B10
 # Set STIL file from DFT Compiler
@@ -56,7 +56,7 @@ run_drc
  Begin reading test protocol file ./des2d1.spf...
  Warning: Rule V14 (missing state) was violated 1 times.
  End parsing STIL file ./des2d1.spf with 0 errors.
- Test protocol file reading completed, CPU time=0.01 sec.
+ Test protocol file reading completed, CPU time=0.00 sec.
  ------------------------------------------------------------------------------
  Begin simulating test protocol procedures...
  Test protocol simulation completed, CPU time=0.00 sec.
@@ -76,7 +76,7 @@ run_drc
  ------------------------------------------------------------------------------
  Begin DRC dependent learning...
  Fast-sequential depth results: control=0(0), observe=0(0), detect=0(0), CPU time=0.00 sec
- DRC dependent learning completed, CPU time=0.00 sec.
+ DRC dependent learning completed, CPU time=0.01 sec.
  ------------------------------------------------------------------------------
  DRC Summary Report
  ------------------------------------------------------------------------------
@@ -95,7 +95,7 @@ set NUM_PATHS $::env(NUM_PATHS)
 add_delay_path ./pathdelay/timing${NUM_PATHS}withoutmob.rpt
  Warning: Rule P8 (capture later than path cycle time) was violated 100 times.
  Warning: Rule P22 (off-path node values not satisfiable) was violated 2 times.
- Delay path file results: #paths=100, #invalid=0, #untestable=0, CPU time=0.01 sec.
+ Delay path file results: #paths=100, #invalid=0, #untestable=0, CPU time=0.02 sec.
 add_faults -all
  100 faults were added to fault list.
 #set_atpg -nofull_seq_atpg
@@ -109,17 +109,17 @@ run_atpg -auto
  ---------  -------------  ------------  --------  --------
  Begin fast-seq ATPG: #collapsed_faults=100, abort_limit=10, depth=4...
  1              29     71         0/0/0    29.00%      0.00
- 2               3     68         0/0/0    32.00%      0.00
- 3               4     64         0/0/0    36.00%      0.00
- 4               4     60         0/0/0    40.00%      0.00
- 5               7     53         0/0/0    47.00%      0.00
- 6               5     48         0/0/0    52.00%      0.00
+ 2               3     68         0/0/0    32.00%      0.01
+ 3               4     64         0/0/0    36.00%      0.01
+ 4               4     60         0/0/0    40.00%      0.01
+ 5               7     53         0/0/0    47.00%      0.01
+ 6               5     48         0/0/0    52.00%      0.01
  7               6     42         0/0/0    58.00%      0.01
  8               5     35         0/2/1    63.00%      0.01
- 9               2     33         0/2/2    65.00%      0.01
- 10              4     29         0/2/2    69.00%      0.01
- 11              2     27         0/2/2    71.00%      0.01
- 12              2     25         0/2/2    73.00%      0.01
+ 9               2     33         0/2/2    65.00%      0.02
+ 10              4     29         0/2/2    69.00%      0.02
+ 11              2     27         0/2/2    71.00%      0.02
+ 12              2     25         0/2/2    73.00%      0.02
  13              2     23         0/2/2    75.00%      0.02
  14              1     21         0/3/2    76.00%      0.02
  15              1     20         0/3/2    77.00%      0.02

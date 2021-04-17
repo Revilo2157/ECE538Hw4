@@ -56,10 +56,10 @@ run_drc
  Begin reading test protocol file ./des2d1.spf...
  Warning: Rule V14 (missing state) was violated 1 times.
  End parsing STIL file ./des2d1.spf with 0 errors.
- Test protocol file reading completed, CPU time=0.01 sec.
+ Test protocol file reading completed, CPU time=0.00 sec.
  ------------------------------------------------------------------------------
  Begin simulating test protocol procedures...
- Test protocol simulation completed, CPU time=0.00 sec.
+ Test protocol simulation completed, CPU time=0.01 sec.
  ------------------------------------------------------------------------------
  Begin scan chain operation checking...
  Chain 1 successfully traced with 82 scan_cells.
@@ -95,7 +95,7 @@ set NUM_PATHS $::env(NUM_PATHS)
 add_delay_path ./pathdelay/timing${NUM_PATHS}withoutmob.rpt
  Warning: Rule P8 (capture later than path cycle time) was violated 200 times.
  Warning: Rule P22 (off-path node values not satisfiable) was violated 2 times.
- Delay path file results: #paths=200, #invalid=0, #untestable=0, CPU time=0.03 sec.
+ Delay path file results: #paths=200, #invalid=0, #untestable=0, CPU time=0.01 sec.
 add_faults -all
  200 faults were added to fault list.
 #set_atpg -nofull_seq_atpg
@@ -112,20 +112,20 @@ run_atpg -auto
  2              22    132         0/0/0    34.00%      0.01
  3               9    123         0/0/0    38.50%      0.01
  4               6    117         0/0/1    41.50%      0.01
- 5               2    115         0/0/1    42.50%      0.01
+ 5               2    115         0/0/1    42.50%      0.02
  6               9    106         0/0/1    47.00%      0.02
- 7               2    104         0/0/1    48.00%      0.03
- 8               5     99         0/0/1    50.50%      0.03
- 9               3     96         0/0/1    52.00%      0.03
- 10              2     93         0/1/1    53.00%      0.03
- 11              4     88         0/2/3    55.00%      0.03
- 12              6     82         0/2/3    58.00%      0.04
- 13              4     78         0/2/3    60.00%      0.04
- 14              1     76         0/3/3    60.50%      0.04
- 15              2     74         0/3/3    61.50%      0.04
- 16              2     72         0/3/3    62.50%      0.04
- 17              2     70         0/3/3    63.50%      0.04
- 18              1     68         0/4/3    64.00%      0.04
+ 7               2    104         0/0/1    48.00%      0.02
+ 8               5     99         0/0/1    50.50%      0.02
+ 9               3     96         0/0/1    52.00%      0.02
+ 10              2     93         0/1/1    53.00%      0.02
+ 11              4     88         0/2/3    55.00%      0.02
+ 12              6     82         0/2/3    58.00%      0.03
+ 13              4     78         0/2/3    60.00%      0.03
+ 14              1     76         0/3/3    60.50%      0.03
+ 15              2     74         0/3/3    61.50%      0.03
+ 16              2     72         0/3/3    62.50%      0.03
+ 17              2     70         0/3/3    63.50%      0.03
+ 18              1     68         0/4/3    64.00%      0.03
  
     Collapsed Path_delay Fault Summary Report
  -----------------------------------------------

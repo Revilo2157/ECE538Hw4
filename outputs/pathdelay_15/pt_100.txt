@@ -32,8 +32,9 @@ Information: There are 801 leaf cells, ports, hiers and 915 nets in the design (
 set_max_area 0
 1
 #Clock setup commands
-set CLK_PERIOD 0.15
+set CLK_PERIOD $::env(CLK_PERIOD)
 0.15
+ 
 #set DFF_CKQ 0.02
 #set SETUP_TIME 0.01
 set CLK "blif_clk_net" 
@@ -65,7 +66,7 @@ Report : timing
 	-sort_by slack
 Design : s5378_bench
 Version: K-2015.06-SP3-2
-Date   : Fri Apr 16 18:01:33 2021
+Date   : Sat Apr 17 17:23:35 2021
 ****************************************
 
 
@@ -134,9 +135,9 @@ Information: Defining new variable 'NUM_PATHS'. (CMD-041)
 
 Timing updates: 3 (1 implicit, 2 explicit) (2 incremental, 1 full, 0 logical)
 Noise updates: 0 (0 implicit, 0 explicit) (0 incremental, 0 full)
-Maximum memory usage for this session: 573.83 MB
+Maximum memory usage for this session: 560.73 MB
 CPU usage for this session: 2 seconds 
-Elapsed time for this session: 11 seconds
+Elapsed time for this session: 110 seconds
 Diagnostics summary: 2 warnings, 7 informationals
 
 Thank you for using pt_shell!

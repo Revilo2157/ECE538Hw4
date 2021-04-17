@@ -32,8 +32,9 @@ Information: There are 801 leaf cells, ports, hiers and 915 nets in the design (
 set_max_area 0
 1
 #Clock setup commands
-set CLK_PERIOD 0.15
-0.15
+set CLK_PERIOD $::env(CLK_PERIOD)
+0.10
+ 
 #set DFF_CKQ 0.02
 #set SETUP_TIME 0.01
 set CLK "blif_clk_net" 
@@ -65,7 +66,7 @@ Report : timing
 	-sort_by slack
 Design : s5378_bench
 Version: K-2015.06-SP3-2
-Date   : Fri Apr 16 17:59:58 2021
+Date   : Sat Apr 17 17:13:06 2021
 ****************************************
 
 
@@ -93,17 +94,17 @@ Date   : Fri Apr 16 17:59:58 2021
   n931gat_reg/D (SDFFS_X2)                 0.00       1.07 r
   data arrival time                                   1.07
 
-  clock blif_clk_net (rise edge)           0.15       0.15
-  clock network delay (ideal)              0.01       0.16
-  clock reconvergence pessimism            0.00       0.16
-  n931gat_reg/CK (SDFFS_X2)                           0.16 r
-  library setup time                      -0.14       0.02
-  data required time                                  0.02
+  clock blif_clk_net (rise edge)           0.10       0.10
+  clock network delay (ideal)              0.01       0.11
+  clock reconvergence pessimism            0.00       0.11
+  n931gat_reg/CK (SDFFS_X2)                           0.11 r
+  library setup time                      -0.14      -0.03
+  data required time                                 -0.03
   ---------------------------------------------------------------
-  data required time                                  0.02
+  data required time                                 -0.03
   data arrival time                                  -1.07
   ---------------------------------------------------------------
-  slack (VIOLATED)                                   -1.05
+  slack (VIOLATED)                                   -1.10
 
 
 1
@@ -134,9 +135,9 @@ Information: Defining new variable 'NUM_PATHS'. (CMD-041)
 
 Timing updates: 3 (1 implicit, 2 explicit) (2 incremental, 1 full, 0 logical)
 Noise updates: 0 (0 implicit, 0 explicit) (0 incremental, 0 full)
-Maximum memory usage for this session: 574.02 MB
+Maximum memory usage for this session: 560.73 MB
 CPU usage for this session: 2 seconds 
-Elapsed time for this session: 10 seconds
+Elapsed time for this session: 42 seconds
 Diagnostics summary: 2 warnings, 7 informationals
 
 Thank you for using pt_shell!

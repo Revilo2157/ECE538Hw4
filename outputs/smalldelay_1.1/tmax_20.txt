@@ -41,7 +41,7 @@ run_build_model $top_module
  End build model: #primitives=1597, CPU_time=0.00 sec, Memory=1MB
  ------------------------------------------------------------------------------
  Begin learning analyses...
- End learning analyses, total learning CPU time=0.01 sec.
+ End learning analyses, total learning CPU time=0.00 sec.
  ------------------------------------------------------------------------------
 # ignoring warnings like N20 or B10
 # Set STIL file from DFT Compiler
@@ -107,7 +107,7 @@ run_atpg basic_scan_only -ndetects 1
  64            549   1555         0/1/0    71.71%      0.02
  96            248   1302         0/6/0    78.76%      0.03
  128           197   1101        0/10/0    83.19%      0.04
- 160           101    989        0/21/0    86.00%      0.05
+ 160           101    989        0/21/0    86.00%      0.04
  190            86    899        0/25/0    88.30%      0.05
  222           107    788        0/29/0    90.63%      0.06
  254            59    720        0/38/0    92.14%      0.06
@@ -115,7 +115,7 @@ run_atpg basic_scan_only -ndetects 1
  316            66    601        0/48/0    94.57%      0.07
  346            41    548        0/60/0    95.67%      0.08
  374            34    506        0/68/0    96.48%      0.08
- 401            34    454        0/86/0    97.31%      0.09
+ 401            34    454        0/86/0    97.31%      0.08
  417            14    434        0/92/0    97.75%      0.09
  
     Collapsed Transition Fault Summary Report

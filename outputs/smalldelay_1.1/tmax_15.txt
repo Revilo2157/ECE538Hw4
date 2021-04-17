@@ -25,23 +25,23 @@ read_netlist -delete
 read_netlist $scan_lib -library
  Begin reading netlist ( ./nangate_scan.v )...
  End parsing Verilog file ./nangate_scan.v with 0 errors.
- End reading netlist: #modules=139, top=XOR2_X2, #lines=2594, CPU_time=0.01 sec, Memory=0MB
+ End reading netlist: #modules=139, top=XOR2_X2, #lines=2594, CPU_time=0.00 sec, Memory=0MB
 # read in user's synthesized verilog code
 #read_netlist $synthesized_files
 read_netlist  s5378_bench.v
  Begin reading netlist ( s5378_bench.v )...
  End parsing Verilog file s5378_bench.v with 0 errors.
- End reading netlist: #modules=1, top=s5378_bench, #lines=1079, CPU_time=0.00 sec, Memory=0MB
+ End reading netlist: #modules=1, top=s5378_bench, #lines=1079, CPU_time=0.01 sec, Memory=0MB
 run_build_model $top_module
  ------------------------------------------------------------------------------
  Begin build model for topcut = s5378_bench ...
  ------------------------------------------------------------------------------
  There were 1688 primitives and 36 faultable pins removed during model optimizations
  Warning: Rule N21 (unsupported UDP entry) was violated 1 times.
- End build model: #primitives=1597, CPU_time=0.01 sec, Memory=1MB
+ End build model: #primitives=1597, CPU_time=0.00 sec, Memory=1MB
  ------------------------------------------------------------------------------
  Begin learning analyses...
- End learning analyses, total learning CPU time=0.01 sec.
+ End learning analyses, total learning CPU time=0.02 sec.
  ------------------------------------------------------------------------------
 # ignoring warnings like N20 or B10
 # Set STIL file from DFT Compiler
@@ -106,16 +106,16 @@ run_atpg basic_scan_only -ndetects 1
  32           1490   2066         0/0/0    59.72%      0.01
  64            500   1565         0/1/0    71.46%      0.02
  93            163   1396         0/7/0    75.97%      0.03
- 125           251   1143         0/9/0    82.16%      0.03
- 156           129   1010        0/13/0    85.27%      0.04
+ 125           251   1143         0/9/0    82.16%      0.04
+ 156           129   1010        0/13/0    85.27%      0.05
  186            90    911        0/22/0    87.79%      0.05
- 218           107    800        0/26/0    90.63%      0.05
+ 218           107    800        0/26/0    90.63%      0.06
  247            72    720        0/34/0    92.14%      0.06
- 278            53    661        0/40/0    93.37%      0.06
+ 278            53    661        0/40/0    93.37%      0.07
  308            54    599        0/48/0    94.64%      0.07
- 338            38    550        0/59/0    95.64%      0.07
+ 338            38    550        0/59/0    95.64%      0.08
  368            37    507        0/65/0    96.55%      0.08
- 399            35    452        0/85/0    97.38%      0.08
+ 399            35    452        0/85/0    97.38%      0.09
  413            15    430        0/92/0    97.75%      0.09
  
     Collapsed Transition Fault Summary Report

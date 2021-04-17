@@ -38,10 +38,10 @@ run_build_model $top_module
  ------------------------------------------------------------------------------
  There were 1688 primitives and 36 faultable pins removed during model optimizations
  Warning: Rule N21 (unsupported UDP entry) was violated 1 times.
- End build model: #primitives=1597, CPU_time=0.01 sec, Memory=1MB
+ End build model: #primitives=1597, CPU_time=0.00 sec, Memory=1MB
  ------------------------------------------------------------------------------
  Begin learning analyses...
- End learning analyses, total learning CPU time=0.01 sec.
+ End learning analyses, total learning CPU time=0.02 sec.
  ------------------------------------------------------------------------------
 # ignoring warnings like N20 or B10
 # Set STIL file from DFT Compiler
@@ -56,7 +56,7 @@ run_drc
  Begin reading test protocol file ./des2d1.spf...
  Warning: Rule V14 (missing state) was violated 1 times.
  End parsing STIL file ./des2d1.spf with 0 errors.
- Test protocol file reading completed, CPU time=0.01 sec.
+ Test protocol file reading completed, CPU time=0.00 sec.
  ------------------------------------------------------------------------------
  Begin simulating test protocol procedures...
  Test protocol simulation completed, CPU time=0.00 sec.
@@ -82,7 +82,7 @@ run_drc
  ------------------------------------------------------------------------------
  Warning: Rule V14 (missing state) was violated 1 times.
  There were 1 violations that occurred during DRC process.
- Design rules checking was successful, total CPU time=0.01 sec.
+ Design rules checking was successful, total CPU time=0.00 sec.
  ------------------------------------------------------------------------------
 read_timing ./SDD/slack.dat
  reading slack data file ./SDD/slack.dat.
@@ -108,14 +108,14 @@ run_atpg basic_scan_only -ndetects 1
  96            225   1299         0/7/0    78.51%      0.03
  128           174   1125         0/7/0    83.02%      0.04
  160           140    982        0/10/0    86.34%      0.05
- 191           101    874        0/17/0    88.84%      0.05
+ 191           101    874        0/17/0    88.84%      0.06
  223            65    797        0/29/0    90.70%      0.06
- 255            48    740        0/38/0    91.95%      0.08
- 286            66    670        0/42/0    93.51%      0.08
- 315            40    617        0/55/0    94.62%      0.09
- 346            53    556        0/63/0    95.72%      0.09
- 376            36    512        0/71/0    96.60%      0.10
- 401            31    467        0/85/0    97.38%      0.10
+ 255            48    740        0/38/0    91.95%      0.07
+ 286            66    670        0/42/0    93.51%      0.07
+ 315            40    617        0/55/0    94.62%      0.08
+ 346            53    556        0/63/0    95.72%      0.08
+ 376            36    512        0/71/0    96.60%      0.09
+ 401            31    467        0/85/0    97.38%      0.09
  416            13    447        0/92/0    97.75%      0.10
  
     Collapsed Transition Fault Summary Report

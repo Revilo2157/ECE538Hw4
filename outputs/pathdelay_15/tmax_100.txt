@@ -56,7 +56,7 @@ run_drc
  Begin reading test protocol file ./des2d1.spf...
  Warning: Rule V14 (missing state) was violated 1 times.
  End parsing STIL file ./des2d1.spf with 0 errors.
- Test protocol file reading completed, CPU time=0.00 sec.
+ Test protocol file reading completed, CPU time=0.01 sec.
  ------------------------------------------------------------------------------
  Begin simulating test protocol procedures...
  Test protocol simulation completed, CPU time=0.00 sec.
@@ -76,7 +76,7 @@ run_drc
  ------------------------------------------------------------------------------
  Begin DRC dependent learning...
  Fast-sequential depth results: control=0(0), observe=0(0), detect=0(0), CPU time=0.00 sec
- DRC dependent learning completed, CPU time=0.01 sec.
+ DRC dependent learning completed, CPU time=0.00 sec.
  ------------------------------------------------------------------------------
  DRC Summary Report
  ------------------------------------------------------------------------------
@@ -95,7 +95,7 @@ set NUM_PATHS $::env(NUM_PATHS)
 add_delay_path ./pathdelay/timing${NUM_PATHS}withoutmob.rpt
  Warning: Rule P8 (capture later than path cycle time) was violated 100 times.
  Warning: Rule P22 (off-path node values not satisfiable) was violated 2 times.
- Delay path file results: #paths=100, #invalid=0, #untestable=0, CPU time=0.02 sec.
+ Delay path file results: #paths=100, #invalid=0, #untestable=0, CPU time=0.01 sec.
 add_faults -all
  100 faults were added to fault list.
 #set_atpg -nofull_seq_atpg
@@ -108,15 +108,15 @@ run_atpg -auto
  stored     detect/active  red/au/abort  coverage  CPU time
  ---------  -------------  ------------  --------  --------
  Begin fast-seq ATPG: #collapsed_faults=100, abort_limit=10, depth=4...
- 1              29     71         0/0/0    29.00%      0.00
- 2               3     68         0/0/0    32.00%      0.00
+ 1              29     71         0/0/0    29.00%      0.01
+ 2               3     68         0/0/0    32.00%      0.01
  3               4     64         0/0/0    36.00%      0.01
  4               4     60         0/0/0    40.00%      0.01
  5               7     53         0/0/0    47.00%      0.01
  6               5     48         0/0/0    52.00%      0.01
- 7               6     42         0/0/0    58.00%      0.01
- 8               5     35         0/2/1    63.00%      0.01
- 9               2     33         0/2/2    65.00%      0.01
+ 7               6     42         0/0/0    58.00%      0.02
+ 8               5     35         0/2/1    63.00%      0.02
+ 9               2     33         0/2/2    65.00%      0.02
  10              4     29         0/2/2    69.00%      0.02
  11              2     27         0/2/2    71.00%      0.02
  12              2     25         0/2/2    73.00%      0.02
@@ -125,7 +125,7 @@ run_atpg -auto
  15              1     20         0/3/2    77.00%      0.02
  16              2     18         0/3/2    79.00%      0.02
  17              2     16         0/3/2    81.00%      0.02
- 18              1     14         0/4/2    82.00%      0.02
+ 18              1     14         0/4/2    82.00%      0.03
  
     Collapsed Path_delay Fault Summary Report
  -----------------------------------------------
@@ -148,7 +148,7 @@ run_atpg -auto
  -----------------------------------------------
             CPU Usage Summary Report
  -----------------------------------------------
- Total CPU time                            0.02
+ Total CPU time                            0.03
  -----------------------------------------------
 write_patterns ./pathdelay/patterns${NUM_PATHS}.stil -internal -format STIL -unified_stil_flow -replace 
  Patterns written reference 76 V statements, generating 1615 test cycles
