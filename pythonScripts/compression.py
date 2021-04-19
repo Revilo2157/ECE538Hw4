@@ -73,25 +73,27 @@ def findImplications(patterns):
         scanChain = patterns[index]
 
         for index2 in patterns:
-            scanChain2 = patterns[index2]
+            if index < index2:
+                scanChain2 = patterns[index2]
 
-            if index is not index2:
-                if index not in implications[index2]:
-
-                    implication = findImplication(scanChain, scanChain2)
-                    implications[index][index2] = implication
-                    implications[index2][index] = implication
+                implication = findImplication(scanChain, scanChain2)
+                implications[index][index2] = implication
+                implications[index2][index] = implication
     return implications
 
-def printImplications(implications):
+def printImplications(implications, table=True):
     separator = " & "
     hline = "\\\\ \\hline\n"
-    header = ["{:<6}".format(x) for x in range(len(implications))]
+    if not table:
+        separator = "\t"
+        hline = "\n"
+
+    header = ["{:<6}".format(x) for x in implications]
     print("Chain", *header, sep=separator, end=hline)
     for index in implications:
         relationships = implications[index]
         print("{:6}".format(index), end="")
-        for chain in range(len(implications)):
+        for chain in implications:
             print(end=separator)
             if chain in relationships:
                 print("{:<6}".format(relationships[chain]), end="")
@@ -189,15 +191,11 @@ def invertMerge(mergeList):
         newList.append((chain, invertImplication(implication)))
     return newList
 
-def findGraph(patterns):
+def findGraph(patternsDict):
     
-    patternsDict = {}
-    for index in range(len(patterns)):
-        patternsDict[index] = patterns[index]
-
     implicationsList = findImplications(patternsDict)
 
-    printImplications(implicationsList)
+    # printImplications(implicationsList, False)
     print()
 
     mergeList = {}
@@ -250,7 +248,7 @@ def findGraph(patterns):
             else:
                 firstMerge.extend(invertMerge(secondMerge))
 
-        print("Merged %d with %d as %s" % (firstChain, secondChain, implication))
+        # print("Merged %d with %d as %s" % (firstChain, secondChain, implication))
 
     print()
 
@@ -258,11 +256,12 @@ def findGraph(patterns):
 
     printMergeList(mergeList)
     print()
-    printImplications(implicationsList)
+    printImplications(implicationsList, False)
 
 def printPatternStatistics(patterns):
     print("Chain", "Zeroes", "Ones", sep=" & ", end="\\\\ \\hline\n")
-    for chain, pattern in enumerate(patterns):
+    for chain in patterns:
+        pattern = patterns[chain]
         cares = {}
         for index, bit in enumerate(pattern):
             if not bit == "X":
@@ -272,7 +271,10 @@ def printPatternStatistics(patterns):
         print(chain, len(cares[0]), len(cares[1]), sep=" & ", end="\\\\ \\hline\n")     
 
 def generatePatterns(chainCount, chainBits, patternCount):
-    combinedPatterns = [[] for x in range(chainCount)]
+    combinedPatterns = {}
+    for x in range(chainCount):
+        combinedPatterns[x] = []
+
     separatedPatterns = []
     for patternIndex in range(patternCount):
         scanChains = []
@@ -286,3 +288,49 @@ def generatePatterns(chainCount, chainBits, patternCount):
             combinedPatterns[chainIndex].extend(scanChain)
         separatedPatterns.append(scanChains)
     return combinedPatterns, separatedPatterns
+
+def findConfigurationLayout(patterns):
+    cycleConfigs = []
+    votes = {}
+    for n in range(len(patterns[0])):
+        cycleConfigs.append(0)
+
+    for index in patterns:
+        scanChain = patterns[index]
+        for index2 in patterns:
+            scanChain2 = patterns[index2]
+            if index < index2:
+                scanChain2 = patterns[index2]
+                implicationCycles = sortImplications(scanChain, scanChain2)
+                
+                for cycle in implicationCycles[CONTRADICTION]:
+                    if cycle not in votes: 
+                        votes[cycle] = [0, 0]
+                    votes[cycle][1] += 1
+
+                for cycle in implicationCycles[EQUAL] + implicationCycles[NOT]:
+                    if cycle not in votes: 
+                        votes[cycle] = [0, 0]
+                    votes[cycle][0] += 1
+    
+    for cycle in votes:
+        if votes[cycle][1] > votes[cycle][0]:
+            cycleConfigs[cycle] = 1
+    return cycleConfigs
+                    
+
+def sortImplications(chain1, chain2):
+    implications = {CONTRADICTION : [], EQUAL : [], NOT : [], NONE : []} 
+    pairImplication = NONE
+    for index, (bit1, bit2) in enumerate(zip(chain1, chain2)):
+        implication = getImplication(bit1, bit2)
+
+        if not implication == NONE:
+            if pairImplication == NONE:
+                pairImplication = implication
+            else:
+                if not implication == pairImplication:
+                    implication = CONTRADICTION              
+        implications[implication].append(index)
+    return implications
+        
