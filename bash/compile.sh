@@ -4,7 +4,7 @@ if [ $# -ne 2 ]; then
 fi
 
 export top=$1
-export source=$(realpath $(rtl/${top}))
+export source=$(realpath "rtl/${top})")
 export clk=$2
 
 cd compilation 

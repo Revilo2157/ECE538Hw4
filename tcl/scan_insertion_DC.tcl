@@ -1,3 +1,4 @@
+# To Be Run From the Compilation Directory
 set top_module $::env(top)
 read_verilog ${top_module}_gatelevel.v
 set link_library "* ../nangate_scan.db"
