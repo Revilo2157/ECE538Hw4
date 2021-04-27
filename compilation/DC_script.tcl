@@ -1,7 +1,7 @@
 #Only use:DFF_X2 NAND2_X2 INV_X4 AND2_X2 NOR2_X2 OR3_X2 NAND3_X2 OR2_X2 NOR3_X2 AND2_X1 AND3_X2 CLKBUF_X1 CLKBUF_X2 BUF_X8
-set target_library "nangate45nm_lib.db"
+set target_library "NangateOpenCellLibrary.db "
 #set synthetic_library "dw_foundation.sldb"
-set link_library   "* nangate45nm_lib.db"
+set link_library   "* NangateOpenCellLibrary.db"
 #set symbol_library "/tools/synopsys/syn/O-2018.06-SP4/libraries/syn generic.sdb"
 # set_dont_use {NangateOpenCellLibrary/AOI*}
 # set_dont_use {NangateOpenCellLibrary/OAI*}
@@ -60,11 +60,11 @@ set verilogout_no_tri true
 set verilogout_show_unconnected_pins true
 set hdlin_auto_save_templates true
 
-set dir project
-set top_module vgafb
+set dir .
+set top_module divider_dshift
 ############# Elaborate Design ################
 # read_file {./project} -autoread -format verilog -top vgafb
-foreach {file} [ls ./${dir}/*.v] { 
+foreach {file} [ls *.v] { 
 read_file -format verilog ${file}
 }
 #read_file -format verilog ${dir}/
