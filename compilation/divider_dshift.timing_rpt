@@ -1,0 +1,36 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : divider_dshift
+Version: F-2011.09
+Date   : Tue Apr 27 02:02:02 2021
+****************************************
+
+Operating Conditions: typical   Library: nangate_scan
+Wire Load Model Mode: top
+
+  Startpoint: ready_reg (rising edge-triggered flip-flop)
+  Endpoint: o_ready (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  divider_dshift     5K_hvratio_1_1        nangate_scan
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  ready_reg/CK (SDFFR_X2)                  0.00       0.00 r
+  ready_reg/Q (SDFFR_X2)                   0.14       0.14 r
+  U2373/ZN (NAND2_X1)                      0.03       0.16 f
+  U1985/ZN (INV_X1)                        0.02       0.19 r
+  o_ready (out)                            0.00       0.19 r
+  data arrival time                                   0.19
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
