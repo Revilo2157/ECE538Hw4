@@ -9,7 +9,7 @@ read_netlist $scan_lib -library
 # read in user's synthesized verilog code
 #read_netlist $synthesized_files
 
-read_netlist  ${top_module}_scan.v
+read_netlist  ./gate/${top_module}/${top_module}_scan.v
 
 
 run_build_model $top_module
@@ -22,7 +22,7 @@ add_pi_constraints 0 test_se
 run_drc
 
 
-read_timing ./SDD/${top_module}/slack.dat
+read_timing ./SDD/slack.dat
 set_delay -launch_cycle last_shift
 set_faults -model transition
 add_faults -all

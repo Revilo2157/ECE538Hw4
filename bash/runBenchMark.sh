@@ -5,6 +5,5 @@
 
 bash/compile.sh divider_dshift i_clk
 
-
 bash/run4small.sh 1
 

@@ -1,9 +1,9 @@
 set library_name NangateOpenCellLibrary
-set link_library [list * ./nangate_scan.db]
+set link_library [list * ../nangate_scan.db]
 
 set top_module $::env(top)
 
-read_verilog ./gate/${top_module}/${top_module}.v
+read_verilog ./gate/${top_module}/${top_module}_scan.v
 
 #ungroup -flatten -all
 # Define top level in the hierarchy
@@ -35,7 +35,7 @@ report_timing
 
 set timing_save_pin_arrival_and_slack TRUE
 update_timing
-report_global_slack -max -nosplit > ./SDD/${top_module}/slack.dat
+report_global_slack -max -nosplit > ./SDD/slack.dat
 
 
 quit
