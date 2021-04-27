@@ -1,6 +1,6 @@
 from compression import *
 
-patternCount = 1500
+patternCount = 1000
 chainCount = 16
 patternBits = 8
 combinedPatterns, separatedPatterns = generatePatterns(chainCount, patternBits, patternCount)
@@ -30,6 +30,10 @@ for index, config in enumerate(cycleConfigs):
         for pattern in combinedPatterns:
             patterns2[pattern].append(combinedPatterns[pattern][index])
 
-findGraph(patterns1)
+reduction1 = findGraph(patterns1)
 print()
-findGraph(patterns2)
+reduction2 = findGraph(patterns2)
+
+inputs = 1 + max(reduction1, reduction2)
+compression = inputs / chainCount
+print("Compression = %.2f%%" % ((1-compression) * 100))

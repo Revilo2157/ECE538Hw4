@@ -158,14 +158,22 @@ def applyImplication(patterns, firstChain, secondChain, implication):
 
 def printMergeList(mergeList):
     chains = list(mergeList.keys())
+
+    longestMerge = 0
+    for chain in chains:
+        longestMerge = max(longestMerge, len(mergeList[chain]))
+
     chains.sort()
     for index, parentChain in enumerate(chains):
         print(index + 1, "%d %s" % (parentChain, EQUAL), sep=" & ", end="")
         children = mergeList[parentChain]
         children.sort()
-        for childChain in children:
+        index2 = 0
+        for index2, childChain in enumerate(children):
             print(end=" & ")
             print(childChain[0], childChain[1], end="")
+        for n in range(index2, longestMerge -1 ):
+            print(end=" & ")
         print("\\\\ \\hline")
 
 def byContradiction(item):
@@ -194,7 +202,7 @@ def invertMerge(mergeList):
 def findGraph(patternsDict):
     
     implicationsList = findImplications(patternsDict)
-
+    start = len(patternsDict)
     # printImplications(implicationsList, False)
     print()
 
@@ -253,10 +261,15 @@ def findGraph(patternsDict):
     print()
 
     # printChains(patterns)
+    for chain in patternsDict:
+        if chain not in mergeList:
+            mergeList[chain] = []
 
     printMergeList(mergeList)
     print()
-    printImplications(implicationsList, False)
+    print(str((1 - len(patternsDict) / start) * 100) + "%" )
+    # printImplications(implicationsList, False)
+    return len(patternsDict)
 
 def printPatternStatistics(patterns):
     print("Chain", "Zeroes", "Ones", sep=" & ", end="\\\\ \\hline\n")
