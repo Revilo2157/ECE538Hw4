@@ -60,14 +60,11 @@ set verilogout_no_tri true
 set verilogout_show_unconnected_pins true
 set hdlin_auto_save_templates true
 
-set dir project
 set top_module vgafb
 ############# Elaborate Design ################
-# read_file {./project} -autoread -format verilog -top vgafb
-foreach {file} [ls ./${dir}/*.v] { 
-read_file -format verilog ${file}
-}
-#read_file -format verilog ${dir}/
+read_file {./project} -autoread -format verilog -top vgafb
+#read_file -format verilog ${top_module}.v
+#read_file -format verilog lib.v
 #read_file -format verilog DFF2.v
 
 current_design ${top_module}
