@@ -1,11 +1,11 @@
-if [ $# -ne 3 ]; then
-	echo "Need top level module name, source directory, and clock pin"
+if [ $# -ne 2 ]; then
+	echo "Need top level module name, and clock pin"
 	exit 1
 fi
 
 export top=$1
-export source=$(realpath $2)
-export clk=$3
+export source=$(realpath $(rtl/${top}))
+export clk=$2
 
 cd compilation 
 
@@ -25,7 +25,7 @@ grep Error scan.txt
 rm -r ../gate/$top
 mkdir ../gate/$top > /dev/null
 cp ${top}_scan.v ../gate/$top/
-cp ${top}.sdf ../gate/$top/
+cp ${top}.spf ../gate/$top/
 
 cd ..
 bash/run4small.sh
