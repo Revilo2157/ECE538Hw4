@@ -4,7 +4,7 @@ set link_library "* nangate_scan.db"
 current_design ${top_module}
 link
 set_scan_configuration -style multiplexed_flip_flop
-create_clock clk_i -period 10
+create_clock $::env(clk) -period 10
 set target_library nangate_scan.db  
 compile -scan -map_effort medium
 set_scan_configuration -chain_count 3

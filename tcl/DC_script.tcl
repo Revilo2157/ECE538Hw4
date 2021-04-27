@@ -10,6 +10,7 @@ set hdlin_auto_save_templates true
 
 set sourceDir $::env(source)
 set top_module $::env(top)
+set clk_pin $::env(clk)
 
 ############# Elaborate Design ################
 foreach {file} [ls ${sourceDir}/*.v] { 
@@ -24,17 +25,17 @@ uniquify -dont_skip_empty_designs
 #set set_ultra_optimization true
 
 
-set all_input_but_clock  [remove_from_collection [all_inputs] sys_clk]
+set all_input_but_clock  [remove_from_collection [all_inputs] $clk_pin]
 
 ###################################################################
 ##...............define generated clock............................
-create_clock -period  2  [get_ports sys_clk]
-set_clock_uncertainty -setup 0.1 [get_ports sys_clk]
-set_clock_uncertainty -hold  0.1 [get_ports sys_clk]
-set_clock_transition 0.1 [get_clocks sys_clk]
+create_clock -period  2  [get_ports $clk_pin]
+set_clock_uncertainty -setup 0.1 [get_ports $clk_pin]
+set_clock_uncertainty -hold  0.1 [get_ports $clk_pin]
+set_clock_transition 0.1 [get_clocks $clk_pin]
 ##.............delay and drive strength on input ports.............
-set_input_delay -max 0 -clock sys_clk  $all_input_but_clock
-set_input_delay -min 0 -clock sys_clk  $all_input_but_clock
+set_input_delay -max 0 -clock $clk_pin  $all_input_but_clock
+set_input_delay -min 0 -clock $clk_pin  $all_input_but_clock
 #set_driving_cell  -lib_cell INVX1 $all_input_but_clock
 ##set_operating_conditions -min best -max worst
 set_wire_load_mode segmented

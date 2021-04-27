@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version F-2011.09 for linux -- Aug 22, 2011
-#@ # Date:   Tue Apr 27 02:20:38 2021
+#@ # Date:   Tue Apr 27 02:44:23 2021
 #@ # Run by: oar5@vlsi05.egr.duke.edu
 #@ 
 
@@ -4716,14 +4716,14 @@ source /home/software/synopsys/synthesis/F-2011.09/admin/setup/.synopsys_dc.setu
 #@ 
 #@ # -- End source /home/software/synopsys/synthesis/F-2011.09/admin/setup/.synopsys_dc.setup
 
-source -echo -verbose /winhomes/oar5/ECE538/Hw4/compilation/scan_insertion_DC.tcl
+source -echo -verbose /winhomes/oar5/ECE538/Hw4/compilation/../tcl/scan_insertion_DC.tcl
 #@ set top_module $::env(top)
 #@ read_verilog ${top_module}_gatelevel.v
 #@ set link_library "* nangate_scan.db"
 #@ current_design ${top_module}
 #@ link
 #@ set_scan_configuration -style multiplexed_flip_flop
-#@ create_clock clk_i -period 10
+#@ create_clock $::env(clk) -period 10
 #@ set target_library nangate_scan.db  
 #@ compile -scan -map_effort medium
 #@ set_scan_configuration -chain_count 3

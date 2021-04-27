@@ -1,6 +1,5 @@
 Loading db file '/winhomes/oar5/ECE538/Hw4/compilation/nangate_scan.db'
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
-Warning: There is no defined clock in the design. (PWR-80)
 Warning: Design has unannotated primary inputs. (PWR-414)
 Warning: Design has unannotated sequential cell outputs. (PWR-415)
  
@@ -9,7 +8,7 @@ Report : power
         -analysis_effort low
 Design : divider_dshift
 Version: F-2011.09
-Date   : Tue Apr 27 02:20:47 2021
+Date   : Tue Apr 27 02:44:33 2021
 ****************************************
 
 
@@ -35,14 +34,13 @@ Power-specific unit information :
     Leakage Power Units = 1pW
 
 
-  Cell Internal Power  = 208.9929 uW   (87%)
-  Net Switching Power  =  30.5192 uW   (13%)
+  Cell Internal Power  = 260.7574 uW   (83%)
+  Net Switching Power  =  53.0034 uW   (17%)
                          ---------
-Total Dynamic Power    = 239.5121 uW  (100%)
+Total Dynamic Power    = 313.7608 uW  (100%)
 
-Cell Leakage Power     =  41.6961 uW
+Cell Leakage Power     =  58.4753 uW
 
-Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
 
                  Internal         Switching           Leakage            Total
 Power Group      Power            Power               Power              Power   (   %    )  Attrs
@@ -51,9 +49,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
-sequential         0.1865        3.5783e-03        2.2226e+07            0.2123  (  75.51%)
-combinational  2.2470e-02        2.6941e-02        1.9470e+07        6.8881e-02  (  24.49%)
+register           0.2238        1.5325e-02        2.3527e+07            0.2626  (  70.55%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  3.7000e-02        3.7678e-02        3.4949e+07            0.1096  (  29.45%)
 --------------------------------------------------------------------------------------------------
-Total              0.2090 mW     3.0519e-02 mW     4.1696e+07 pW         0.2812 mW
+Total              0.2608 mW     5.3003e-02 mW     5.8476e+07 pW         0.3722 mW
 1

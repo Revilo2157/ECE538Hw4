@@ -59,10 +59,8 @@ Loading db file '/winhomes/oar5/ECE538/Hw4/compilation/nangate_scan.db'
 set_scan_configuration -style multiplexed_flip_flop
 Accepted scan configuration for modes: all_dft
 1
-create_clock clk_i -period 10
-Warning: Can't find object 'clk_i' in design 'divider_dshift'. (UID-95)
-Error: Value for list 'source_objects' must have 1 elements. (CMD-036)
-0
+create_clock $::env(clk) -period 10
+1
 set target_library nangate_scan.db  
 nangate_scan.db
 compile -scan -map_effort medium
@@ -87,35 +85,26 @@ Information: There are 29 potential problems in your design. Please run 'check_d
 
   Updating timing information
 Information: Updating design information... (UID-85)
-Information: Design 'divider_dshift' has no optimization constraints set. (OPT-108)
 
   Beginning Mapping Optimizations  (Medium effort)
   -------------------------------
-  Structuring 'divider_dshift'
-  Mapping 'divider_dshift'
 
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:03    6080.1      0.00       0.0       4.0                          
-    0:00:03    6080.1      0.00       0.0       4.0                          
-    0:00:03    6080.1      0.00       0.0       4.0                          
-    0:00:03    6080.1      0.00       0.0       4.0                          
-    0:00:03    6080.1      0.00       0.0       4.0                          
-    0:00:04    6080.1      0.00       0.0       4.0                          
-    0:00:04    6080.1      0.00       0.0       4.0                          
-    0:00:04    6080.1      0.00       0.0       4.0                          
-    0:00:04    6080.1      0.00       0.0       4.0                          
-    0:00:04    6077.2      0.00       0.0       0.6                          
-    0:00:04    6077.7      0.00       0.0       0.2                          
-    0:00:04    6077.7      0.00       0.0       0.1                          
-    0:00:04    6077.7      0.00       0.0       0.0                          
-    0:00:04    6077.7      0.00       0.0       0.0                          
-    0:00:04    6077.7      0.00       0.0       0.0                          
-    0:00:04    6077.7      0.00       0.0       0.0                          
-    0:00:04    6077.7      0.00       0.0       0.0                          
-    0:00:04    6077.7      0.00       0.0       0.0                          
-    0:00:04    6077.7      0.00       0.0       0.0                          
+    0:00:03    6918.1      0.00       0.0       0.0                          
+    0:00:03    6918.1      0.00       0.0       0.0                          
+    0:00:03    6918.1      0.00       0.0       0.0                          
+    0:00:03    6918.1      0.00       0.0       0.0                          
+    0:00:03    6918.1      0.00       0.0       0.0                          
+    0:00:04    6115.3      0.00       0.0       0.0                          
+    0:00:04    6115.3      0.00       0.0       0.0                          
+    0:00:04    6115.3      0.00       0.0       0.0                          
+    0:00:04    6115.3      0.00       0.0       0.0                          
+    0:00:04    6115.3      0.00       0.0       0.0                          
+    0:00:04    6115.3      0.00       0.0       0.0                          
+    0:00:04    6115.3      0.00       0.0       0.0                          
+    0:00:04    6115.3      0.00       0.0       0.0                          
 
 
 
@@ -125,9 +114,9 @@ Information: Design 'divider_dshift' has no optimization constraints set. (OPT-1
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:04    6077.7      0.00       0.0       0.0                          
-    0:00:04    6077.7      0.00       0.0       0.0                          
-    0:00:04    6077.7      0.00       0.0       0.0                          
+    0:00:04    6115.3      0.00       0.0       0.0                          
+    0:00:04    6115.3      0.00       0.0       0.0                          
+    0:00:05    5936.3      0.00       0.0       0.0                          
 
 
   Beginning Area-Recovery Phase  (cleanup)
@@ -136,20 +125,21 @@ Information: Design 'divider_dshift' has no optimization constraints set. (OPT-1
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:04    6077.7      0.00       0.0       0.0                          
-    0:00:04    6077.7      0.00       0.0       0.0                          
-    0:00:04    5990.6      0.00       0.0       0.0                          
-    0:00:04    5963.5      0.00       0.0       0.0                          
-    0:00:04    5955.2      0.00       0.0       0.0                          
-    0:00:04    5955.1      0.00       0.0       0.0                          
-    0:00:04    5955.1      0.00       0.0       0.0                          
-    0:00:04    5955.1      0.00       0.0       0.0                          
-    0:00:04    5955.1      0.00       0.0       0.0                          
-    0:00:04    5955.1      0.00       0.0       0.0                          
-    0:00:04    5955.1      0.00       0.0       0.0                          
-    0:00:04    5955.1      0.00       0.0       0.0                          
-    0:00:04    5955.1      0.00       0.0       0.0                          
-    0:00:04    5955.1      0.00       0.0       0.0                          
+    0:00:05    5936.3      0.00       0.0       0.0                          
+    0:00:05    5936.3      0.00       0.0       0.0                          
+    0:00:05    5916.6      0.00       0.0       0.0                          
+    0:00:05    5901.3      0.00       0.0       0.0                          
+    0:00:05    5893.7      0.00       0.0       0.0                          
+    0:00:05    5891.4      0.00       0.0       0.0                          
+    0:00:05    5890.7      0.00       0.0       0.0                          
+    0:00:05    5890.7      0.00       0.0       0.0                          
+    0:00:05    5890.7      0.00       0.0       0.0                          
+    0:00:05    5890.7      0.00       0.0       0.0                          
+    0:00:05    5890.7      0.00       0.0       0.0                          
+    0:00:05    5890.7      0.00       0.0       0.0                          
+    0:00:05    5890.7      0.00       0.0       0.0                          
+    0:00:05    5890.7      0.00       0.0       0.0                          
+    0:00:05    5890.7      0.00       0.0       0.0                          
 
   Optimization Complete
   ---------------------
@@ -211,7 +201,7 @@ Preview_dft report
 For    : 'Insert_dft' command
 Design : divider_dshift
 Version: F-2011.09
-Date   : Tue Apr 27 02:20:46 2021
+Date   : Tue Apr 27 02:44:32 2021
 ****************************************
 
 Number of chains: 3
@@ -248,6 +238,12 @@ insert_dft
   Routing Global Signals
   Mapping New Logic
 Resetting current test mode
+  Beginning Mapping Optimizations
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
 
 1
 # Report Things
@@ -270,4 +266,5 @@ Information: Annotated 'cell' delays are assumed to include load delay. (UID-282
 Information: Writing timing information to file '/winhomes/oar5/ECE538/Hw4/compilation/divider_dshift.sdf'. (WT-3)
 1
 exit
+
 Thank you...
