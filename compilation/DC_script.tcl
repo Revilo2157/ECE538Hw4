@@ -1,57 +1,5 @@
-#Only use:DFF_X2 NAND2_X2 INV_X4 AND2_X2 NOR2_X2 OR3_X2 NAND3_X2 OR2_X2 NOR3_X2 AND2_X1 AND3_X2 CLKBUF_X1 CLKBUF_X2 BUF_X8
 set target_library "NangateOpenCellLibrary.db "
-#set synthetic_library "dw_foundation.sldb"
 set link_library   "* NangateOpenCellLibrary.db"
-#set symbol_library "/tools/synopsys/syn/O-2018.06-SP4/libraries/syn generic.sdb"
-# set_dont_use {NangateOpenCellLibrary/AOI*}
-# set_dont_use {NangateOpenCellLibrary/OAI*}
-# set_dont_use {NangateOpenCellLibrary/TINV*}
-# set_dont_use {NangateOpenCellLibrary/TBUF*}
-# set_dont_use {NangateOpenCellLibrary/FA*}
-# set_dont_use {NangateOpenCellLibrary/HA*}
-# set_dont_use {NangateOpenCellLibrary/MUX*}
-# set_dont_use {NangateOpenCellLibrary/DL*}
-# set_dont_use {NangateOpenCellLibrary/SDFF*}
-# #comment out the following lines later
-# set_dont_use {NangateOpenCellLibrary/AND2_X4}
-# set_dont_use {NangateOpenCellLibrary/AND3_X1}
-# set_dont_use {NangateOpenCellLibrary/AND3_X4}
-# set_dont_use {NangateOpenCellLibrary/AND4*}
-# set_dont_use {NangateOpenCellLibrary/BUF_X1}
-# set_dont_use {NangateOpenCellLibrary/BUF_X16}
-# set_dont_use {NangateOpenCellLibrary/BUF_X4}
-# set_dont_use {NangateOpenCellLibrary/BUF_X2}
-# set_dont_use {NangateOpenCellLibrary/BUF_X32}
-# set_dont_use {NangateOpenCellLibrary/CLKBUF_X3}
-# set_dont_use {NangateOpenCellLibrary/CLKGATE*}
-# #set_dont_use {NangateOpenCellLibrary/DFFR*}
-# #set_dont_use {NangateOpenCellLibrary/DFFS*}
-# #set_dont_use {NangateOpenCellLibrary/DFF_X1*}
-# set_dont_use {NangateOpenCellLibrary/DL*}
-# set_dont_use {NangateOpenCellLibrary/INV_X1}
-# set_dont_use {NangateOpenCellLibrary/INV_X2}
-# set_dont_use {NangateOpenCellLibrary/INV_X8}
-# set_dont_use {NangateOpenCellLibrary/INV_X16}
-# set_dont_use {NangateOpenCellLibrary/INV_X32}
-# set_dont_use {NangateOpenCellLibrary/NAND2_X1}
-# set_dont_use {NangateOpenCellLibrary/NAND2_X4}
-# set_dont_use {NangateOpenCellLibrary/NAND3_X1}
-# set_dont_use {NangateOpenCellLibrary/NAND3_X4}
-# set_dont_use {NangateOpenCellLibrary/NAND4*}
-# set_dont_use {NangateOpenCellLibrary/ANT*}
-# set_dont_use {NangateOpenCellLibrary/NOR2_X1}
-# set_dont_use {NangateOpenCellLibrary/NOR2_X4}
-# set_dont_use {NangateOpenCellLibrary/NOR3_X1}
-# set_dont_use {NangateOpenCellLibrary/NOR3_X4}
-# set_dont_use {NangateOpenCellLibrary/NOR4*}
-# set_dont_use {NangateOpenCellLibrary/OR2_X1}
-# set_dont_use {NangateOpenCellLibrary/OR2_X4}
-# set_dont_use {NangateOpenCellLibrary/OR3_X1}
-# set_dont_use {NangateOpenCellLibrary/OR3_X4}
-# set_dont_use {NangateOpenCellLibrary/OR4*}
-# set_dont_use {NangateOpenCellLibrary/TLAT*}
-# set_dont_use {NangateOpenCellLibrary/XNOR*}
-# set_dont_use {NangateOpenCellLibrary/XOR*}
 
 set timestamp [clock format [clock scan now] -format "%Y-%m-%d_%H-%M"]
 set enable_page_mode false
@@ -60,15 +8,13 @@ set verilogout_no_tri true
 set verilogout_show_unconnected_pins true
 set hdlin_auto_save_templates true
 
-set dir .
-set top_module divider_dshift
+set sourceDir $::env(source)
+set top_module $::env(top)
+
 ############# Elaborate Design ################
-# read_file {./project} -autoread -format verilog -top vgafb
-foreach {file} [ls *.v] { 
-read_file -format verilog ${file}
+foreach {file} [ls ${sourceDir}/*.v] { 
+    read_file -format verilog ${file}
 }
-#read_file -format verilog ${dir}/
-#read_file -format verilog DFF2.v
 
 current_design ${top_module}
 link
@@ -100,23 +46,12 @@ set_fix_hold [all_clocks]
 set verilogout_show_unconnected_pins true
 set verilogout_no_tri true
 set_fix_multiple_port_nets -all -buffer_constants
-#set_svf PE.svf
+
 compile
-#compile_ultra -timing_high_effort_script -no_autoungroup
-#compile_ultra -incremental -timing_high_effort_script -no_autoungroup
-#compile
 
 ## Report Design
 define_name_rules verilog -case_insensitive
 change_names -hierarchy -rules verilog
 ungroup -all -flatten
 write  -h -format verilog -output "${top_module}_gatelevel.v"
-#write -format ddc -hierarchy -output "$output_dir/${top_module}_gate.ddc"
-#write_sdc "$output_dir/${top_module}_gate.sdc"
-#write_sdf "$output_dir/${top_module}_gate.sdf"
-#redirect -append -tee "Report_area_modularsystolic.txt" {report_area -nosplit -hierarchy}
-#redirect -append -tee "Report_power.txt" {report_power -hier -hier_level 100 -analysis_effort high}
-#redirect -append -tee "$output_dir/Report_power_netcell.txt" {report_power -net -cell -analysis_effort high -sort_mode dynamic_power}
-#redirect -append -tee "$output_dir/Report_clock.txt" {report_clock -nosplit}
-#redirect -append -tee "$output_dir/Report_timing.txt" {report_timing -path full -delay min -nworst 1 -max_paths 3 -significant_digits 2 -sort_by group}
 exit
