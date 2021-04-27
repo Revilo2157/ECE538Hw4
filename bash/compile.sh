@@ -26,3 +26,6 @@ rm -r ../gate/$top
 mkdir ../gate/$top > /dev/null
 cp ${top}_scan.v ../gate/$top/
 cp ${top}.sdf ../gate/$top/
+
+cd ..
+bash/run4small.sh
